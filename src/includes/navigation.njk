@@ -1,5 +1,5 @@
 <nav>
-    <ul class="flex flex-row">
+    <ul class="flex flex-row" style="color: #D3FFE9">
         {%- for item in collections.all | eleventyNavigation -%}
             {%- set isCurrent = (item.url == page.url) -%}
             {%- set isParent = item.url != '/' and item.url in page.url -%}
