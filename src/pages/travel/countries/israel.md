@@ -1,4 +1,4 @@
 ---
-title: Japan
+title: Israel
 flag: 🇯🇵
 ---
