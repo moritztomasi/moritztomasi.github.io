@@ -2,5 +2,5 @@
 layout: base.njk
 eleventyNavigation:
   key: Books
-  order: 2
+  order: 3
 ---

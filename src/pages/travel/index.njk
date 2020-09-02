@@ -1,0 +1,12 @@
+---
+layout: base.njk
+eleventyNavigation:
+  key: Travel
+  order: 4
+---
+
+{%- for post in collections.countries | reverse -%}
+  {% set absolutePostUrl %}{{ post.url | url  }}{% endset %}
+  <span class="text-gray-600">{{ post.date | dateformat }}</span>
+  <a class="pl-12" href="{{ post.url }}">{{ post.data.title }}</a>
+{%- endfor -%}
