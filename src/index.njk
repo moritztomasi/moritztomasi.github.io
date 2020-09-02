@@ -2,6 +2,7 @@
 layout: base.njk
 eleventyNavigation:
   key: Home
+  order: 0
 ---
 
 <section>
@@ -26,11 +27,11 @@ eleventyNavigation:
 <section class="pt-24">
   <h2 class="text-gray-600 text-xl">Posts</h2>
 
-  <div class="pt-4">
+  <div class="text-sm pt-4">
     {%- for post in collections.posts | reverse -%}
       {% set absolutePostUrl %}{{ post.url | url  }}{% endset %}
       <span class="text-gray-600">{{ post.date | dateformat }}</span>
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <a class="pl-12" href="{{ post.url }}">{{ post.data.title }}</a>
     {%- endfor -%}
   </div>
 </section>
