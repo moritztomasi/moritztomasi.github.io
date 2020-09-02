@@ -1,0 +1,31 @@
+{%- set absolutePageUrl -%}{{ page.url | url }}{%- endset -%}
+
+{# General #}
+<meta name="description" content="{{ description or meta.description }}">
+<link rel="canonical" href="{{ absolutePageUrl }}">
+
+{# Open Graph #}
+<meta property="og:site_name" content="{{ meta.title }}">
+<meta property="og:title" content="{{ title or meta.title }}">
+<meta property="og:description" content="{{ description  or meta.description }}">
+<meta property="og:url" content="{{ absolutePageUrl }}">
+<meta property="og:locale" content="{{ meta.locale }}">
+<meta name="twitter:card" content="{% if image -%}summary_large_image{% else %}summary{% endif %}">
+{%- if image -%}
+    <meta property="og:image" content="{{ image | url | absoluteUrl(meta.url) }}">
+{%- endif -%}
+
+{# Favicon #}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/apple-touch-icon.png' | url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon-32x32.png' | url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon-16x16.png' | url }}">
+<link rel="manifest" href="{{ '/assets/site.webmanifest' | url }}">
+
+{# Font Awesome #}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+{# Styles #}
+<link rel="stylesheet" href="{{ '/style.css' | url }}">
+
+{# RSS Feed #}
+<link type="application/atom+xml" rel="alternate" href="{{ meta.url }}/feed.xml" title="{{ meta.title }}">

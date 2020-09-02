@@ -1,18 +1,30 @@
 const htmlmin = require("html-minifier");
+const pluginNavigation = require("@11ty/eleventy-navigation");
+const moment = require("moment-timezone");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(pluginNavigation);
+
   eleventyConfig.setUseGitIgnore(false);
 
-  eleventyConfig.addWatchTarget("./_tmp/style.css");
+  eleventyConfig.addWatchTarget("./src/_tmp/style.css");
 
-  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
+  eleventyConfig.addPassthroughCopy({
+    "./src/_tmp/style.css": "./style.css",
+  });
 
   eleventyConfig.addPassthroughCopy({
     "./node_modules/alpinejs/dist/alpine.js": "./js/alpine.js",
   });
 
+  eleventyConfig.addPassthroughCopy({ "./src/assets": "./assets" });
+
   eleventyConfig.addShortcode("version", function () {
     return String(Date.now());
+  });
+
+  eleventyConfig.addFilter("dateformat", function (dateIn) {
+    return moment(dateIn).tz("GMT").format("DD-MM-YYYY");
   });
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
@@ -31,4 +43,14 @@ module.exports = function (eleventyConfig) {
 
     return content;
   });
+
+  return {
+    dir: {
+      input: "src",
+      output: "dist",
+      includes: "includes",
+      layouts: "layouts",
+      data: "data",
+    },
+  };
 };
