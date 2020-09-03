@@ -14,17 +14,17 @@ h3 {
   @apply text-lg;
 }
 
-#post {
+#text {
   @apply text-sm;
 }
 
-#post p {
+#text p {
   @apply my-6;
   overflow-wrap: break-word;
   hyphens: auto;
 }
 
-#post ul {
+#text ul {
   @apply list-disc;
   @apply ml-4;
   overflow-wrap: break-word;

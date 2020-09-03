@@ -2,10 +2,14 @@
 layout: base
 ---
 
-<article id="post">
-    <h1 style="color: #d3ffe9">{{ title }}</h1>
-    <h2>{{ page.date | dateformat }}</h2>
-    <div class="pt-12">
-        {{ content | safe }}
-    </div>
+<article id="text">
+    {% if title %}
+        <h1 style="color: #d3ffe9">{{ title }}</h1>
+    {% endif %}
+
+    {% if showDate %}
+        <h2>{{ page.date | dateformat }}</h2>
+    {% endif %}
+
+    {{ content | safe }}
 </article>

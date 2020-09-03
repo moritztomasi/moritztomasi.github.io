@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: base
 eleventyNavigation:
   key: Books
   order: 3

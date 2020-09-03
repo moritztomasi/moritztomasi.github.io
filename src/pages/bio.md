@@ -1,5 +1,6 @@
 ---
-layout: base.njk
+layout: post
+showDate: false
 eleventyNavigation:
   key: Bio
   order: 1
