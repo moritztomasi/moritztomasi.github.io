@@ -2,9 +2,9 @@
 layout: base
 ---
 
-<article>
-    <h1 class="text-xl" style="color: #d3ffe9">{{ title }}</h1>
-    <h2 class="text-sm">{{ page.date | dateformat }}</h2>
+<article id="post">
+    <h1 style="color: #d3ffe9">{{ title }}</h1>
+    <h2>{{ page.date | dateformat }}</h2>
     <div class="pt-12">
         {{ content | safe }}
     </div>

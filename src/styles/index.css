@@ -1,3 +1,41 @@
 @tailwind base;
+
+body {
+  @apply leading-7;
+}
+
+h1 {
+  @apply text-2xl;
+}
+h2 {
+  @apply text-xl;
+}
+h3 {
+  @apply text-lg;
+}
+
+#post {
+  @apply text-sm;
+}
+
+#post p {
+  @apply my-6;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+#post ul {
+  @apply list-disc;
+  @apply ml-4;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+pre,
+code {
+  font-feature-settings: normal;
+  @apply text-base;
+}
+
 @tailwind components;
 @tailwind utilities;
