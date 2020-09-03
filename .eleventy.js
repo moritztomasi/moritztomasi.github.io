@@ -9,16 +9,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setUseGitIgnore(false);
 
-  eleventyConfig.addWatchTarget("./src/_tmp/style.css");
-
-  eleventyConfig.addPassthroughCopy({
-    "./src/_tmp/style.css": "./style.css",
-  });
-
-  eleventyConfig.addPassthroughCopy({
-    "./src/styles/custom.css": "./custom.css",
-  });
-
   eleventyConfig.addPassthroughCopy({
     "./node_modules/alpinejs/dist/alpine.js": "./js/alpine.js",
   });
