@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ meta.lang }}">
+<html class="h-full" lang="{{ meta.lang }}">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +7,13 @@
 
         {% include "meta.njk" %}
     </head>
-    <body class="font-mono text-white" style="background-color: #465362">
-        <div class="container mx-auto max-w-2xl">
-            {% include "header.njk" %}
+    <body class="h-full container mx-auto flex flex-col max-w-2xl font-mono text-white" style="background-color: #465362">
+        {% include "header.njk" %}
 
-            <main id="main" class="main">
-                {{ content | safe }}
-            </main>
+        <main class="flex-1">
+            {{ content | safe }}
+        </main>
 
-            {% include "footer.njk" %}
-        </div>
+        {% include "footer.njk" %}
     </body>
 </html>
