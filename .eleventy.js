@@ -14,6 +14,10 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy({
+    "./src/styles/custom.css": "./custom.css",
+  });
+
+  eleventyConfig.addPassthroughCopy({
     "./node_modules/alpinejs/dist/alpine.js": "./js/alpine.js",
   });
 
