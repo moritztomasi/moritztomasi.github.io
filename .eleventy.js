@@ -1,9 +1,11 @@
 const htmlmin = require("html-minifier");
 const pluginNavigation = require("@11ty/eleventy-navigation");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const moment = require("moment-timezone");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.setUseGitIgnore(false);
 
