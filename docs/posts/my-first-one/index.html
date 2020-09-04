@@ -90,11 +90,20 @@
 <p><img src="https://images.pexels.com/photos/4234939/pexels-photo-4234939.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Pizza"></p>
 <h2 id="calculator">Calculator</h2>
 <div class="py-6">
-<div x-data="ingredients()" x-init="getCalculatedIngredients()" class="flex flex-col text-black">
-    <input type="number" x-model.number="numberOfPizzas" x-on:change="getCalculatedIngredients()"/>
-    <input type="number" x-model.number="gramsPerDoughBall" x-on:change="getCalculatedIngredients()"/>
-    <input type="number" x-model.number="waterContent" x-on:change="getCalculatedIngredients()"/>
-    <div class="flex flex-col text-white">
+<div x-data="ingredients()" x-init="getCalculatedIngredients()" class="flex flex-col">
+    <div class="py-1">
+        <input class="px-1 text-black" type="number" min="1" x-model.number="numberOfPizzas" x-on:change="getCalculatedIngredients()"/>
+        <label>pizza(s)</label>
+    </div>
+    <div class="py-1">
+        <input class="px-1 text-black" type="number" min="1" x-model.number="gramsPerDoughBall" x-on:change="getCalculatedIngredients()"/>
+        <label>grams / dough ball</label>
+    </div>
+    <div class="py-1">
+        <input class="px-1 text-black" type="number" min="1" x-model.number="waterContent" x-on:change="getCalculatedIngredients()"/>
+        <label>% water</label>
+    </div>
+    <div class="flex flex-col pt-6">
         <div>
             Flour:
             <span x-text="flour"></span>g
