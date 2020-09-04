@@ -13,7 +13,11 @@
                 </span>
             </div>
 
-            <div class="lg:inline" style="color: #D3FFE9" x-show="open">
+            <div class="lg:hidden" style="color: #D3FFE9" x-show="open">
+                {% include "navigation.njk" %}
+            </div>
+
+            <div class="hidden lg:inline" style="color: #D3FFE9">
                 {% include "navigation.njk" %}
             </div>
         </div>
