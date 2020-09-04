@@ -27,6 +27,10 @@ module.exports = function (eleventyConfig) {
     return moment(dateIn).tz("GMT").format("DD-MM-YYYY");
   });
 
+  eleventyConfig.addFilter("sitemapdateformat", function (dateIn) {
+    return moment(dateIn).tz("GMT").format("YYYY-MM-DD");
+  });
+
   eleventyConfig.setLibrary(
     "md",
     markdownIt({
