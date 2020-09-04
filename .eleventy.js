@@ -2,10 +2,14 @@ const htmlmin = require("html-minifier");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const moment = require("moment-timezone");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+const pluginTOC = require("eleventy-plugin-toc");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(pluginTOC);
 
   eleventyConfig.setUseGitIgnore(false);
 
@@ -22,6 +26,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("dateformat", function (dateIn) {
     return moment(dateIn).tz("GMT").format("DD-MM-YYYY");
   });
+
+  eleventyConfig.setLibrary(
+    "md",
+    markdownIt({
+      html: true,
+      breaks: true,
+      linkify: true,
+      typographer: true,
+    }).use(markdownItAnchor)
+  );
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (
