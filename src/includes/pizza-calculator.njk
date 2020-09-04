@@ -1,0 +1,43 @@
+<div x-data="ingredients()" x-init="getCalculatedIngredients()" class="flex flex-col text-black">
+    <input type="number" x-model.number="numberOfPizzas" x-on:change="getCalculatedIngredients()"/>
+    <input type="number" x-model.number="gramsPerDoughBall" x-on:change="getCalculatedIngredients()"/>
+    <input type="number" x-model.number="waterContent" x-on:change="getCalculatedIngredients()"/>
+    <div class="flex flex-col text-white">
+        <div>
+            Flour:
+            <span x-text="flour"></span>g
+        </div>
+        <div>
+            Water:
+            <span x-text="water"></span>g
+        </div>
+        <div>
+            Salt:
+            <span x-text="salt"></span>g
+        </div>
+        <div>
+            Yeast:
+            <span x-text="yeast"></span>g
+        </div>
+    </div>
+</div>
+
+<script>
+    function ingredients() {
+        return {
+            numberOfPizzas: 1,
+            gramsPerDoughBall: 200,
+            waterContent: 57,
+            flour: 0,
+            water: 0,
+            salt: 0,
+            yeast: 0,
+            getCalculatedIngredients: function () {
+                this.flour = Math.round((this.numberOfPizzas * this.gramsPerDoughBall) / (1 + (this.waterContent / 100) + 0.03 + 0.002));
+                this.water = Math.round((this.flour * this.waterContent) / 100);
+                this.salt = Math.round(0.03 * this.flour);
+                this.yeast = Math.round((0.002 * this.flour) * 100) / 100;
+            }
+        }
+    }
+</script>
