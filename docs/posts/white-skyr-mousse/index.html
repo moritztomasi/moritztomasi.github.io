@@ -7,13 +7,13 @@
 
         
 <meta name="description" content="The personal site of Moritz Tomasi">
-<link rel="canonical" href="/">
+<link rel="canonical" href="/posts/white-skyr-mousse/">
 
 
 <meta property="og:site_name" content="Moritz Tomasi">
-<meta property="og:title" content="Moritz Tomasi">
+<meta property="og:title" content="White Choccolate Skyr Mousse">
 <meta property="og:description" content="The personal site of Moritz Tomasi">
-<meta property="og:url" content="/">
+<meta property="og:url" content="/posts/white-skyr-mousse/">
 <meta property="og:locale" content="en_us">
 <meta name="twitter:card" content="summary">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
@@ -109,42 +109,81 @@
 
         <main class="container mx-auto max-w-2xl flex-1">
             
-<section>
-  <p class="text-base">
-    This is my website. There are many like it, but this one is mine.
-  </p>
-  <p class="text-base pt-4">
-    Contact:
-    <a href="mailto:tomasi.moritz@gmail.com">
-      <i class="fa fa-envelope"></i>
-    </a>,
-    <a href="https://www.linkedin.com/in/moritz-tomasi-990398163/" target="_blank">
-      <i class="fa fa-linkedin"></i>
-    </a>
-    and
-    <a href="https://github.com/moritztomasi" target="_blank">
-      <i class="fa fa-github"></i>
-    </a>
-  </p>
-</section>
+<article id="text">
+    
+        <h1 style="color: #d3ffe9">White Choccolate Skyr Mousse</h1>
+    
 
-<section class="pt-24">
-  <h2 class="text-xl" style="color: #D3FFE9">Posts</h2>
+    
+        <h2 class="text-base">13-09-2020</h2>
+    
 
-  <div class="flex flex-col text-sm pt-4"><div class="flex flex-row">
-        
-        <span class="text-gray-600">13-09-2020</span>
-        <a class="pl-12" href="/posts/dark-skyr-mousse/">Dark Choccolate Skyr Mousse</a>
-      </div><div class="flex flex-row">
-        
-        <span class="text-gray-600">13-09-2020</span>
-        <a class="pl-12" href="/posts/white-skyr-mousse/">White Choccolate Skyr Mousse</a>
-      </div><div class="flex flex-row">
-        
-        <span class="text-gray-600">02-09-2020</span>
-        <a class="pl-12" href="/posts/my-first-one/">Pizza dough for losers</a>
-      </div></div>
-</section>
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+<h2 id="calculator">Calculator</h2>
+<div class="py-6">
+    <div x-data="ingredients()" x-init="getCalculatedIngredients()" class="flex flex-col">
+    <div class="py-1">
+        <input class="px-1 text-black" type="number" min="1" x-model.number="portions" x-on:change="getCalculatedIngredients()"/>
+        <label>portions</label>
+    </div>
+    <div class="flex flex-col pt-6">
+        <div>
+            Skyr:
+            <span x-text="skyr"></span>g
+        </div>
+        <div>
+            Egg Whites:
+            <span x-text="eggWhites"></span>
+        </div>
+        <div>
+            White Choccolate:
+            <span x-text="whiteChoccolate"></span>g
+        </div>
+        <div>
+            Vanilla Sugar:
+            <span x-text="vanillaSugar"></span>
+            tsp
+        </div>
+        <div>
+            Lemon:
+            <span x-text="lemon"></span>
+        </div>
+    </div>
+</div>
+<script>
+    function ingredients() {
+        return {
+            portions: 4,
+
+            skyr: 0,
+            eggWhites: 0,
+            whiteChoccolate: 0,
+            vanillaSugar: 0,
+            lemon: 0,
+            getCalculatedIngredients: function () {
+                const skyr = 25;
+                const eggWhites = 1;
+                const whiteChoccolate = 50;
+                const vanillaSugar = 0.5;
+                const lemon = 0.125
+
+                this.skyr = this.portions * skyr;
+                this.eggWhites = this.portions * eggWhites;
+                this.whiteChoccolate = this.portions * whiteChoccolate;
+                this.vanillaSugar = this.portions * vanillaSugar;
+                this.lemon = this.portions * lemon;
+            }
+        }
+    }
+</script>
+</div>
+
+</article>
+
+<aside hidden="hidden" class="fixed top-0 right-0 mt-12">
+    <nav class="toc">
+        <ol><li><a href="#calculator">Calculator</a></li></ol></nav>
+</aside>
         </main>
 
         <footer class="w-full bottom-0 py-6">

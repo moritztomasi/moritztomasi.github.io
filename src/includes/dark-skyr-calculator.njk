@@ -1,0 +1,56 @@
+<div x-data="ingredients()" x-init="getCalculatedIngredients()" class="flex flex-col">
+    <div class="py-1">
+        <input class="px-1 text-black" type="number" min="1" x-model.number="portions" x-on:change="getCalculatedIngredients()"/>
+        <label>portions</label>
+    </div>
+    <div class="flex flex-col pt-6">
+        <div>
+            Skyr:
+            <span x-text="skyr"></span>g
+        </div>
+        <div>
+            Egg Whites:
+            <span x-text="eggWhites"></span>
+        </div>
+        <div>
+            Milk:
+            <span x-text="milk"></span>
+            ml
+        </div>
+        <div>
+            Sugar:
+            <span x-text="sugar"></span>g
+        </div>
+        <div>
+            Dark Choccolate:
+            <span x-text="darkChoccolate"></span>g
+        </div>
+    </div>
+</div>
+
+<script>
+    function ingredients() {
+        return {
+            portions: 4,
+
+            skyr: 0,
+            eggWhites: 0,
+            milk: 0,
+            sugar: 0,
+            darkChoccolate: 0,
+            getCalculatedIngredients: function () {
+                const skyr = 30;
+                const eggWhites = 0.4;
+                const milk = 30;
+                const sugar = 18;
+                const darkChoccolate = 40;
+
+                this.skyr = this.portions * skyr;
+                this.eggWhites = Math.round((this.portions * eggWhites) * 100) / 100;
+                this.milk = this.portions * milk;
+                this.sugar = this.portions * sugar;
+                this.darkChoccolate = this.portions * darkChoccolate;
+            }
+        }
+    }
+</script>
