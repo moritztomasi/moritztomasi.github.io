@@ -12,10 +12,7 @@
                 <loc>/posts/my-first-one/</loc>
                 <lastmod>2020-09-02</lastmod>
             </url><url>
-                <loc>/pages/books/</loc>
-                <lastmod>2020-09-02</lastmod>
-            </url><url>
-                <loc>/pages/bio/</loc>
+                <loc>/pages/reading/</loc>
                 <lastmod>2020-09-02</lastmod>
             </url><url>
                 <loc>/pages/travel/</loc>
@@ -38,4 +35,7 @@
             </url><url>
                 <loc>/posts/dark-skyr-mousse/</loc>
                 <lastmod>2020-09-13</lastmod>
+            </url><url>
+                <loc>/pages/bio/</loc>
+                <lastmod>2020-09-15</lastmod>
             </url></urlset>
