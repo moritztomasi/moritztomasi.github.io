@@ -4,6 +4,7 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const moment = require('moment-timezone');
 const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
+const markdownItEmoji = require('markdown-it-emoji');
 const pluginTOC = require('eleventy-plugin-toc');
 
 module.exports = function (eleventyConfig) {
@@ -38,7 +39,9 @@ module.exports = function (eleventyConfig) {
       breaks: true,
       linkify: true,
       typographer: true,
-    }).use(markdownItAnchor),
+    })
+      .use(markdownItAnchor)
+      .use(markdownItEmoji),
   );
 
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {

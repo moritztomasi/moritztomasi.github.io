@@ -36,6 +36,7 @@
     "tailwindcss": "^1.7.2"
   },
   "dependencies": {
+    "markdown-it-emoji": "^1.4.0",
     "postcss-import": "^12.0.1"
   }
 }
