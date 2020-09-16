@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moritz Tomasi</title>
+
+        
+<meta name="description" content="The personal site of Moritz Tomasi">
+<link rel="canonical" href="/posts/pizza-dough/">
+
+
+<meta property="og:site_name" content="Moritz Tomasi">
+<meta property="og:title" content="Pizza dough for losers">
+<meta property="og:description" content="The personal site of Moritz Tomasi">
+<meta property="og:url" content="/posts/pizza-dough/">
+<meta property="og:locale" content="en_us">
+<meta name="twitter:card" content="summary">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+<link rel="manifest" href="/assets/site.webmanifest">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link type="application/atom+xml" rel="alternate" href="https://moritztomasi.github.io/feed.xml" title="Moritz Tomasi">
+
+
+<script src="/js/alpine.js"></script>
+    </head>
+    <body class="w-full h-full flex flex-col font-mono text-white px-4 lg:px-0" style="background-color: #465362">
+        <header class="w-full">
+    <div class="w-full max-w-2xl container mx-auto flex flex-row items-center py-12">
+        <figure class="w-16">
+            <img src="/assets/logo.png"/>
+        </figure>
+
+        <div class="w-full flex flex-col pl-4 lg:pl-6" x-data="{ open: false }">
+            <div class="w-full flex flex-row items-center">
+                <h1 class="text-2xl">Moritz Tomasi</h1>
+
+                <span class="lg:hidden pt-1 ml-12" x-on:click="open = !open">
+                    <i class="fa fa-bars fa-lg"></i>
+                </span>
+            </div>
+
+            <div class="lg:hidden" style="color: #D3FFE9" x-show="open">
+                <nav>
+    <ul class="flex flex-col lg:flex-row"><li class="pr-6">
+                <a href="/">
+                    Home
+                </a>
+            </li><li class="pr-6">
+                <a href="/pages/bio/">
+                    Bio
+                </a>
+            </li><li class="pr-6">
+                <a href="/pages/work/">
+                    Work
+                </a>
+            </li><li class="pr-6">
+                <a href="/pages/reading/">
+                    Reading
+                </a>
+            </li><li class="pr-6">
+                <a href="/pages/travel/">
+                    Travel
+                </a>
+            </li></ul>
+</nav>
+            </div>
+
+            <div class="hidden lg:inline" style="color: #D3FFE9">
+                <nav>
+    <ul class="flex flex-col lg:flex-row"><li class="pr-6">
+                <a href="/">
+                    Home
+                </a>
+            </li><li class="pr-6">
+                <a href="/pages/bio/">
+                    Bio
+                </a>
+            </li><li class="pr-6">
+                <a href="/pages/work/">
+                    Work
+                </a>
+            </li><li class="pr-6">
+                <a href="/pages/reading/">
+                    Reading
+                </a>
+            </li><li class="pr-6">
+                <a href="/pages/travel/">
+                    Travel
+                </a>
+            </li></ul>
+</nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <main class="container mx-auto max-w-2xl flex-1">
+            
+<article id="text">
+    
+        <h1 style="color: #d3ffe9">Pizza dough for losers</h1>
+    
+
+    
+        <h2 class="text-base">02-09-2020</h2>
+    
+
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+<p><img src="https://images.pexels.com/photos/4234939/pexels-photo-4234939.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Pizza"></p>
+<h2 id="calculator">Calculator</h2>
+<div class="py-6">
+<div x-data="ingredients()" x-init="getCalculatedIngredients()" class="flex flex-col">
+    <div class="py-1">
+        <input class="px-1 text-black" type="number" min="1" x-model.number="numberOfPizzas" x-on:change="getCalculatedIngredients()"/>
+        <label>pizza(s)</label>
+    </div>
+    <div class="py-1">
+        <input class="px-1 text-black" type="number" min="1" x-model.number="gramsPerDoughBall" x-on:change="getCalculatedIngredients()"/>
+        <label>grams / dough ball</label>
+    </div>
+    <div class="py-1">
+        <input class="px-1 text-black" type="number" min="1" x-model.number="waterContent" x-on:change="getCalculatedIngredients()"/>
+        <label>% water</label>
+    </div>
+    <div class="flex flex-col pt-6">
+        <div>
+            Flour:
+            <span x-text="flour"></span>g
+        </div>
+        <div>
+            Water:
+            <span x-text="water"></span>g
+        </div>
+        <div>
+            Salt:
+            <span x-text="salt"></span>g
+        </div>
+        <div>
+            Yeast:
+            <span x-text="yeast"></span>g
+        </div>
+    </div>
+</div>
+<script>
+    function ingredients() {
+        return {
+            numberOfPizzas: 1,
+            gramsPerDoughBall: 200,
+            waterContent: 57,
+            flour: 0,
+            water: 0,
+            salt: 0,
+            yeast: 0,
+            getCalculatedIngredients: function () {
+                this.flour = Math.round((this.numberOfPizzas * this.gramsPerDoughBall) / (1 + (this.waterContent / 100) + 0.03 + 0.002));
+                this.water = Math.round((this.flour * this.waterContent) / 100);
+                this.salt = Math.round(0.03 * this.flour);
+                this.yeast = Math.round((0.002 * this.flour) * 100) / 100;
+            }
+        }
+    }
+</script>
+</div>
+<h2 id="my-name">my name</h2>
+<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+<h2 id="is-moritz">is moritz</h2>
+<p>This code is pointless:</p>
+<pre class="language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'hello world!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h3 id="shitty-code">shitty code</h3>
+<p>The previous code is pointless because:</p>
+<ul>
+<li>hello</li>
+<li>jello</li>
+<li>trello</li>
+</ul>
+<iframe class="w-full py-4" height="400" src="https://www.youtube.com/embed/tALHNW_rkoA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</article>
+
+<aside hidden="hidden" class="fixed top-0 right-0 mt-12">
+    <nav class="toc">
+        <ol><li><a href="#calculator">Calculator</a></li><li><a href="#my-name">my name</a></li><li><a href="#is-moritz">is moritz</a><ol><li><a href="#shitty-code">shitty code</a></li></ol></li></ol></nav>
+</aside>
+        </main>
+
+        <footer class="w-full bottom-0 py-6">
+    <div class="container mx-auto max-w-2xl flex flex-col lg:flex-row items-center lg:justify-between text-xs">
+        <p>Copyright © Moritz Tomasi</p>
+
+        <nav>
+            <ul class="flex flex-row"><li class="pr-6">
+                        <a href="/">
+                            Home
+                        </a>
+                    </li><li class="pr-6">
+                        <a href="/pages/bio/">
+                            Bio
+                        </a>
+                    </li><li class="pr-6">
+                        <a href="/pages/work/">
+                            Work
+                        </a>
+                    </li><li class="pr-6">
+                        <a href="/pages/reading/">
+                            Reading
+                        </a>
+                    </li><li class="pr-6">
+                        <a href="/pages/travel/">
+                            Travel
+                        </a>
+                    </li></ul>
+        </nav>
+    </div>
+</footer>
+    </body>
+</html>

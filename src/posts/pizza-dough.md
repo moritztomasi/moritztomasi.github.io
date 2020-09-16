@@ -22,7 +22,7 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 This code is pointless:
 
 ```javascript
-console.log("hello world!");
+console.log('hello world!');
 ```
 
 ### shitty code
