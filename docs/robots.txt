@@ -1,4 +1,4 @@
 
 User-agent: *
-Disallow: /build.txt Sitemap:
-https://moritztomasi.github.io/sitemap.xml
+Disallow: /build.txt 
+Sitemap: https://moritztomasi.github.io/sitemap.xml
