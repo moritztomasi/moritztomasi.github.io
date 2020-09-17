@@ -6,16 +6,20 @@ body {
 
 h1 {
   @apply text-2xl;
+  color: #fffffe;
 }
 h2 {
   @apply text-xl;
+  color: #fffffe;
 }
 h3 {
   @apply text-lg;
+  color: #fffffe;
 }
 
 #text {
   @apply text-sm;
+  color: #94a1b2;
 }
 
 #text a {
