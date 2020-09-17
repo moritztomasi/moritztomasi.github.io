@@ -18,6 +18,10 @@ h3 {
   @apply text-sm;
 }
 
+#text a {
+  @apply underline;
+}
+
 #text p {
   @apply my-6;
   overflow-wrap: break-word;
@@ -26,6 +30,7 @@ h3 {
 
 #text ul {
   @apply list-disc;
+  @apply my-6;
   @apply ml-4;
   overflow-wrap: break-word;
   hyphens: auto;

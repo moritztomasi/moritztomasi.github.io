@@ -1,5 +1,5 @@
 ---
-title: Pizza dough for losers
+title: Pizza Dough Calculator
 showDate: true
 ---
 
