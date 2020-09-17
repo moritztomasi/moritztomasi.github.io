@@ -6,8 +6,37 @@ eleventyNavigation:
   order: 1
 ---
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+Hey there! 👋 Nice to see you!
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+I'm Moritz Tomasi, a fullstack web developer based in Vienna (Austria). Originally from Bozen (South Tyrol, Italy), I moved to Vienna in 2009 to study "Computer Science and Visual Computing" at the Technical University of Vienna, which I graduated from in 2015 with a Bachelor of Science.
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+I made my first real experiences as a freelance working on small business websites with a designer friend of mine. Looking back I would'nt say that they are the best quality project i've done, but they made me realize that web development is the right thing for me. After completing my bachelors degree i got hired by a company called Zoomsquare.
+
+I've been building stuff for the web now for around 10 years. First as a freelancer, where I built small business websites with a designer friend of mine. Then as a backend software engineer at Zoomsquare,
+
+## Technical Skills
+
+- NodeJS, Python
+- Javascript, Typescript
+- VueJS + NuxtJS, React
+- AWS, elastic.co
+- Elasticsearch, Postgres, Redis
+- Machine Learning, NLP, Computer Vision
+- GIS (PostGIS, QGIS)
+
+## Project Management Skills
+
+- sadjh
+- asldj
+
+## Other stuff
+
+- I started out programming in Java and worked with it for quite a few years. But I haven't kept up with it for a while so I wouldn't dare to list it under "Technical Skills".
+- I know my way around the Shopify ecosystem.
+- This site was built with 11ty static site generator.
+- I'm pretty good at googling stuff.
+- I can type without looking at my keyboard, but never finished my 10-finger-system course in highschool.
+
+## CV
+
+[cv.pdf]({{ '/assets/resume.pdf' | url }})

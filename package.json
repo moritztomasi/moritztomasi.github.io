@@ -12,7 +12,8 @@
     "testbuild": "NODE_ENV=production npm-run-all clean --parallel testProd:*",
     "testProd:postcss": "postcss ./src/styles/index.css -o ./docs/style.css --config ./postcss.config.js -w",
     "testProd:bsync": "browser-sync start --server ./docs -w --no-open --no-notify --no-ghost-mode",
-    "testProd:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./docs --watch"
+    "testProd:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./docs --watch",
+    "buildResume": "sh ./bin/build_resume.sh"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
@@ -36,7 +37,10 @@
     "tailwindcss": "^1.7.2"
   },
   "dependencies": {
+    "jsonresume-theme-material": "^1.3.1",
+    "jsonresume-theme-paper": "^0.3.5",
     "markdown-it-emoji": "^1.4.0",
-    "postcss-import": "^12.0.1"
+    "postcss-import": "^12.0.1",
+    "resume-cli": "^1.2.8"
   }
 }
