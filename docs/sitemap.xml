@@ -3,9 +3,6 @@
                 <loc>/404.html</loc>
                 <lastmod>2020-09-02</lastmod>
             </url><url>
-                <loc>/</loc>
-                <lastmod>2020-09-02</lastmod>
-            </url><url>
                 <loc>/posts/pizza-dough/</loc>
                 <lastmod>2020-09-02</lastmod>
             </url><url>
@@ -35,4 +32,7 @@
             </url><url>
                 <loc>/pages/bio/</loc>
                 <lastmod>2020-09-15</lastmod>
+            </url><url>
+                <loc>/</loc>
+                <lastmod>2020-09-17</lastmod>
             </url></urlset>
