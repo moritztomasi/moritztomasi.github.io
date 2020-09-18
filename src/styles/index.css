@@ -20,7 +20,15 @@ h3 {
   color: var(--color-secondary);
 }
 
-.nav_header {
+p {
+  color: var(--color-text);
+}
+
+ul {
+  color: var(--color-text);
+}
+
+.nav_header ul {
   color: var(--color-primary);
 }
 
@@ -44,9 +52,13 @@ h3 {
   color: var(--color-secondary);
 }
 
+.aside ul,
+.aside p {
+  color: black;
+}
+
 #text {
   @apply text-sm;
-  color: var(--color-text);
 }
 
 #text a {
@@ -57,6 +69,7 @@ h3 {
   @apply my-6;
   overflow-wrap: break-word;
   hyphens: auto;
+  color: var(--color-text);
 }
 
 #text ul {
