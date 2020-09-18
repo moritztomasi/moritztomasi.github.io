@@ -2,7 +2,7 @@
 
 body {
   @apply leading-7;
-  background-color: var(--color-bg)
+  background-color: var(--color-bg);
 }
 
 h1 {
@@ -22,6 +22,10 @@ h3 {
 
 .nav_header {
   color: var(--color-primary);
+}
+
+.home_text {
+  color: var(--color-secondary);
 }
 
 .posts_label {
