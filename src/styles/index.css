@@ -2,24 +2,47 @@
 
 body {
   @apply leading-7;
+  background-color: var(--color-bg)
 }
 
 h1 {
   @apply text-2xl;
-  color: #fffffe;
+  color: var(--color-secondary);
 }
+
 h2 {
   @apply text-xl;
-  color: #fffffe;
+  color: var(--color-secondary);
 }
+
 h3 {
   @apply text-lg;
-  color: #fffffe;
+  color: var(--color-secondary);
+}
+
+.nav_header {
+  color: var(--color-primary);
+}
+
+.posts_label {
+  color: var(--color-primary);
+}
+
+.post_date {
+  color: var(--color-text);
+}
+
+.post_title {
+  color: var(--color-primary);
+}
+
+.post_title_list {
+  color: var(--color-secondary);
 }
 
 #text {
   @apply text-sm;
-  color: #94a1b2;
+  color: var(--color-text);
 }
 
 #text a {
@@ -42,8 +65,8 @@ h3 {
 
 pre,
 code {
-  font-feature-settings: normal;
   @apply text-base;
+  font-feature-settings: normal;
 }
 
 @tailwind components;
