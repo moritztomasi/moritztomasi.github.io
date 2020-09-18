@@ -10,16 +10,6 @@
 }
 
 
-    [data-theme='default'] {
-        
-    --color-bg: #ffffff;
-    --color-text: #373a3c;
-    --color-border: #eceeef;
-    --color-primary: #ff335f;
-    --color-secondary: #43a9a3;
-
-    }
-
     [data-theme='dark'] {
         
     --color-bg: #16161a;
@@ -30,33 +20,23 @@
 
     }
 
-    [data-theme='beach'] {
+    [data-theme='light'] {
         
-    --color-bg: #fffffe;
-    --color-text: #272343;
-    --color-border: #e3f6f5;
-    --color-primary: #ff9d00;
-    --color-secondary: #bae8e8;
+    --color-bg: #ffffff;
+    --color-text: #373a3c;
+    --color-border: #eceeef;
+    --color-primary: #ff335f;
+    --color-secondary: #43a9a3;
 
     }
 
-    [data-theme='choco'] {
+    [data-theme='chocolate'] {
         
     --color-bg: #55423d;
     --color-text: #fffffe;
     --color-border: #271c19;
     --color-primary: #f3ab87;
     --color-secondary: #e78fb3;
-
-    }
-
-    [data-theme='sherbet'] {
-        
-    --color-bg: #fffffe;
-    --color-text: #1b2d45;
-    --color-border: #d5e6fd;
-    --color-primary: #00bfa2;
-    --color-secondary: #ff5470;
 
     }
 
@@ -70,7 +50,7 @@
 
     }
 
-    [data-theme='moomoo'] {
+    [data-theme='vanilla'] {
         
     --color-bg: #fef6e4;
     --color-text: #172c66;

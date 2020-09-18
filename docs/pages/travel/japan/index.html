@@ -37,7 +37,7 @@
 
 <script src="/js/alpine.js"></script>
     </head>
-    <body x-data="{ themeId: 'dark' }" x-bind:data-theme="themeId" class="w-full h-full flex flex-col font-mono text-white px-4 lg:px-0">
+    <body x-data="{ themeId: localStorage.getItem('themeId') || 'dark' }" x-bind:data-theme="themeId" class="w-full h-full flex flex-col font-mono text-white px-4 lg:px-0">
         <header class="w-full">
     <div class="w-full max-w-2xl container mx-auto flex flex-row items-center py-12">
         <figure class="w-16">
@@ -104,27 +104,23 @@
             <p class="text-lg mb-4">Themes</p>
             <ul>
                 
-                    <li @click="themeId = 'default'" class="text-sm underline cursor-pointer">Classic</li>
+                    <li @click="themeId = 'dark'; localStorage.setItem('themeId', 'dark');" class="text-sm underline cursor-pointer">Dark</li>
                 
-                    <li @click="themeId = 'dark'" class="text-sm underline cursor-pointer">Dark</li>
+                    <li @click="themeId = 'light'; localStorage.setItem('themeId', 'light');" class="text-sm underline cursor-pointer">Light</li>
                 
-                    <li @click="themeId = 'beach'" class="text-sm underline cursor-pointer">Koopa Beach</li>
+                    <li @click="themeId = 'chocolate'; localStorage.setItem('themeId', 'chocolate');" class="text-sm underline cursor-pointer">Chocolate</li>
                 
-                    <li @click="themeId = 'choco'" class="text-sm underline cursor-pointer">Choco Mountain</li>
+                    <li @click="themeId = 'turnpike'; localStorage.setItem('themeId', 'turnpike');" class="text-sm underline cursor-pointer">Toad&#39;s Turnpike</li>
                 
-                    <li @click="themeId = 'sherbet'" class="text-sm underline cursor-pointer">Sherbet Land</li>
+                    <li @click="themeId = 'vanilla'; localStorage.setItem('themeId', 'vanilla');" class="text-sm underline cursor-pointer">Vanilla</li>
                 
-                    <li @click="themeId = 'turnpike'" class="text-sm underline cursor-pointer">Toad&#39;s Turnpike</li>
+                    <li @click="themeId = 'bowser'; localStorage.setItem('themeId', 'bowser');" class="text-sm underline cursor-pointer">Bowser&#39;s Castle</li>
                 
-                    <li @click="themeId = 'moomoo'" class="text-sm underline cursor-pointer">Moo Moo Farm</li>
+                    <li @click="themeId = 'yoshi'; localStorage.setItem('themeId', 'yoshi');" class="text-sm underline cursor-pointer">Yoshi Valley</li>
                 
-                    <li @click="themeId = 'bowser'" class="text-sm underline cursor-pointer">Bowser&#39;s Castle</li>
+                    <li @click="themeId = 'rainbow'; localStorage.setItem('themeId', 'rainbow');" class="text-sm underline cursor-pointer">Rainbow Road</li>
                 
-                    <li @click="themeId = 'yoshi'" class="text-sm underline cursor-pointer">Yoshi Valley</li>
-                
-                    <li @click="themeId = 'rainbow'" class="text-sm underline cursor-pointer">Rainbow Road</li>
-                
-                    <li @click="themeId = 'lobster'" class="text-sm underline cursor-pointer">Lobster Life</li>
+                    <li @click="themeId = 'lobster'; localStorage.setItem('themeId', 'lobster');" class="text-sm underline cursor-pointer">Lobster Life</li>
                 
             </ul>
         </aside>

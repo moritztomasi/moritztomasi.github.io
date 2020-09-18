@@ -31,9 +31,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('sitemapdateformat', function (dateIn) {
     return moment(dateIn).tz('GMT').format('YYYY-MM-DD');
   });
-  
+
   eleventyConfig.addFilter('gettheme', function (themes, id) {
-    return themes.find((theme) => theme.id === id);
+    return themes.find(theme => theme.id === id);
   });
 
   eleventyConfig.setLibrary(

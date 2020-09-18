@@ -1,16 +1,5 @@
 [
   {
-    "id": "default",
-    "name": "Classic",
-    "colors": {
-      "primary": "#ff335f",
-      "secondary": "#43a9a3",
-      "text": "#373a3c",
-      "border": "#eceeef",
-      "background": "#ffffff"
-    }
-  },
-  {
     "id": "dark",
     "name": "Dark",
     "colors": {
@@ -22,36 +11,25 @@
     }
   },
   {
-    "id": "beach",
-    "name": "Koopa Beach",
+    "id": "light",
+    "name": "Light",
     "colors": {
-      "primary": "#ff9d00",
-      "secondary": "#bae8e8",
-      "text": "#272343",
-      "border": "#e3f6f5",
-      "background": "#fffffe"
+      "primary": "#ff335f",
+      "secondary": "#43a9a3",
+      "text": "#373a3c",
+      "border": "#eceeef",
+      "background": "#ffffff"
     }
   },
   {
-    "id": "choco",
-    "name": "Choco Mountain",
+    "id": "chocolate",
+    "name": "Chocolate",
     "colors": {
       "primary": "#f3ab87",
       "secondary": "#e78fb3",
       "text": "#fffffe",
       "border": "#271c19",
       "background": "#55423d"
-    }
-  },
-  {
-    "id": "sherbet",
-    "name": "Sherbet Land",
-    "colors": {
-      "primary": "#00bfa2",
-      "secondary": "#ff5470",
-      "text": "#1b2d45",
-      "border": "#d5e6fd",
-      "background": "#fffffe"
     }
   },
   {
@@ -66,8 +44,8 @@
     }
   },
   {
-    "id": "moomoo",
-    "name": "Moo Moo Farm",
+    "id": "vanilla",
+    "name": "Vanilla",
     "colors": {
       "primary": "#f582ae",
       "secondary": "#8bd3dd",
