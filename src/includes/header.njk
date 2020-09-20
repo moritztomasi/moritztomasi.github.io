@@ -4,16 +4,16 @@
             <img src="{{ '/assets/logo.png' | url }}"/>
         </figure>
 
-        <div class="w-full flex flex-col pl-4 lg:pl-6" x-data="{ open: false }">
+        <div class="w-full flex flex-col pl-4 lg:pl-6">
             <div class="w-full flex flex-row items-center">
                 <h1 class="text-2xl font-semibold">{{ meta.title }}</h1>
 
-                <span class="lg:hidden pt-1 ml-12" x-on:click="open = !open">
+                <span class="lg:hidden pt-1 ml-12" x-on:click="onToggleMobileNav()">
                     <i class="fa fa-bars fa-lg"></i>
                 </span>
             </div>
 
-            <div class="nav_header lg:hidden" x-show="open">
+            <div class="nav_header lg:hidden" x-show="isMobileNavOpen">
                 {% include "navigation.njk" %}
             </div>
 

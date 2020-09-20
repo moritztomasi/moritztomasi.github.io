@@ -37,23 +37,48 @@
 
 <script src="/js/alpine.js"></script>
     </head>
-    <body x-data="{ themeId: localStorage.getItem('themeId') || 'dark' }" x-bind:data-theme="themeId" class="w-full h-full flex flex-col font-mono text-white px-4 lg:px-0">
+    <body x-data="data()" x-bind:data-theme="themeId" class="w-full h-full flex flex-col font-mono text-white px-4 lg:px-0">
+        <aside x-show="isThemeSelectorOpen" class="aside w-full lg:w-auto lg:absolute lg:left-0 bg-white p-4" style="color: black">
+            <p class="text-lg mb-4">Themes</p>
+            <ul>
+                
+                    <li @click="onToggleTheme('dark')" class="text-sm underline cursor-pointer">Dark</li>
+                
+                    <li @click="onToggleTheme('light')" class="text-sm underline cursor-pointer">Light</li>
+                
+                    <li @click="onToggleTheme('chocolate')" class="text-sm underline cursor-pointer">Chocolate</li>
+                
+                    <li @click="onToggleTheme('turnpike')" class="text-sm underline cursor-pointer">Toad&#39;s Turnpike</li>
+                
+                    <li @click="onToggleTheme('vanilla')" class="text-sm underline cursor-pointer">Vanilla</li>
+                
+                    <li @click="onToggleTheme('bowser')" class="text-sm underline cursor-pointer">Bowser&#39;s Castle</li>
+                
+                    <li @click="onToggleTheme('yoshi')" class="text-sm underline cursor-pointer">Yoshi Valley</li>
+                
+                    <li @click="onToggleTheme('rainbow')" class="text-sm underline cursor-pointer">Rainbow Road</li>
+                
+                    <li @click="onToggleTheme('lobster')" class="text-sm underline cursor-pointer">Lobster Life</li>
+                
+            </ul>
+        </aside>
+
         <header class="w-full">
     <div class="w-full max-w-2xl container mx-auto flex flex-row items-center py-12">
         <figure class="w-16">
             <img src="/assets/logo.png"/>
         </figure>
 
-        <div class="w-full flex flex-col pl-4 lg:pl-6" x-data="{ open: false }">
+        <div class="w-full flex flex-col pl-4 lg:pl-6">
             <div class="w-full flex flex-row items-center">
                 <h1 class="text-2xl font-semibold">Moritz Tomasi</h1>
 
-                <span class="lg:hidden pt-1 ml-12" x-on:click="open = !open">
+                <span class="lg:hidden pt-1 ml-12" x-on:click="onToggleMobileNav()">
                     <i class="fa fa-bars fa-lg"></i>
                 </span>
             </div>
 
-            <div class="nav_header lg:hidden" x-show="open">
+            <div class="nav_header lg:hidden" x-show="isMobileNavOpen">
                 <nav>
     <ul class="flex flex-col lg:flex-row"><li class="pr-6">
                 <a href="/">
@@ -71,7 +96,10 @@
                 <a href="/pages/travel/">
                     Travel
                 </a>
-            </li></ul>
+            </li><li @click="onToggleThemeSelector()" class="cursor-pointer pr-6">
+            Themes
+        </li>
+    </ul>
 </nav>
             </div>
 
@@ -93,37 +121,15 @@
                 <a href="/pages/travel/">
                     Travel
                 </a>
-            </li></ul>
+            </li><li @click="onToggleThemeSelector()" class="cursor-pointer pr-6">
+            Themes
+        </li>
+    </ul>
 </nav>
             </div>
         </div>
     </div>
 </header>
-
-        <aside class="aside absolute left-0 bg-white p-4" style="color: black">
-            <p class="text-lg mb-4">Themes</p>
-            <ul>
-                
-                    <li @click="themeId = 'dark'; localStorage.setItem('themeId', 'dark');" class="text-sm underline cursor-pointer">Dark</li>
-                
-                    <li @click="themeId = 'light'; localStorage.setItem('themeId', 'light');" class="text-sm underline cursor-pointer">Light</li>
-                
-                    <li @click="themeId = 'chocolate'; localStorage.setItem('themeId', 'chocolate');" class="text-sm underline cursor-pointer">Chocolate</li>
-                
-                    <li @click="themeId = 'turnpike'; localStorage.setItem('themeId', 'turnpike');" class="text-sm underline cursor-pointer">Toad&#39;s Turnpike</li>
-                
-                    <li @click="themeId = 'vanilla'; localStorage.setItem('themeId', 'vanilla');" class="text-sm underline cursor-pointer">Vanilla</li>
-                
-                    <li @click="themeId = 'bowser'; localStorage.setItem('themeId', 'bowser');" class="text-sm underline cursor-pointer">Bowser&#39;s Castle</li>
-                
-                    <li @click="themeId = 'yoshi'; localStorage.setItem('themeId', 'yoshi');" class="text-sm underline cursor-pointer">Yoshi Valley</li>
-                
-                    <li @click="themeId = 'rainbow'; localStorage.setItem('themeId', 'rainbow');" class="text-sm underline cursor-pointer">Rainbow Road</li>
-                
-                    <li @click="themeId = 'lobster'; localStorage.setItem('themeId', 'lobster');" class="text-sm underline cursor-pointer">Lobster Life</li>
-                
-            </ul>
-        </aside>
 
         <main class="container mx-auto max-w-2xl flex-1">
             
@@ -192,3 +198,23 @@
 </footer>
     </body>
 </html>
+
+<script>
+    function data() {
+        return {
+            themeId: localStorage.getItem('themeId') || 'dark',
+            isMobileNavOpen: false,
+            isThemeSelectorOpen: false,
+            onToggleTheme: function (themeId) {
+                this.themeId = themeId;
+                localStorage.setItem('themeId', themeId);
+            },
+            onToggleMobileNav: function () {
+                this.isMobileNavOpen = !this.isMobileNavOpen
+            },
+            onToggleThemeSelector: function () {
+                this.isThemeSelectorOpen = !this.isThemeSelectorOpen
+            }
+        }
+    }
+</script>
