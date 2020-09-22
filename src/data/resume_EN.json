@@ -1,0 +1,92 @@
+{
+  "basics": {
+    "name": "Moritz Tomasi",
+    "label": "Full-Stack Developer",
+    "picture": "",
+    "email": "tomasi.moritz@gmail.com",
+    "phone": "+43 650 72 72 959",
+    "website": "https://moritztomasi.github.io",
+    "summary": "I'm a full-stack developer who has been building applications on the web for the past 8 years.",
+    "location": {
+      "address": "Lerchenfelderstrasse 129/4",
+      "postalCode": "1070",
+      "city": "Wien",
+      "countryCode": "AT",
+      "region": "Wien"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Moritz Tomasi",
+        "url": "https://www.linkedin.com/in/moritz-tomasi-990398163/"
+      },
+      {
+        "network": "Github",
+        "username": "moritztomasi",
+        "url": "https://github.com/moritztomasi"
+      },
+      {
+        "network": "Twitter",
+        "username": "@MoritzTomasi",
+        "url": "https://twitter.com/MoritzTomasi"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Company",
+      "position": "President",
+      "website": "http://company.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Description...",
+      "highlights": ["Started the company"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "gpa": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "German",
+      "fluency": "Mothertongue"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Italian",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Cooking",
+      "keywords": ["Cooking"]
+    },
+    {
+      "name": "Reading",
+      "keywords": ["Reading"]
+    },
+    {
+      "name": "Tennis",
+      "keywords": ["Tennis"]
+    }
+  ]
+}
