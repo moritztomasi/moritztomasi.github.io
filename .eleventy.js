@@ -5,6 +5,7 @@ const moment = require('moment-timezone');
 const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownItEmoji = require('markdown-it-emoji');
+const markdownItAttrs = require('markdown-it-attrs');
 const pluginTOC = require('eleventy-plugin-toc');
 
 module.exports = function (eleventyConfig) {
@@ -45,7 +46,8 @@ module.exports = function (eleventyConfig) {
       typographer: true,
     })
       .use(markdownItAnchor)
-      .use(markdownItEmoji),
+      .use(markdownItEmoji)
+      .use(markdownItAttrs),
   );
 
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {

@@ -39,5 +39,5 @@ I've been building stuff for the web now for around 10 years. First as a freelan
 
 ## CV
 
-[Moritz_Tomasi_CV_EN.pdf]({{ '/assets/Moritz_Tomasi_CV_EN.pdf' | url }})
-[Moritz_Tomasi_CV_DE.pdf]({{ '/assets/Moritz_Tomasi_CV_DE.pdf' | url }})
+[Moritz_Tomasi_CV_EN.pdf]({{ '/assets/Moritz_Tomasi_CV_EN.pdf' | url }}){target="\_blank" rel="noreferrer"}
+[Moritz_Tomasi_CV_DE.pdf]({{ '/assets/Moritz_Tomasi_CV_DE.pdf' | url }}){target="\_blank" rel="noreferrer"}
