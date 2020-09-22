@@ -37,8 +37,6 @@
     "tailwindcss": "^1.7.2"
   },
   "dependencies": {
-    "jsonresume-theme-material": "^1.3.1",
-    "jsonresume-theme-paper": "^0.3.5",
     "markdown-it-attrs": "^3.0.3",
     "markdown-it-emoji": "^1.4.0",
     "postcss-import": "^12.0.1",
