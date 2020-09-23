@@ -37,36 +37,38 @@
 
 <script src="/js/alpine.js"></script>
     </head>
-    <body x-data="data()" x-bind:data-theme="themeId" x-on:keydown.escape="onToggleCloseThemeSelector()" class="w-full h-full flex flex-col font-mono text-white px-4 lg:px-0">
+    <body x-data="data()" x-bind:data-theme="themeId" x-on:keydown.escape="onToggleCloseThemeSelector()" class="w-full h-full flex flex-col font-mono text-white">
         <aside x-show="isThemeSelectorOpen" class="aside w-full lg:w-auto lg:absolute lg:left-0 bg-white p-4" style="color: black">
             <figure class="absolute top-0 right-0 cursor-pointer pr-1">
-                <i @click="onToggleCloseThemeSelector()" class="far fa-window-close"></i>
+                <i @click="onToggleCloseThemeSelector()" class="lg:hidden far fa-window-close fa-lg"></i>
+                <i @click="onToggleCloseThemeSelector()" class="hidden lg:inline far fa-window-close"></i>
             </figure>
             <p class="text-lg mb-4">Themes</p>
-            <ul>
+            <ul class="flex flex-row flex-wrap">
                 
-                    <li @click="onToggleTheme('dark')" class="text-sm underline cursor-pointer">Dark</li>
+                    <li @click="onToggleTheme('dark')" class="text-sm underline cursor-pointer pr-6 last:pr-0">Dark</li>
                 
-                    <li @click="onToggleTheme('light')" class="text-sm underline cursor-pointer">Light</li>
+                    <li @click="onToggleTheme('light')" class="text-sm underline cursor-pointer pr-6 last:pr-0">Light</li>
                 
-                    <li @click="onToggleTheme('chocolate')" class="text-sm underline cursor-pointer">Chocolate</li>
+                    <li @click="onToggleTheme('chocolate')" class="text-sm underline cursor-pointer pr-6 last:pr-0">Chocolate</li>
                 
-                    <li @click="onToggleTheme('turnpike')" class="text-sm underline cursor-pointer">Toad&#39;s Turnpike</li>
+                    <li @click="onToggleTheme('turnpike')" class="text-sm underline cursor-pointer pr-6 last:pr-0">Toad&#39;s Turnpike</li>
                 
-                    <li @click="onToggleTheme('vanilla')" class="text-sm underline cursor-pointer">Vanilla</li>
+                    <li @click="onToggleTheme('vanilla')" class="text-sm underline cursor-pointer pr-6 last:pr-0">Vanilla</li>
                 
-                    <li @click="onToggleTheme('bowser')" class="text-sm underline cursor-pointer">Bowser&#39;s Castle</li>
+                    <li @click="onToggleTheme('bowser')" class="text-sm underline cursor-pointer pr-6 last:pr-0">Bowser&#39;s Castle</li>
                 
-                    <li @click="onToggleTheme('yoshi')" class="text-sm underline cursor-pointer">Yoshi Valley</li>
+                    <li @click="onToggleTheme('yoshi')" class="text-sm underline cursor-pointer pr-6 last:pr-0">Yoshi Valley</li>
                 
-                    <li @click="onToggleTheme('rainbow')" class="text-sm underline cursor-pointer">Rainbow Road</li>
+                    <li @click="onToggleTheme('rainbow')" class="text-sm underline cursor-pointer pr-6 last:pr-0">Rainbow Road</li>
                 
-                    <li @click="onToggleTheme('lobster')" class="text-sm underline cursor-pointer">Lobster Life</li>
+                    <li @click="onToggleTheme('lobster')" class="text-sm underline cursor-pointer pr-6 last:pr-0">Lobster Life</li>
                 
             </ul>
         </aside>
 
-        <header class="w-full">
+        <div class="px-4 lg:px-0">
+            <header class="w-full">
     <div class="w-full max-w-2xl container mx-auto flex flex-row items-center py-12">
         <figure class="w-16">
             <img src="/assets/logo.png"/>
@@ -135,8 +137,8 @@
     </div>
 </header>
 
-        <main class="container mx-auto max-w-2xl flex-1">
-            
+            <main class="container mx-auto max-w-2xl flex-1">
+                
 <article id="text">
     
 
@@ -179,9 +181,9 @@
     <nav class="toc">
         <ol><li><a href="#technical-skills">Technical Skills</a></li><li><a href="#project-management-skills">Project Management Skills</a></li><li><a href="#other-stuff">Other stuff</a></li><li><a href="#cv">CV</a></li></ol></nav>
 </aside>
-        </main>
+            </main>
 
-        <footer class="w-full bottom-0 py-6">
+            <footer class="w-full bottom-0 py-6">
     <div class="container mx-auto max-w-2xl flex flex-col lg:flex-row items-center lg:justify-between text-xs">
         <p>Copyright © Moritz Tomasi</p>
 
@@ -206,6 +208,7 @@
         </nav>
     </div>
 </footer>
+        </div>
     </body>
 </html>
 
