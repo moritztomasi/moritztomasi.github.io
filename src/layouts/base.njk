@@ -14,9 +14,9 @@
                 <i @click="onToggleCloseThemeSelector()" class="hidden lg:inline far fa-window-close"></i>
             </figure>
             <p class="text-lg mb-4">Themes</p>
-            <ul class="flex flex-row flex-wrap">
+            <ul class="flex flex-row lg:flex-col flex-wrap lg:flex-no-wrap">
                 {% for theme in themes %}
-                    <li @click="onToggleTheme('{{ theme.id }}')" class="text-sm underline cursor-pointer pr-6 last:pr-0">{{ theme.name }}</li>
+                    <li @click="onToggleTheme('{{ theme.id }}')" class="text-sm underline cursor-pointer pr-6 lg:pr-0 last:pr-0">{{ theme.name }}</li>
                 {% endfor %}
             </ul>
         </aside>
