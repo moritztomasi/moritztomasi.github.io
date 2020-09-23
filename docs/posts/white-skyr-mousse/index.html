@@ -76,9 +76,10 @@
             <div class="w-full flex flex-row items-center">
                 <h1 class="text-2xl font-semibold">Moritz Tomasi</h1>
 
-                <span class="lg:hidden pt-1 ml-12" x-on:click="onToggleMobileNav()">
-                    <i class="fa fa-bars fa-lg"></i>
-                </span>
+                <div class="lg:hidden pt-1 ml-6">
+                    <i x-on:click="onToggleThemeSelector()" class="fas fa-fill-drip fa-lg mr-2"></i>
+                    <i x-on:click="onToggleMobileNav()" class="fa fa-bars fa-lg"></i>
+                </div>
             </div>
 
             <div class="nav_header lg:hidden" x-show="isMobileNavOpen">
@@ -99,7 +100,7 @@
                 <a href="/pages/travel/">
                     Travel
                 </a>
-            </li><li @click="onToggleThemeSelector()" class="cursor-pointer pr-6">
+            </li><li @click="onToggleThemeSelector()" class="hidden lg:inline cursor-pointer pr-6">
             <i class="fas fa-fill-drip"></i>
         </li>
     </ul>
@@ -124,7 +125,7 @@
                 <a href="/pages/travel/">
                     Travel
                 </a>
-            </li><li @click="onToggleThemeSelector()" class="cursor-pointer pr-6">
+            </li><li @click="onToggleThemeSelector()" class="hidden lg:inline cursor-pointer pr-6">
             <i class="fas fa-fill-drip"></i>
         </li>
     </ul>
