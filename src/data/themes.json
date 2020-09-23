@@ -33,8 +33,8 @@
     }
   },
   {
-    "id": "turnpike",
-    "name": "Toad's Turnpike",
+    "id": "blueberry",
+    "name": "Blueberry",
     "colors": {
       "primary": "#ffbd03",
       "secondary": "#e53170",
@@ -55,19 +55,8 @@
     }
   },
   {
-    "id": "bowser",
-    "name": "Bowser's Castle",
-    "colors": {
-      "primary": "#7f5af0",
-      "secondary": "#2cb67d",
-      "text": "#fffffe",
-      "border": "#383a61",
-      "background": "#16161a"
-    }
-  },
-  {
-    "id": "yoshi",
-    "name": "Yoshi Valley",
+    "id": "orange",
+    "name": "Orange",
     "colors": {
       "primary": "#99C221",
       "secondary": "#E55812",
@@ -77,19 +66,8 @@
     }
   },
   {
-    "id": "rainbow",
-    "name": "Rainbow Road",
-    "colors": {
-      "primary": "#49f5f7",
-      "secondary": "#01c317",
-      "text": "#feff00",
-      "border": "#d846ff",
-      "background": "#140527"
-    }
-  },
-  {
-    "id": "lobster",
-    "name": "Lobster Life",
+    "id": "salmon",
+    "name": "Salmon",
     "colors": {
       "primary": "#b62b2b",
       "secondary": "#fb9f13",

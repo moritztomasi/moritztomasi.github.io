@@ -40,7 +40,7 @@
 
     }
 
-    [data-theme='turnpike'] {
+    [data-theme='blueberry'] {
         
     --color-bg: #232946;
     --color-text: #fffffe;
@@ -60,17 +60,7 @@
 
     }
 
-    [data-theme='bowser'] {
-        
-    --color-bg: #16161a;
-    --color-text: #fffffe;
-    --color-border: #383a61;
-    --color-primary: #7f5af0;
-    --color-secondary: #2cb67d;
-
-    }
-
-    [data-theme='yoshi'] {
+    [data-theme='orange'] {
         
     --color-bg: #fafbf5;
     --color-text: #41474C;
@@ -80,17 +70,7 @@
 
     }
 
-    [data-theme='rainbow'] {
-        
-    --color-bg: #140527;
-    --color-text: #feff00;
-    --color-border: #d846ff;
-    --color-primary: #49f5f7;
-    --color-secondary: #01c317;
-
-    }
-
-    [data-theme='lobster'] {
+    [data-theme='salmon'] {
         
     --color-bg: #fcddd4;
     --color-text: #4b1313;
