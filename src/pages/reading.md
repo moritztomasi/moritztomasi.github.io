@@ -7,10 +7,11 @@ eleventyNavigation:
 
 ## Currently
 
-The Shining - Stephen King
+The 4-Hour Work Week - Timothy Ferriss
 
 ## 2020
 
+- The Shining - Stephen King
 - The Testaments - Margaret Atwood
 - Homo Deus: A History of Tomorrow - Yuval Noah Harari
 - Too Much and Never Enough: How My Family Created the World's Most Dangerous Man - Mary L. Trump
