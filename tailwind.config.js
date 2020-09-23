@@ -7,7 +7,9 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    padding: ['last']
+  },
   plugins: [],
   future: {
     removeDeprecatedGapUtilities: true,
