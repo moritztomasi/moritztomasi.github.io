@@ -17,16 +17,19 @@
     "profiles": [
       {
         "network": "LinkedIn",
+        "faClass": "fab fa-linkedin",
         "username": "Moritz Tomasi",
         "url": "https://www.linkedin.com/in/moritz-tomasi-990398163/"
       },
       {
         "network": "Github",
+        "faClass": "fab fa-twitter",
         "username": "moritztomasi",
         "url": "https://github.com/moritztomasi"
       },
       {
         "network": "Twitter",
+        "faClass": "fab fa-github",
         "username": "@MoritzTomasi",
         "url": "https://twitter.com/MoritzTomasi"
       }
@@ -34,29 +37,77 @@
   },
   "work": [
     {
-      "company": "Company",
+      "company": "Findheim GmbH",
       "position": "President",
       "website": "http://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description...",
+      "startDate": "Nov. 2016",
+      "endDate": "Jun. 2018",
+      "summary": "I did stuff and things very nicely and everyone loved me to bits.",
+      "highlights": ["Started the company"]
+    },
+    {
+      "company": "Findheim GmbH",
+      "position": "President",
+      "website": "http://company.com",
+      "startDate": "Nov. 2016",
+      "endDate": "Jun. 2018",
+      "summary": "I did stuff and things very nicely and everyone loved me to bits.",
       "highlights": ["Started the company"]
     }
   ],
   "education": [
     {
-      "institution": "University",
+      "institution": "Technical University of Vienna",
       "area": "Software Development",
       "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
+      "startDate": "2009",
+      "endDate": "2015",
+      "gpa": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    },
+    {
+      "institution": "Technical University of Vienna",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2009",
+      "endDate": "2015",
       "gpa": "4.0",
       "courses": ["DB1101 - Basic SQL"]
     }
   ],
   "skills": [
     {
-      "name": "Web Development",
+      "name": "NodeJS, Python",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "Javascript, Typescript",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "VueJS + NuxtJS, React",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "AWS, elastic.co",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "Elasticsearch, Postgres, Redis",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "Machine Learning, NLP, Computer Vision",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "GIS (PostGIS, QGIS)",
       "level": "Master",
       "keywords": ["HTML", "CSS", "Javascript"]
     }
