@@ -38,16 +38,28 @@ input {
   background-color: var(--color-secondary);
 }
 
-.header_title {
+header {
   color: var(--color-secondary);
 }
 
-.header_navigation {
+header h1 {
+  color: var(--color-secondary);
+}
+
+header nav {
   color: var(--color-primary);
 }
 
-.header_navigation ul {
+header nav ul {
   color: var(--color-primary);
+}
+
+footer {
+  color: var(--color-secondary);
+}
+
+footer p, footer ul {
+  color: var(--color-secondary);
 }
 
 .home_text {
@@ -82,7 +94,7 @@ input {
   @apply text-black;
 }
 
-.theme_selector ul, h4 {
+.theme_selector ul, .theme_selector h4 {
   @apply text-black;
 }
 

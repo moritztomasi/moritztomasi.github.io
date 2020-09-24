@@ -6,7 +6,7 @@
 
         <div class="w-full flex flex-col pl-4 lg:pl-6">
             <div class="w-full flex flex-row items-center">
-                <h1 class="header_title text-2xl font-semibold">{{ meta.title }}</h1>
+                <h1 class="text-2xl font-semibold">{{ meta.title }}</h1>
 
                 <div class="lg:hidden pt-1 ml-6">
                     <i x-on:click="onToggleThemeSelector()" class="fas fa-fill-drip fa-lg mr-2"></i>
@@ -14,11 +14,11 @@
                 </div>
             </div>
 
-            <div class="nav_header lg:hidden" x-show="isMobileNavOpen">
+            <div class="lg:hidden" x-show="isMobileNavOpen">
                 {% include "navigation.njk" %}
             </div>
 
-            <div class="header_navigation hidden lg:inline">
+            <div class="hidden lg:inline">
                 {% include "navigation.njk" %}
             </div>
         </div>
