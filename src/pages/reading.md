@@ -7,7 +7,7 @@ eleventyNavigation:
 
 ## Currently
 
-The 4-Hour Work Week - Timothy Ferriss
+The Long Walk - Stephen King
 
 ## 2020
 
