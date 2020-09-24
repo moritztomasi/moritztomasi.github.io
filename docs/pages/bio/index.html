@@ -70,19 +70,19 @@
             <img src="/assets/logo.png"/>
         </figure>
 
-        <div class="w-full flex flex-col pl-4 lg:pl-6">
+        <div class="w-full flex flex-col pl-4 md:pl-6">
             <div class="w-full flex flex-row items-center">
                 <h1 class="text-2xl font-semibold">Moritz Tomasi</h1>
 
-                <div class="lg:hidden pt-1 ml-6">
-                    <i x-on:click="onToggleThemeSelector()" class="fas fa-fill-drip fa-lg mr-2"></i>
+                <div class="md:hidden flex flex-row pt-1 ml-8">
+                    <i x-on:click="onToggleThemeSelector()" class="fas fa-fill-drip fa-lg mr-4"></i>
                     <i x-on:click="onToggleMobileNav()" class="fa fa-bars fa-lg"></i>
                 </div>
             </div>
 
-            <div class="lg:hidden" x-show="isMobileNavOpen">
+            <div class="md:hidden" x-show="isMobileNavOpen">
                 <nav>
-    <ul class="flex flex-col lg:flex-row"><li class="pr-6">
+    <ul class="flex flex-col md:flex-row"><li class="pr-6">
                 <a href="/">
                     Home
                 </a>
@@ -98,16 +98,16 @@
                 <a href="/pages/travel/">
                     Travel
                 </a>
-            </li><li @click="onToggleThemeSelector()" class="hidden lg:inline cursor-pointer pr-6">
+            </li><li @click="onToggleThemeSelector()" class="hidden md:inline cursor-pointer pr-6">
             <i class="fas fa-fill-drip"></i>
         </li>
     </ul>
 </nav>
             </div>
 
-            <div class="hidden lg:inline">
+            <div class="hidden md:inline">
                 <nav>
-    <ul class="flex flex-col lg:flex-row"><li class="pr-6">
+    <ul class="flex flex-col md:flex-row"><li class="pr-6">
                 <a href="/">
                     Home
                 </a>
@@ -123,7 +123,7 @@
                 <a href="/pages/travel/">
                     Travel
                 </a>
-            </li><li @click="onToggleThemeSelector()" class="hidden lg:inline cursor-pointer pr-6">
+            </li><li @click="onToggleThemeSelector()" class="hidden md:inline cursor-pointer pr-6">
             <i class="fas fa-fill-drip"></i>
         </li>
     </ul>
@@ -180,7 +180,7 @@
             </main>
 
             <footer class="w-full bottom-0 py-6">
-    <div class="container mx-auto max-w-2xl flex flex-col lg:flex-row items-center lg:justify-between text-xs">
+    <div class="container mx-auto max-w-2xl flex flex-col md:flex-row items-center md:justify-between text-xs">
         <p>Copyright © Moritz Tomasi</p>
 
         <nav>

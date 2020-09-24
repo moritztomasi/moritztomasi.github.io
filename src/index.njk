@@ -5,6 +5,13 @@ eleventyNavigation:
   order: 0
 ---
 
+<div class="absolute top-0 right-0">
+  <span class="text-white sm:inline md:hidden lg:hidden xl:hidden">sm</span>
+  <span class="text-white sm:hidden md:inline lg:hidden xl:hidden">md</span>
+  <span class="text-white sm:hidden md:hidden lg:inline xl:hidden">lg</span>
+  <span class="text-white sm:hidden md:hidden lg:hidden xl:inline">xl</span>
+</div>
+
 <section>
   <p class="home_text text-base pb-4">
     Hi, I'm Moritz! A full-stack developer based in Vienna, Austria.<br /> This is my website, where I write about topics that interest me and document parts of my life.
@@ -30,10 +37,10 @@ eleventyNavigation:
 
   <div class="flex flex-col text-sm pt-4">
     {%- for post in collections.posts | reverse -%}
-      <div class="flex flex-row">
+      <div class="flex flex-col md:flex-row">
         {% set absolutePostUrl %}{{ post.url | url  }}{% endset %}
         <span class="posts_list_date">{{ post.date | dateformat }}</span>
-        <a class="posts_list_title pl-12" href="{{ post.url }}">{{ post.data.title }}</a>
+        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="{{ post.url }}">{{ post.data.title }}</a>
       </div>
     {%- endfor -%}
   </div>
