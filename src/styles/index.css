@@ -20,6 +20,11 @@ h3 {
   color: var(--color-secondary);
 }
 
+h4 {
+  @apply text-lg;
+  color: var(--color-secondary);
+}
+
 p {
   color: var(--color-text);
 }
@@ -28,7 +33,20 @@ ul {
   color: var(--color-text);
 }
 
-.nav_header ul {
+input {
+  color: var(--color-text);
+  background-color: var(--color-secondary);
+}
+
+.header_title {
+  color: var(--color-secondary);
+}
+
+.header_navigation {
+  color: var(--color-primary);
+}
+
+.header_navigation ul {
   color: var(--color-primary);
 }
 
@@ -36,43 +54,54 @@ ul {
   color: var(--color-secondary);
 }
 
-.posts_label {
+.home_contact {
+  color: var(--color-secondary);
+}
+
+.posts_list_label {
   color: var(--color-primary);
 }
 
-.post_date {
+.posts_list_date {
   color: var(--color-text);
+}
+
+.posts_list_title {
+  color: var(--color-secondary);
 }
 
 .post_title {
   color: var(--color-primary);
 }
 
-.post_title_list {
+.post_date {
   color: var(--color-secondary);
 }
 
-.aside ul,
-.aside p {
-  color: black;
+.theme_selector {
+  @apply text-black;
 }
 
-#text {
+.theme_selector ul, h4 {
+  @apply text-black;
+}
+
+article {
   @apply text-sm;
 }
 
-#text a {
+article a {
   @apply underline;
+  @apply cursor-pointer;
 }
 
-#text p {
+article p {
   @apply my-6;
   overflow-wrap: break-word;
   hyphens: auto;
-  color: var(--color-text);
 }
 
-#text ul {
+article ul {
   @apply list-disc;
   @apply my-6;
   @apply ml-4;

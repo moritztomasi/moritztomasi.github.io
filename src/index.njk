@@ -9,7 +9,7 @@ eleventyNavigation:
   <p class="home_text text-base pb-4">
     Hi, I'm Moritz! A full-stack developer based in Vienna, Austria.<br /> This is my website, where I write about topics that interest me and document parts of my life.
   </p>
-  <p class="home_text text-base">
+  <p class="home_contact text-base">
     <a href="mailto:tomasi.moritz@gmail.com">
       <i class="fas fa-envelope"></i>
     </a>
@@ -26,14 +26,14 @@ eleventyNavigation:
 </section>
 
 <section class="pt-24">
-  <h2 class="posts_label text-xl">Posts</h2>
+  <h2 class="posts_list_label text-xl">Posts</h2>
 
   <div class="flex flex-col text-sm pt-4">
     {%- for post in collections.posts | reverse -%}
       <div class="flex flex-row">
         {% set absolutePostUrl %}{{ post.url | url  }}{% endset %}
-        <span class="post_date">{{ post.date | dateformat }}</span>
-        <a class="post_title_list pl-12" href="{{ post.url }}">{{ post.data.title }}</a>
+        <span class="posts_list_date">{{ post.date | dateformat }}</span>
+        <a class="posts_list_title pl-12" href="{{ post.url }}">{{ post.data.title }}</a>
       </div>
     {%- endfor -%}
   </div>

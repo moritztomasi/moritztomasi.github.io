@@ -2,13 +2,13 @@
 layout: base
 ---
 
-<article id="text">
+<article>
     {% if title %}
         <h1 class="post_title">{{ title }}</h1>
     {% endif %}
 
     {% if showDate %}
-        <h2 class="text-base">{{ page.date | dateformat }}</h2>
+        <h2 class="post_date text-base">{{ page.date | dateformat }}</h2>
     {% endif %}
 
     {{ content | safe }}
