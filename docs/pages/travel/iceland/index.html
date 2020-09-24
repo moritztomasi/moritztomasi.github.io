@@ -64,70 +64,70 @@
         </aside>
 
         <div class="h-full w-full flex flex-col px-4 lg:px-0">
-            <header class="w-full">
-    <div class="w-full max-w-2xl container mx-auto flex flex-row items-center py-12">
-        <figure class="w-16">
+            <header class="w-full max-w-2xl container mx-auto flex flex-row py-12">
+    <div class="w-full flex flex-row md:items-center">
+        <figure class="w-20 pr-4 md:pr-6">
             <img src="/assets/logo.png"/>
         </figure>
 
-        <div class="w-full flex flex-col pl-4 md:pl-6">
-            <div class="w-full flex flex-row items-center">
+        <div class="flex flex-row mt-6 md:mt-0">
+            <div class="flex flex-col">
                 <h1 class="text-2xl font-semibold">Moritz Tomasi</h1>
 
-                <div class="md:hidden flex flex-row pt-1 ml-8">
-                    <i x-on:click="onToggleThemeSelector()" class="fas fa-fill-drip fa-lg mr-4"></i>
-                    <i x-on:click="onToggleMobileNav()" class="fa fa-bars fa-lg"></i>
+                <div class="md:hidden" x-show="isMobileNavOpen">
+                    <nav>
+    <ul class="flex flex-col md:flex-row"><li class="pr-6">
+                <a href="/">
+                    Home
+                </a>
+            </li><li class="pr-6">
+                <a href="/pages/bio/">
+                    Bio
+                </a>
+            </li><li class="pr-6">
+                <a href="/pages/reading/">
+                    Reading
+                </a>
+            </li><li class="pr-6">
+                <a href="/pages/travel/">
+                    Travel
+                </a>
+            </li><li @click="onToggleThemeSelector()" class="hidden md:inline cursor-pointer pr-6">
+            <i class="fas fa-fill-drip"></i>
+        </li>
+    </ul>
+</nav>
+                </div>
+
+                <div class="hidden md:inline">
+                    <nav>
+    <ul class="flex flex-col md:flex-row"><li class="pr-6">
+                <a href="/">
+                    Home
+                </a>
+            </li><li class="pr-6">
+                <a href="/pages/bio/">
+                    Bio
+                </a>
+            </li><li class="pr-6">
+                <a href="/pages/reading/">
+                    Reading
+                </a>
+            </li><li class="pr-6">
+                <a href="/pages/travel/">
+                    Travel
+                </a>
+            </li><li @click="onToggleThemeSelector()" class="hidden md:inline cursor-pointer pr-6">
+            <i class="fas fa-fill-drip"></i>
+        </li>
+    </ul>
+</nav>
                 </div>
             </div>
 
-            <div class="md:hidden" x-show="isMobileNavOpen">
-                <nav>
-    <ul class="flex flex-col md:flex-row"><li class="pr-6">
-                <a href="/">
-                    Home
-                </a>
-            </li><li class="pr-6">
-                <a href="/pages/bio/">
-                    Bio
-                </a>
-            </li><li class="pr-6">
-                <a href="/pages/reading/">
-                    Reading
-                </a>
-            </li><li class="pr-6">
-                <a href="/pages/travel/">
-                    Travel
-                </a>
-            </li><li @click="onToggleThemeSelector()" class="hidden md:inline cursor-pointer pr-6">
-            <i class="fas fa-fill-drip"></i>
-        </li>
-    </ul>
-</nav>
-            </div>
-
-            <div class="hidden md:inline">
-                <nav>
-    <ul class="flex flex-col md:flex-row"><li class="pr-6">
-                <a href="/">
-                    Home
-                </a>
-            </li><li class="pr-6">
-                <a href="/pages/bio/">
-                    Bio
-                </a>
-            </li><li class="pr-6">
-                <a href="/pages/reading/">
-                    Reading
-                </a>
-            </li><li class="pr-6">
-                <a href="/pages/travel/">
-                    Travel
-                </a>
-            </li><li @click="onToggleThemeSelector()" class="hidden md:inline cursor-pointer pr-6">
-            <i class="fas fa-fill-drip"></i>
-        </li>
-    </ul>
-</nav>
+            <div class="md:hidden flex flex-row pt-2 ml-8">
+                <i x-on:click="onToggleThemeSelector()" class="fas fa-fill-drip fa-lg mr-4"></i>
+                <i x-on:click="onToggleMobileNav()" class="fa fa-bars fa-lg"></i>
             </div>
         </div>
     </div>
