@@ -34,7 +34,7 @@ ul {
 }
 
 input {
-  color: var(--color-text);
+  @apply text-black;
   background-color: var(--color-secondary);
 }
 
@@ -88,6 +88,7 @@ input {
 
 article {
   @apply text-sm;
+  color: var(--color-text);
 }
 
 article a {
