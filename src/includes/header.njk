@@ -1,11 +1,11 @@
 <header class="w-full max-w-2xl container mx-auto flex flex-row py-12">
-    <div class="w-full flex flex-row md:items-center">
+    <div class="w-full flex flex-row items-center">
         <figure class="w-20 pr-4 md:pr-6">
             <img src="{{ '/assets/logo.png' | url }}"/>
         </figure>
 
-        <div class="flex flex-row mt-6 md:mt-0">
-            <div class="flex flex-col">
+        <div class="flex flex-row">
+            <div class="flex flex-col mr-8">
                 <h1 class="text-2xl font-semibold">{{ meta.title }}</h1>
 
                 <div class="md:hidden" x-show="isMobileNavOpen">
@@ -17,7 +17,7 @@
                 </div>
             </div>
 
-            <div class="md:hidden flex flex-row pt-2 ml-8">
+            <div class="md:hidden flex flex-row pt-2">
                 <i x-on:click="onToggleThemeSelector()" class="fas fa-fill-drip fa-lg mr-4"></i>
                 <i x-on:click="onToggleMobileNav()" class="fa fa-bars fa-lg"></i>
             </div>
