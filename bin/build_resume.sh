@@ -9,7 +9,7 @@ function build_resume() {
     # Change to the temporary directory where the resume can be built.
     cd ./_tmp_resume
     # Build the resume.
-    resume export resume.pdf --theme paper
+    resume export resume.pdf --theme deved
 
     cd ..
 
