@@ -1,0 +1,79 @@
+[
+  {
+    "id": "dark",
+    "name": "Dark",
+    "colors": {
+      "primary": "#2cb67d",
+      "secondary": "#fffffe",
+      "text": "#94a1b2",
+      "border": "#16161a",
+      "background": "#16161a"
+    }
+  },
+  {
+    "id": "light",
+    "name": "Light",
+    "colors": {
+      "primary": "#ff335f",
+      "secondary": "#43a9a3",
+      "text": "#373a3c",
+      "border": "#eceeef",
+      "background": "#ffffff"
+    }
+  },
+  {
+    "id": "chocolate",
+    "name": "Chocolate",
+    "colors": {
+      "primary": "#f3ab87",
+      "secondary": "#e78fb3",
+      "text": "#fffffe",
+      "border": "#271c19",
+      "background": "#55423d"
+    }
+  },
+  {
+    "id": "blueberry",
+    "name": "Blueberry",
+    "colors": {
+      "primary": "#ffbd03",
+      "secondary": "#e53170",
+      "text": "#fffffe",
+      "border": "#383a61",
+      "background": "#232946"
+    }
+  },
+  {
+    "id": "vanilla",
+    "name": "Vanilla",
+    "colors": {
+      "primary": "#f582ae",
+      "secondary": "#8bd3dd",
+      "text": "#172c66",
+      "border": "#f3d2c1",
+      "background": "#fef6e4"
+    }
+  },
+  {
+    "id": "orange",
+    "name": "Orange",
+    "colors": {
+      "primary": "#99C221",
+      "secondary": "#E55812",
+      "text": "#41474C",
+      "border": "#e8e0d9",
+      "background": "#fafbf5"
+    }
+  },
+  {
+    "id": "salmon",
+    "name": "Salmon",
+    "colors": {
+      "primary": "#b62b2b",
+      "secondary": "#fb9f13",
+      "text": "#4b1313",
+      "border": "#f1797c",
+      "background": "#fcddd4"
+    }
+  }
+]

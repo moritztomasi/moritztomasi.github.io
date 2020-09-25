@@ -1,0 +1,154 @@
+{
+  "basics": {
+    "name": "Moritz Tomasi",
+    "label": "Full-Stack Developer",
+    "picture": "",
+    "email": "tomasi.moritz@gmail.com",
+    "phone": "+43 650 72 72 959",
+    "website": "https://moritztomasi.github.io",
+    "summary": "I'm a full stack software engineer with experience in integrating many different tools and web frameworks together to develop a variety of different applications. I absolutely love programming, from designing system architecture for full stack apps to diving deep into frameworks and problem solving. I enjoy working on fun, collaborative teams that focus on optimization of applications and integrating additional features.",
+    "location": {
+      "address": "Lerchenfelderstrasse 129/4",
+      "postalCode": "1070",
+      "city": "Wien",
+      "countryCode": "AT",
+      "region": "Wien"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "faClass": "fab fa-linkedin",
+        "username": "Moritz Tomasi",
+        "url": "https://www.linkedin.com/in/moritz-tomasi-990398163/"
+      },
+      {
+        "network": "Github",
+        "faClass": "fab fa-twitter",
+        "username": "moritztomasi",
+        "url": "https://github.com/moritztomasi"
+      },
+      {
+        "network": "Twitter",
+        "faClass": "fab fa-github",
+        "username": "@MoritzTomasi",
+        "url": "https://twitter.com/MoritzTomasi"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Findheim GmbH",
+      "position": "President",
+      "website": "http://company.com",
+      "startDate": "Nov. 2016",
+      "endDate": "Jun. 2018",
+      "summary": "I did stuff and things very nicely and everyone loved me to bits.",
+      "highlights": [
+        "Created features for an application that receives over one billion views per day",
+        "Developed guest watch feature which increased the guest purchase rate by 5%",
+        "Utilized Jest testing framework to increase code coverage from 37% to over 80%",
+        "Resolved a large amount of accessibility bugs, reducing number of bugs by 65%"
+      ]
+    },
+    {
+      "company": "Zoomsquare GmbH",
+      "position": "President",
+      "website": "http://company.com",
+      "startDate": "Nov. 2016",
+      "endDate": "Jun. 2018",
+      "summary": "I did stuff and things very nicely and everyone loved me to bits.",
+      "highlights": [
+        "Developed Angular components, services, and directives, reusable through entire application",
+        "Designed API endpoints to send & receive data from PostgreSQL database",
+        "Implemented and optimized modular end-to-end features",
+        "Wrote integration & unit tests for application routes using Mocha & Chai",
+        "Utilized MongoDB to review logs, diagnose and resolve production bugs"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Technical University of Vienna",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2009",
+      "endDate": "2015",
+      "gpa": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    },
+    {
+      "institution": "Technical University of Vienna",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2009",
+      "endDate": "2015",
+      "gpa": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    }
+  ],
+  "skills": [
+    {
+      "name": "NodeJS, Python",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "Javascript, Typescript",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "VueJS (NuxtJS), React",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "AWS, elastic.co",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "Elasticsearch, Postgres, Redis",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "Machine Learning, NLP, Computer Vision",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "GIS (PostGIS, QGIS)",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "German",
+      "fluency": "mothertongue"
+    },
+    {
+      "language": "English",
+      "fluency": "fluent"
+    },
+    {
+      "language": "Italian",
+      "fluency": "fluent"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Cooking",
+      "keywords": ["Cooking"]
+    },
+    {
+      "name": "Reading",
+      "keywords": ["Reading"]
+    },
+    {
+      "name": "Tennis",
+      "keywords": ["Tennis"]
+    }
+  ]
+}

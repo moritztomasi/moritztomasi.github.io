@@ -1,0 +1,24 @@
+---
+permalink: '/theme.css'
+excludeFromSitemap: true
+---
+
+{% macro colorscheme(colors) %}
+    --color-bg: {{ colors.background }};
+    --color-text: {{ colors.text }};
+    --color-border: {{ colors.border }};
+    --color-primary: {{ colors.primary }};
+    --color-secondary: {{ colors.secondary }};
+{% endmacro %}
+
+{%- set default = themes | gettheme('dark') -%}
+
+:root {
+    {{ colorscheme(default.colors) }}
+}
+
+{% for theme in themes %}
+    [data-theme='{{ theme.id }}'] {
+        {{ colorscheme(theme.colors) }}
+    }
+{% endfor %}

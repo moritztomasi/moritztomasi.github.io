@@ -6,37 +6,83 @@ eleventyNavigation:
   order: 1
 ---
 
-Hey there! 👋 Nice to see you!
+Hey there! 👋
 
-I'm Moritz Tomasi, a fullstack web developer based in Vienna (Austria). Originally from Bozen (South Tyrol, Italy), I moved to Vienna in 2009 to study "Computer Science and Visual Computing" at the Technical University of Vienna, which I graduated from in 2015 with a Bachelor of Science.
+I’m Moritz, a 30-something-year-old full-stack developer. I've been building stuff on the web for the past 8 years and am currently a co-founder at Findheim.at, a real-estate matching platform based in Vienna, Austria.
 
-I made my first real experiences as a freelance working on small business websites with a designer friend of mine. Looking back I would'nt say that they are the best quality project i've done, but they made me realize that web development is the right thing for me. After completing my bachelors degree i got hired by a company called Zoomsquare.
+## Eduaction
 
-I've been building stuff for the web now for around 10 years. First as a freelancer, where I built small business websites with a designer friend of mine. Then as a backend software engineer at Zoomsquare,
+In 2009 I moved from Bozen (where I was born and raised) to Vienna to study "Computer Science and Visual Computing" at the Technical University, which I graduated from in 2015 with a Bachelor of Science. For my bachelor thesis, I built an Android app that would translate and enrich text from an image taken with a camera.
+
+## Freelancing
+
+Between 2012-2015 I took on some projects to make money on the side and gain some experience. I started by building small business websites with a designer friend of mine and then moved on to a simple educational app for law students. While I learned a lot from those projects, they made me realize that software development (and especially web development) was the way to go for me.
+
+Some of those projects can be found here (note: I'm not the maintainer):
+
+- [AROMA Kaffeebar](http://www.aromakaffeebar.com/){target="_blank" rel="noopener noreferrer"}, Munich: Simple static website built with HTML, CSS and Javascript (jQuery).
+- [Oliver Jaist Fotografie](http://www.oliverjaist.com/){target="_blank" rel="noopener noreferrer"}, Brixen: Portfolio website for an architecture photographer built with HTML, CSS and Javascript (jQuery). Built on WordPress for editing and adding content.
+
+## Zoomsquare
+
+I was hired in 2015 to work on both frontend and backend. In 3 years I worked on a whole lot of projects:
+
+- Developed a real-estate search API with Elasticsearch.
+- Conceptualized and built an image-cache for large amounts of data.
+- Image matching with computer vision.
+- Metrics with Grafana, Prometheus and Kibana.
+- Internal tools.
+
+Again, I learned a lot, but this time I had experienced and great people around me who were always open to answering questions about the challenges I was facing.
+
+## Findheim
+
+I co-founded Findheim in 2018 with some colleagues I had previously worked with at  Zoomsquare. Together we set out to improve the challenges people face when looking for a new home online. Some of the projects I worked on include:
+
+- Conceptualized and implemented a real-estate data extractor as part of our web-crawler.
+- Built a real-estate recommender system with Elasticsearch (I really like Elasticsearch 😄).
+- Built a geocoder with TomTom Multinet.
+
+All in all, there is a lot more that I worked on, but I consider those three projects my main milestones.
 
 ## Technical Skills
 
 - NodeJS, Python
 - Javascript, Typescript
-- VueJS + NuxtJS, React
-- AWS, elastic.co
-- Elasticsearch, Postgres, Redis
-- Machine Learning, NLP, Computer Vision
+- VueJS, NuxtJS
+- Elasticsearch, Postgres, Redis, MongoDB
 - GIS (PostGIS, QGIS)
+- AWS, Docker, elastic.co
+- Machine Learning, Computer Vision
 
 ## Project Management Skills
 
-- sadjh
-- asldj
+I worked in Scrum Teams at university, Zoomsquare and Findheim. At Findheim we decided after a while to make some changes to our project management and adapted Basecamp's book "Shape up" to our needs. You can read about that in my post "Adapting and adapting to Basecamp's "Shape up" at Findheim".
 
-## Other stuff
+## Languages
 
-- I started out programming in Java and worked with it for quite a few years. But I haven't kept up with it for a while so I wouldn't dare to list it under "Technical Skills".
+- 🇩🇪 German (mother tongue)
+- 🇬🇧 English (fluent)
+- 🇮🇹 Italian (fluent)
+
+## Other Stuff
+
+- I started programming in Java and worked with it for quite a few years. But I haven’t kept up with it for a while so I wouldn’t dare to list it under “Technical Skills”.
+- Same with Matlab.
 - I know my way around the Shopify ecosystem.
-- This site was built with 11ty static site generator.
-- I'm pretty good at googling stuff.
-- I can type without looking at my keyboard, but never finished my 10-finger-system course in highschool.
+- This site was built with 11ty static site generator, TailwindCSS and AlpineJS.
 
-## CV
+## Interests
 
-[cv.pdf]({{ '/assets/resume.pdf' | url }})
+- Coding (cliché). I enjoy coding on the side and try to keep up with new technologies.
+- Cooking. You can find some recipes with handy portion calculators under [Posts]({{ '/' | url }}).
+- Reading. You can find my reading list under [Reading]({{ '/pages/reading' | url }}).
+- Travelling. I try to keep track of some recent destinations on this website. You can find them under [Travel]({{ '/pages/travel' | url }}).
+- TV. My favourites are "The Office" and "Parks & Recreation".
+
+<!-- ## CV
+
+Here you can find my CV in both English and German:
+
+[Moritz_Tomasi_CV_EN.pdf]({{ '/assets/Moritz_Tomasi_CV_EN.pdf' | url }}){target="\_blank" rel="noopener noreferrer"}
+[Moritz_Tomasi_CV_DE.pdf]({{ '/assets/Moritz_Tomasi_CV_DE.pdf' | url }}){target="\_blank" rel="noopener noreferrer"} -->

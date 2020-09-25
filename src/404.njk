@@ -2,17 +2,23 @@
 title: Oops! Not Found
 permalink: 404.html
 ---
+
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ title }}</title>
+        <title>{{ meta.title }}</title>
+
+        {% include "meta.njk" %}
     </head>
-    <body>
-        <h1>{{ title }}</h1>
-        <p>This is where you should tell the user how to find their content. Maybe on the
-            <a href="{{ " /" | url }}">home page?</a>
+    <body class="w-full h-screen flex flex-col items-center justify-center font-mono text-black">
+        <figure class="w-40">
+            <img src="{{ '/assets/404_icon.webp' | url }}"/>
+        </figure>
+        <p class="text-center px-4 py-6">
+            Looks like you took a wrong turn!<br />
+            <a class="underline cursor-pointer" href="{{ '/' | url }}">Go back</a>
         </p>
     </body>
 </html>

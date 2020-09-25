@@ -22,12 +22,13 @@
 <link rel="manifest" href="/assets/site.webmanifest">
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
 
 <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 
 
+<link rel="stylesheet" href="/theme.css">
 <link rel="stylesheet" href="/style.css">
 
 
@@ -36,25 +37,46 @@
 
 <script src="/js/alpine.js"></script>
     </head>
-    <body class="w-full h-full flex flex-col font-mono text-white px-4 lg:px-0" style="background-color: #16161a">
-        <header class="w-full">
-    <div class="w-full max-w-2xl container mx-auto flex flex-row items-center py-12">
-        <figure class="w-16">
-            <img src="/assets/logo.png"/>
+    <body x-data="data()" x-bind:data-theme="themeId" x-on:keydown.escape="onToggleCloseThemeSelector()" class="w-full h-full font-mono">
+        <aside x-show="isThemeSelectorOpen" class="theme_selector w-full lg:w-auto lg:absolute lg:left-0 text-center lg:text-left bg-white p-4" style="color: black">
+            <figure class="absolute top-0 right-0 cursor-pointer pr-1">
+                <i @click="onToggleCloseThemeSelector()" class="lg:hidden far fa-window-close fa-lg"></i>
+                <i @click="onToggleCloseThemeSelector()" class="hidden lg:inline far fa-window-close"></i>
+            </figure>
+            <h4 class="text-lg mb-4">Themes</h4>
+            <ul class="flex flex-row lg:flex-col flex-wrap lg:flex-no-wrap justify-center">
+                
+                    <li @click="onToggleTheme('dark')" class="text-sm underline cursor-pointer pr-6 lg:pr-0 last:pr-0">Dark</li>
+                
+                    <li @click="onToggleTheme('light')" class="text-sm underline cursor-pointer pr-6 lg:pr-0 last:pr-0">Light</li>
+                
+                    <li @click="onToggleTheme('chocolate')" class="text-sm underline cursor-pointer pr-6 lg:pr-0 last:pr-0">Chocolate</li>
+                
+                    <li @click="onToggleTheme('blueberry')" class="text-sm underline cursor-pointer pr-6 lg:pr-0 last:pr-0">Blueberry</li>
+                
+                    <li @click="onToggleTheme('vanilla')" class="text-sm underline cursor-pointer pr-6 lg:pr-0 last:pr-0">Vanilla</li>
+                
+                    <li @click="onToggleTheme('orange')" class="text-sm underline cursor-pointer pr-6 lg:pr-0 last:pr-0">Orange</li>
+                
+                    <li @click="onToggleTheme('salmon')" class="text-sm underline cursor-pointer pr-6 lg:pr-0 last:pr-0">Salmon</li>
+                
+            </ul>
+        </aside>
+
+        <div class="h-full w-full flex flex-col px-4 lg:px-0">
+            <header class="w-full max-w-2xl container mx-auto flex flex-row py-12">
+    <div class="w-full flex flex-row items-center">
+        <figure class="w-20 pr-4 md:pr-6">
+            <img src="/assets/logo.png" alt="logo"/>
         </figure>
 
-        <div class="w-full flex flex-col pl-4 lg:pl-6" x-data="{ open: false }">
-            <div class="w-full flex flex-row items-center">
+        <div class="flex flex-row">
+            <div class="flex flex-col mr-8">
                 <h1 class="text-2xl font-semibold">Moritz Tomasi</h1>
 
-                <span class="lg:hidden pt-1 ml-12" x-on:click="open = !open">
-                    <i class="fa fa-bars fa-lg"></i>
-                </span>
-            </div>
-
-            <div class="lg:hidden" style="color: #2cb67d" x-show="open">
-                <nav>
-    <ul class="flex flex-col lg:flex-row"><li class="pr-6">
+                <div class="md:hidden" x-show="isMobileNavOpen">
+                    <nav>
+    <ul class="flex flex-col md:flex-row"><li class="pr-6">
                 <a href="/">
                     Home
                 </a>
@@ -70,13 +92,16 @@
                 <a href="/pages/travel/">
                     Travel
                 </a>
-            </li></ul>
+            </li><li @click="onToggleThemeSelector()" class="hidden md:inline cursor-pointer pr-6">
+            <i class="fas fa-swatchbook"></i>
+        </li>
+    </ul>
 </nav>
-            </div>
+                </div>
 
-            <div class="hidden lg:inline" style="color: #2cb67d">
-                <nav>
-    <ul class="flex flex-col lg:flex-row"><li class="pr-6">
+                <div class="hidden md:inline">
+                    <nav>
+    <ul class="flex flex-col md:flex-row"><li class="pr-6">
                 <a href="/">
                     Home
                 </a>
@@ -92,82 +117,157 @@
                 <a href="/pages/travel/">
                     Travel
                 </a>
-            </li></ul>
+            </li><li @click="onToggleThemeSelector()" class="hidden md:inline cursor-pointer pr-6">
+            <i class="fas fa-swatchbook"></i>
+        </li>
+    </ul>
 </nav>
+                </div>
+            </div>
+
+            <div class="md:hidden flex flex-row pt-2">
+                <i x-on:click="onToggleThemeSelector()" class="fas fa-swatchbook fa-lg mr-4"></i>
+                <i x-on:click="onToggleMobileNav()" class="fa fa-bars fa-lg"></i>
             </div>
         </div>
     </div>
 </header>
 
-        <main class="container mx-auto max-w-2xl flex-1">
-            
-<article id="text">
+            <main class="container mx-auto max-w-2xl flex-1">
+                
+<article>
     
 
     
 
-    <p>Hey there! 👋 Nice to see you!</p>
-<p>I’m Moritz Tomasi, a fullstack web developer based in Vienna (Austria). Originally from Bozen (South Tyrol, Italy), I moved to Vienna in 2009 to study “Computer Science and Visual Computing” at the Technical University of Vienna, which I graduated from in 2015 with a Bachelor of Science.</p>
-<p>I made my first real experiences as a freelance working on small business websites with a designer friend of mine. Looking back I would’nt say that they are the best quality project i’ve done, but they made me realize that web development is the right thing for me. After completing my bachelors degree i got hired by a company called Zoomsquare.</p>
-<p>I’ve been building stuff for the web now for around 10 years. First as a freelancer, where I built small business websites with a designer friend of mine. Then as a backend software engineer at Zoomsquare,</p>
+    <p>Hey there! 👋</p>
+<p>I’m Moritz, a 30-something-year-old full-stack developer. I’ve been building stuff on the web for the past 8 years and am currently a co-founder at <a href="http://Findheim.at">Findheim.at</a>, a real-estate matching platform based in Vienna, Austria.</p>
+<h2 id="eduaction">Eduaction</h2>
+<p>In 2009 I moved from Bozen (where I was born and raised) to Vienna to study “Computer Science and Visual Computing” at the Technical University, which I graduated from in 2015 with a Bachelor of Science. For my bachelor thesis, I built an Android app that would translate and enrich text from an image taken with a camera.</p>
+<h2 id="freelancing">Freelancing</h2>
+<p>Between 2012-2015 I took on some projects to make money on the side and gain some experience. I started by building small business websites with a designer friend of mine and then moved on to a simple educational app for law students. While I learned a lot from those projects, they made me realize that software development (and especially web development) was the way to go for me.</p>
+<p>Some of those projects can be found here (note: I’m not the maintainer):</p>
+<ul>
+<li><a href="http://www.aromakaffeebar.com/" target="_blank" rel="noopener noreferrer">AROMA Kaffeebar</a>, Munich: Simple static website built with HTML, CSS and Javascript (jQuery).</li>
+<li><a href="http://www.oliverjaist.com/" target="_blank" rel="noopener noreferrer">Oliver Jaist Fotografie</a>, Brixen: Portfolio website for an architecture photographer built with HTML, CSS and Javascript (jQuery). Built on WordPress for editing and adding content.</li>
+</ul>
+<h2 id="zoomsquare">Zoomsquare</h2>
+<p>I was hired in 2015 to work on both frontend and backend. In 3 years I worked on a whole lot of projects:</p>
+<ul>
+<li>Developed a real-estate search API with Elasticsearch.</li>
+<li>Conceptualized and built an image-cache for large amounts of data.</li>
+<li>Image matching with computer vision.</li>
+<li>Metrics with Grafana, Prometheus and Kibana.</li>
+<li>Internal tools.</li>
+</ul>
+<p>Again, I learned a lot, but this time I had experienced and great people around me who were always open to answering questions about the challenges I was facing.</p>
+<h2 id="findheim">Findheim</h2>
+<p>I co-founded Findheim in 2018 with some colleagues I had previously worked with at  Zoomsquare. Together we set out to improve the challenges people face when looking for a new home online. Some of the projects I worked on include:</p>
+<ul>
+<li>Conceptualized and implemented a real-estate data extractor as part of our web-crawler.</li>
+<li>Built a real-estate recommender system with Elasticsearch (I really like Elasticsearch 😄).</li>
+<li>Built a geocoder with TomTom Multinet.</li>
+</ul>
+<p>All in all, there is a lot more that I worked on, but I consider those three projects my main milestones.</p>
 <h2 id="technical-skills">Technical Skills</h2>
 <ul>
 <li>NodeJS, Python</li>
 <li>Javascript, Typescript</li>
-<li>VueJS + NuxtJS, React</li>
-<li>AWS, <a href="http://elastic.co">elastic.co</a></li>
-<li>Elasticsearch, Postgres, Redis</li>
-<li>Machine Learning, NLP, Computer Vision</li>
+<li>VueJS, NuxtJS</li>
+<li>Elasticsearch, Postgres, Redis, MongoDB</li>
 <li>GIS (PostGIS, QGIS)</li>
+<li>AWS, Docker, <a href="http://elastic.co">elastic.co</a></li>
+<li>Machine Learning, Computer Vision</li>
 </ul>
 <h2 id="project-management-skills">Project Management Skills</h2>
+<p>I worked in Scrum Teams at university, Zoomsquare and Findheim. At Findheim we decided after a while to make some changes to our project management and adapted Basecamp’s book “Shape up” to our needs. You can read about that in my post “Adapting and adapting to Basecamp’s “Shape up” at Findheim”.</p>
+<h2 id="languages">Languages</h2>
 <ul>
-<li>sadjh</li>
-<li>asldj</li>
+<li>🇩🇪 German (mother tongue)</li>
+<li>🇬🇧 English (fluent)</li>
+<li>🇮🇹 Italian (fluent)</li>
 </ul>
-<h2 id="other-stuff">Other stuff</h2>
+<h2 id="other-stuff">Other Stuff</h2>
 <ul>
-<li>I started out programming in Java and worked with it for quite a few years. But I haven’t kept up with it for a while so I wouldn’t dare to list it under “Technical Skills”.</li>
+<li>I started programming in Java and worked with it for quite a few years. But I haven’t kept up with it for a while so I wouldn’t dare to list it under “Technical Skills”.</li>
+<li>Same with Matlab.</li>
 <li>I know my way around the Shopify ecosystem.</li>
-<li>This site was built with 11ty static site generator.</li>
-<li>I’m pretty good at googling stuff.</li>
-<li>I can type without looking at my keyboard, but never finished my 10-finger-system course in highschool.</li>
+<li>This site was built with 11ty static site generator, TailwindCSS and AlpineJS.</li>
 </ul>
-<h2 id="cv">CV</h2>
-<p><a href="/assets/resume.pdf">cv.pdf</a></p>
+<h2 id="interests">Interests</h2>
+<ul>
+<li>Coding (cliché). I enjoy coding on the side and try to keep up with new technologies.</li>
+<li>Cooking. You can find some recipes with handy portion calculators under <a href="/">Posts</a>.</li>
+<li>Reading. You can find my reading list under <a href="/pages/reading">Reading</a>.</li>
+<li>Travelling. I try to keep track of some recent destinations on this website. You can find them under <a href="/pages/travel">Travel</a>.</li>
+<li>TV. My favourites are “The Office” and “Parks &amp; Recreation”.</li>
+</ul>
+<!-- ## CV
+
+Here you can find my CV in both English and German:
+
+[Moritz_Tomasi_CV_EN.pdf](/assets/Moritz_Tomasi_CV_EN.pdf){target="\_blank" rel="noopener noreferrer"}
+[Moritz_Tomasi_CV_DE.pdf](/assets/Moritz_Tomasi_CV_DE.pdf){target="\_blank" rel="noopener noreferrer"} -->
 
 </article>
 
 <aside hidden="hidden" class="fixed top-0 right-0 mt-12">
     <nav class="toc">
-        <ol><li><a href="#technical-skills">Technical Skills</a></li><li><a href="#project-management-skills">Project Management Skills</a></li><li><a href="#other-stuff">Other stuff</a></li><li><a href="#cv">CV</a></li></ol></nav>
+        <ol><li><a href="#eduaction">Eduaction</a></li><li><a href="#freelancing">Freelancing</a></li><li><a href="#zoomsquare">Zoomsquare</a></li><li><a href="#findheim">Findheim</a></li><li><a href="#technical-skills">Technical Skills</a></li><li><a href="#project-management-skills">Project Management Skills</a></li><li><a href="#languages">Languages</a></li><li><a href="#other-stuff">Other Stuff</a></li><li><a href="#interests">Interests</a></li></ol></nav>
 </aside>
-        </main>
+            </main>
 
-        <footer class="w-full bottom-0 py-6">
-    <div class="container mx-auto max-w-2xl flex flex-col lg:flex-row items-center lg:justify-between text-xs">
+            <footer class="w-full bottom-0 py-6">
+    <div class="container mx-auto max-w-2xl flex flex-col md:flex-row items-center md:justify-between text-xs">
         <p>Copyright © Moritz Tomasi</p>
 
         <nav>
-            <ul class="flex flex-row"><li class="pr-6">
-                        <a href="/">
-                            Home
-                        </a>
-                    </li><li class="pr-6">
-                        <a href="/pages/bio/">
-                            Bio
-                        </a>
-                    </li><li class="pr-6">
-                        <a href="/pages/reading/">
-                            Reading
-                        </a>
-                    </li><li class="pr-6">
-                        <a href="/pages/travel/">
-                            Travel
-                        </a>
-                    </li></ul>
-        </nav>
+    <ul class="flex flex-row"><li class="pr-6 last:pr-0">
+                <a href="/">
+                    Home
+                </a>
+            </li><li class="pr-6 last:pr-0">
+                <a href="/pages/bio/">
+                    Bio
+                </a>
+            </li><li class="pr-6 last:pr-0">
+                <a href="/pages/reading/">
+                    Reading
+                </a>
+            </li><li class="pr-6 last:pr-0">
+                <a href="/pages/travel/">
+                    Travel
+                </a>
+            </li></ul>
+</nav>
     </div>
 </footer>
+        </div>
     </body>
 </html>
+
+<script>
+    function data() {
+        return {
+            themeId: localStorage.getItem('themeId') || 'dark',
+            isMobileNavOpen: false,
+            isThemeSelectorOpen: false,
+            onToggleMobileNav: function () {
+                this.isMobileNavOpen = !this.isMobileNavOpen
+            },
+            onToggleTheme: function (themeId) {
+                this.themeId = themeId;
+                localStorage.setItem('themeId', themeId);
+            },
+            onToggleThemeSelector: function () {
+                this.isThemeSelectorOpen = !this.isThemeSelectorOpen
+            },
+            onToggleOpenThemeSelector: function () {
+                this.isThemeSelectorOpen = true;
+            },
+            onToggleCloseThemeSelector: function () {
+                this.isThemeSelectorOpen = false;
+            }
+        }
+    }
+</script>

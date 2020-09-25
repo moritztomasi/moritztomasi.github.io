@@ -22,12 +22,13 @@
 <link rel="manifest" href="/assets/site.webmanifest">
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
 
 <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 
 
+<link rel="stylesheet" href="/theme.css">
 <link rel="stylesheet" href="/style.css">
 
 
@@ -36,25 +37,46 @@
 
 <script src="/js/alpine.js"></script>
     </head>
-    <body class="w-full h-full flex flex-col font-mono text-white px-4 lg:px-0" style="background-color: #16161a">
-        <header class="w-full">
-    <div class="w-full max-w-2xl container mx-auto flex flex-row items-center py-12">
-        <figure class="w-16">
-            <img src="/assets/logo.png"/>
+    <body x-data="data()" x-bind:data-theme="themeId" x-on:keydown.escape="onToggleCloseThemeSelector()" class="w-full h-full font-mono">
+        <aside x-show="isThemeSelectorOpen" class="theme_selector w-full lg:w-auto lg:absolute lg:left-0 text-center lg:text-left bg-white p-4" style="color: black">
+            <figure class="absolute top-0 right-0 cursor-pointer pr-1">
+                <i @click="onToggleCloseThemeSelector()" class="lg:hidden far fa-window-close fa-lg"></i>
+                <i @click="onToggleCloseThemeSelector()" class="hidden lg:inline far fa-window-close"></i>
+            </figure>
+            <h4 class="text-lg mb-4">Themes</h4>
+            <ul class="flex flex-row lg:flex-col flex-wrap lg:flex-no-wrap justify-center">
+                
+                    <li @click="onToggleTheme('dark')" class="text-sm underline cursor-pointer pr-6 lg:pr-0 last:pr-0">Dark</li>
+                
+                    <li @click="onToggleTheme('light')" class="text-sm underline cursor-pointer pr-6 lg:pr-0 last:pr-0">Light</li>
+                
+                    <li @click="onToggleTheme('chocolate')" class="text-sm underline cursor-pointer pr-6 lg:pr-0 last:pr-0">Chocolate</li>
+                
+                    <li @click="onToggleTheme('blueberry')" class="text-sm underline cursor-pointer pr-6 lg:pr-0 last:pr-0">Blueberry</li>
+                
+                    <li @click="onToggleTheme('vanilla')" class="text-sm underline cursor-pointer pr-6 lg:pr-0 last:pr-0">Vanilla</li>
+                
+                    <li @click="onToggleTheme('orange')" class="text-sm underline cursor-pointer pr-6 lg:pr-0 last:pr-0">Orange</li>
+                
+                    <li @click="onToggleTheme('salmon')" class="text-sm underline cursor-pointer pr-6 lg:pr-0 last:pr-0">Salmon</li>
+                
+            </ul>
+        </aside>
+
+        <div class="h-full w-full flex flex-col px-4 lg:px-0">
+            <header class="w-full max-w-2xl container mx-auto flex flex-row py-12">
+    <div class="w-full flex flex-row items-center">
+        <figure class="w-20 pr-4 md:pr-6">
+            <img src="/assets/logo.png" alt="logo"/>
         </figure>
 
-        <div class="w-full flex flex-col pl-4 lg:pl-6" x-data="{ open: false }">
-            <div class="w-full flex flex-row items-center">
+        <div class="flex flex-row">
+            <div class="flex flex-col mr-8">
                 <h1 class="text-2xl font-semibold">Moritz Tomasi</h1>
 
-                <span class="lg:hidden pt-1 ml-12" x-on:click="open = !open">
-                    <i class="fa fa-bars fa-lg"></i>
-                </span>
-            </div>
-
-            <div class="lg:hidden" style="color: #2cb67d" x-show="open">
-                <nav>
-    <ul class="flex flex-col lg:flex-row"><li class="pr-6">
+                <div class="md:hidden" x-show="isMobileNavOpen">
+                    <nav>
+    <ul class="flex flex-col md:flex-row"><li class="pr-6">
                 <a href="/">
                     Home
                 </a>
@@ -70,13 +92,16 @@
                 <a href="/pages/travel/">
                     Travel
                 </a>
-            </li></ul>
+            </li><li @click="onToggleThemeSelector()" class="hidden md:inline cursor-pointer pr-6">
+            <i class="fas fa-swatchbook"></i>
+        </li>
+    </ul>
 </nav>
-            </div>
+                </div>
 
-            <div class="hidden lg:inline" style="color: #2cb67d">
-                <nav>
-    <ul class="flex flex-col lg:flex-row"><li class="pr-6">
+                <div class="hidden md:inline">
+                    <nav>
+    <ul class="flex flex-col md:flex-row"><li class="pr-6">
                 <a href="/">
                     Home
                 </a>
@@ -92,22 +117,31 @@
                 <a href="/pages/travel/">
                     Travel
                 </a>
-            </li></ul>
+            </li><li @click="onToggleThemeSelector()" class="hidden md:inline cursor-pointer pr-6">
+            <i class="fas fa-swatchbook"></i>
+        </li>
+    </ul>
 </nav>
+                </div>
+            </div>
+
+            <div class="md:hidden flex flex-row pt-2">
+                <i x-on:click="onToggleThemeSelector()" class="fas fa-swatchbook fa-lg mr-4"></i>
+                <i x-on:click="onToggleMobileNav()" class="fa fa-bars fa-lg"></i>
             </div>
         </div>
     </div>
 </header>
 
-        <main class="container mx-auto max-w-2xl flex-1">
-            
-<article id="text">
+            <main class="container mx-auto max-w-2xl flex-1">
+                
+<article>
     
-        <h1 style="color: #2cb67d">White Chocolate Skyr Mousse</h1>
+        <h1 class="post_title">White Chocolate Skyr Mousse</h1>
     
 
     
-        <h2 class="text-base">13-09-2020</h2>
+        <h2 class="post_date text-base">13-09-2020</h2>
     
 
     <p>In 2020 I was lucky enough (Coronavirus) to be able to spend three weeks travelling around Iceland by car with my girlfriend. While there, I got hooked on this yoghurt called Skyr. Skyr is a cultured dairy product which is similar in consistency to Greek yoghurt but contains much more protein and much less fat. During our three week stay, I ate a lot of Skyr and tried most of the available flavours. All of them were great. Anyway. On our last day, we went to a restaurant called <a href="https://www.grillmarkadurinn.is/">Grillmarkaðurinn</a> in Reykjavik, and part of the dessert was two scoops of chocolate mousse. One white and one dark chocolate. My girlfriend and I loved both of them, so we decided that we wanted to re-create them both at home and put the recipe with a handy ingredients calculator on this site. Enjoy!</p>
@@ -115,7 +149,7 @@
 <div class="py-6">
     <div x-data="ingredients()" x-init="getCalculatedIngredients()" class="flex flex-col">
     <div class="py-1">
-        <input class="px-1 text-black" type="number" min="1" x-model.number="portions" x-on:change="getCalculatedIngredients()"/>
+        <input class="px-1" type="number" min="1" x-model.number="portions" x-on:change="getCalculatedIngredients()"/>
         <label>portions</label>
     </div>
     <div class="flex flex-col pt-6">
@@ -186,32 +220,59 @@
     <nav class="toc">
         <ol><li><a href="#calculator">Calculator</a></li><li><a href="#instructions">Instructions</a></li><li><a href="#related-posts">Related posts</a></li></ol></nav>
 </aside>
-        </main>
+            </main>
 
-        <footer class="w-full bottom-0 py-6">
-    <div class="container mx-auto max-w-2xl flex flex-col lg:flex-row items-center lg:justify-between text-xs">
+            <footer class="w-full bottom-0 py-6">
+    <div class="container mx-auto max-w-2xl flex flex-col md:flex-row items-center md:justify-between text-xs">
         <p>Copyright © Moritz Tomasi</p>
 
         <nav>
-            <ul class="flex flex-row"><li class="pr-6">
-                        <a href="/">
-                            Home
-                        </a>
-                    </li><li class="pr-6">
-                        <a href="/pages/bio/">
-                            Bio
-                        </a>
-                    </li><li class="pr-6">
-                        <a href="/pages/reading/">
-                            Reading
-                        </a>
-                    </li><li class="pr-6">
-                        <a href="/pages/travel/">
-                            Travel
-                        </a>
-                    </li></ul>
-        </nav>
+    <ul class="flex flex-row"><li class="pr-6 last:pr-0">
+                <a href="/">
+                    Home
+                </a>
+            </li><li class="pr-6 last:pr-0">
+                <a href="/pages/bio/">
+                    Bio
+                </a>
+            </li><li class="pr-6 last:pr-0">
+                <a href="/pages/reading/">
+                    Reading
+                </a>
+            </li><li class="pr-6 last:pr-0">
+                <a href="/pages/travel/">
+                    Travel
+                </a>
+            </li></ul>
+</nav>
     </div>
 </footer>
+        </div>
     </body>
 </html>
+
+<script>
+    function data() {
+        return {
+            themeId: localStorage.getItem('themeId') || 'dark',
+            isMobileNavOpen: false,
+            isThemeSelectorOpen: false,
+            onToggleMobileNav: function () {
+                this.isMobileNavOpen = !this.isMobileNavOpen
+            },
+            onToggleTheme: function (themeId) {
+                this.themeId = themeId;
+                localStorage.setItem('themeId', themeId);
+            },
+            onToggleThemeSelector: function () {
+                this.isThemeSelectorOpen = !this.isThemeSelectorOpen
+            },
+            onToggleOpenThemeSelector: function () {
+                this.isThemeSelectorOpen = true;
+            },
+            onToggleCloseThemeSelector: function () {
+                this.isThemeSelectorOpen = false;
+            }
+        }
+    }
+</script>
