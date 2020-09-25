@@ -80,9 +80,9 @@ I worked in Scrum Teams at university, Zoomsquare and Findheim. At Findheim we d
 - Travelling. I try to keep track of some recent destinations on this website. You can find them under [Travel]({{ '/pages/travel' | url }}).
 - TV. My favourites are "The Office" and "Parks & Recreation".
 
-## CV
+<!-- ## CV
 
 Here you can find my CV in both English and German:
 
 [Moritz_Tomasi_CV_EN.pdf]({{ '/assets/Moritz_Tomasi_CV_EN.pdf' | url }}){target="\_blank" rel="noopener noreferrer"}
-[Moritz_Tomasi_CV_DE.pdf]({{ '/assets/Moritz_Tomasi_CV_DE.pdf' | url }}){target="\_blank" rel="noopener noreferrer"}
+[Moritz_Tomasi_CV_DE.pdf]({{ '/assets/Moritz_Tomasi_CV_DE.pdf' | url }}){target="\_blank" rel="noopener noreferrer"} -->
