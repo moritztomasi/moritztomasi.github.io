@@ -20,8 +20,8 @@ Between 2012-2015 I took on some projects to make money on the side and gain som
 
 Some of those projects can be found here (note: I'm not the maintainer):
 
-- [AROMA Kaffeebar](http://www.aromakaffeebar.com/){target="_blank" rel="noreferrer"}, Munich: Simple static website built with HTML, CSS and Javascript (jQuery).
-- [Oliver Jaist Fotografie](http://www.oliverjaist.com/){target="_blank" rel="noreferrer"}, Brixen: Portfolio website for an architecture photographer built with HTML, CSS and Javascript (jQuery). Built on WordPress for editing and adding content.
+- [AROMA Kaffeebar](http://www.aromakaffeebar.com/){target="_blank" rel="noopener noreferrer"}, Munich: Simple static website built with HTML, CSS and Javascript (jQuery).
+- [Oliver Jaist Fotografie](http://www.oliverjaist.com/){target="_blank" rel="noopener noreferrer"}, Brixen: Portfolio website for an architecture photographer built with HTML, CSS and Javascript (jQuery). Built on WordPress for editing and adding content.
 
 ## Zoomsquare
 
@@ -84,5 +84,5 @@ I worked in Scrum Teams at university, Zoomsquare and Findheim. At Findheim we d
 
 Here you can find my CV in both English and German:
 
-[Moritz_Tomasi_CV_EN.pdf]({{ '/assets/Moritz_Tomasi_CV_EN.pdf' | url }}){target="\_blank" rel="noreferrer"}
-[Moritz_Tomasi_CV_DE.pdf]({{ '/assets/Moritz_Tomasi_CV_DE.pdf' | url }}){target="\_blank" rel="noreferrer"}
+[Moritz_Tomasi_CV_EN.pdf]({{ '/assets/Moritz_Tomasi_CV_EN.pdf' | url }}){target="\_blank" rel="noopener noreferrer"}
+[Moritz_Tomasi_CV_DE.pdf]({{ '/assets/Moritz_Tomasi_CV_DE.pdf' | url }}){target="\_blank" rel="noopener noreferrer"}
