@@ -1,5 +1,5 @@
 <nav>
-    <ul class="flex flex-col md:flex-row">
+    <ul class="flex flex-row flex-wrap">
         {%- for item in collections.all | eleventyNavigation -%}
             {%- set isCurrent = (item.url == page.url) -%}
             {%- set isParent = item.url != '/' and item.url in page.url -%}
@@ -9,7 +9,7 @@
                 </a>
             </li>
         {%- endfor -%}
-        <li @click="onToggleThemeSelector()" class="hidden md:inline cursor-pointer pr-6">
+        <li @click="onToggleThemeSelector()" class="cursor-pointer">
             <i class="fas fa-swatchbook"></i>
         </li>
     </ul>

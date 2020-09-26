@@ -64,9 +64,9 @@
         </aside>
 
         <div class="h-full w-full flex flex-col px-4 lg:px-0">
-            <header class="w-full max-w-2xl container mx-auto flex flex-row py-12">
+            <header class="w-full max-w-2xl container mx-auto py-12">
     <div class="w-full flex flex-row items-center">
-        <figure class="w-20 pr-4 md:pr-6">
+        <figure class="hidden sm:inline w-20 pr-6">
             <img src="/assets/logo.png" alt="logo"/>
         </figure>
 
@@ -74,9 +74,9 @@
             <div class="flex flex-col mr-8">
                 <h1 class="text-2xl font-semibold">Moritz Tomasi</h1>
 
-                <div class="md:hidden" x-show="isMobileNavOpen">
+                <div>
                     <nav>
-    <ul class="flex flex-col md:flex-row"><li class="pr-6">
+    <ul class="flex flex-row flex-wrap"><li class="pr-6">
                 <a href="/">
                     Home
                 </a>
@@ -92,42 +92,12 @@
                 <a href="/pages/travel/">
                     Travel
                 </a>
-            </li><li @click="onToggleThemeSelector()" class="hidden md:inline cursor-pointer pr-6">
+            </li><li @click="onToggleThemeSelector()" class="cursor-pointer">
             <i class="fas fa-swatchbook"></i>
         </li>
     </ul>
 </nav>
                 </div>
-
-                <div class="hidden md:inline">
-                    <nav>
-    <ul class="flex flex-col md:flex-row"><li class="pr-6">
-                <a href="/">
-                    Home
-                </a>
-            </li><li class="pr-6">
-                <a href="/pages/bio/">
-                    Bio
-                </a>
-            </li><li class="pr-6">
-                <a href="/pages/reading/">
-                    Reading
-                </a>
-            </li><li class="pr-6">
-                <a href="/pages/travel/">
-                    Travel
-                </a>
-            </li><li @click="onToggleThemeSelector()" class="hidden md:inline cursor-pointer pr-6">
-            <i class="fas fa-swatchbook"></i>
-        </li>
-    </ul>
-</nav>
-                </div>
-            </div>
-
-            <div class="md:hidden flex flex-row pt-2">
-                <i x-on:click="onToggleThemeSelector()" class="fas fa-swatchbook fa-lg mr-4"></i>
-                <i x-on:click="onToggleMobileNav()" class="fa fa-bars fa-lg"></i>
             </div>
         </div>
     </div>
