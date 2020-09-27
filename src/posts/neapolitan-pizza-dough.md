@@ -3,6 +3,8 @@ title: Neapolitan Pizza Dough Calculator
 showDate: true
 ---
 
+![Neapolitan Pizza in oven]({{ '/assets/posts/pizza.jpg' | url }})
+
 I wanted to make Neapolitan pizza at home. So I created this ingredients calculator to make it easier. You will need:
 
 - Tipo 00 Flour: Highly refined flour which has been milled to standard "00". Make sure that its W-value is between 250-310.
