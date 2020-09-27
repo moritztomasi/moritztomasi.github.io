@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
     {%- for item in collections.all -%}
         {%- if not item.data.excludeFromSitemap -%}
             <url>
-                <loc>{{ item.url | url }}</loc>
+                <loc>{{ meta.url | url }}{{ item.url | url }}</loc>
                 <lastmod>{{ item.date | sitemapdateformat }}</lastmod>
             </url>
         {%- endif -%}
