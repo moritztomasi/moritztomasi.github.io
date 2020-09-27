@@ -3,11 +3,16 @@
         {%- for item in collections.all | eleventyNavigation -%}
             {%- set isCurrent = (item.url == page.url) -%}
             {%- set isParent = item.url != '/' and item.url in page.url -%}
-            <li class="pr-6 last:pr-0">
+            <li class="pr-6">
                 <a href="{% if iscurrent %}#main{% else %}{{ item.url | url }}{% endif %}">
                     {{ item.title }}
                 </a>
             </li>
         {%- endfor -%}
+        <li class="pr-6 last:pr-0">
+            <a href="/pages/imprint">
+                Imprint
+            </a>
+        </li>
     </ul>
 </nav>
