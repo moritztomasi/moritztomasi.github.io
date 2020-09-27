@@ -58,7 +58,8 @@ footer {
   color: var(--color-secondary);
 }
 
-footer p, footer ul {
+footer p,
+footer ul {
   color: var(--color-secondary);
 }
 
@@ -82,6 +83,10 @@ footer p, footer ul {
   color: var(--color-secondary);
 }
 
+a.posts_list_title:hover {
+  color: var(--color-primary);
+}
+
 .post_title {
   color: var(--color-primary);
 }
@@ -94,7 +99,8 @@ footer p, footer ul {
   @apply text-black;
 }
 
-.theme_selector ul, .theme_selector h4 {
+.theme_selector ul,
+.theme_selector h4 {
   @apply text-black;
 }
 
