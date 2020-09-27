@@ -7,13 +7,13 @@
 
         
 <meta name="description" content="The personal site of Moritz Tomasi">
-<link rel="canonical" href="/">
+<link rel="canonical" href="/posts/assert-in-guard-clauses/">
 
 
 <meta property="og:site_name" content="Moritz Tomasi">
-<meta property="og:title" content="Moritz Tomasi">
+<meta property="og:title" content="Guarding your Node.js functions with assert">
 <meta property="og:description" content="The personal site of Moritz Tomasi">
-<meta property="og:url" content="/">
+<meta property="og:url" content="/posts/assert-in-guard-clauses/">
 <meta property="og:locale" content="en_us">
 <meta name="twitter:card" content="summary">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
@@ -105,49 +105,34 @@
 
             <main class="container mx-auto max-w-2xl flex-1">
                 
+<article>
+    
+        <h1 class="post_title">Guarding your Node.js functions with assert</h1>
+    
 
+    
+        <h2 class="post_date text-base">27-09-2020</h2>
+    
 
-<section>
-  <p class="home_text text-base pb-4">
-    Hi, I'm Moritz! A full-stack developer based in Vienna, Austria. This is my website, where I write about topics that interest me and document parts of my life.
-  </p>
-  <p class="home_contact text-base">
-    <a href="mailto:tomasi.moritz@gmail.com" aria-label="Email">
-      <i class="fas fa-envelope"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/moritz-tomasi-990398163/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://twitter.com/MoritzTomasi" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a href="https://github.com/moritztomasi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-      <i class="fab fa-github"></i>
-    </a>
-  </p>
-</section>
+    <p>A guard clause is a chunk of code at the top of a function that serves as a precondition. In most cases, it checks one, more or all of the following preconditions:</p>
+<ul>
+<li>Checks parameters and throws an error if they’re invalid.</li>
+<li>Checks state of the object and returns if the function call is invalid.</li>
+<li>Checks trivial cases, and gets rid of them.</li>
+</ul>
+<p>In this article, I want to focus on the first case, where we want to make sure that all our functions parameters are valid.</p>
+<p>Guard clauses can be written as if-statements, but Node.js provides a way to replace those by using <a href="https://nodejs.org/api/assert.html">assert</a>.</p>
+<p>So something like this:</p>
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">function</span> <span class="token function">drawCircle</span><span class="token punctuation">(</span>radius<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">if</span> <span class="token punctuation">(</span>radius <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'radius is not defined'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><br>  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> radius <span class="token operator">===</span> <span class="token string">'number'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'radius is not a number'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><br>  <span class="token comment">// do something</span><br><span class="token punctuation">}</span></code></pre>
+<p>Can be refactored to something like this:</p>
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">const</span> assert <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">'assert'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token keyword">function</span> <span class="token function">drawCircle</span><span class="token punctuation">(</span>radius<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token function">assert</span><span class="token punctuation">(</span>radius <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">'radius is not defined'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token function">assert</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> radius <span class="token operator">===</span> <span class="token string">'number'</span><span class="token punctuation">,</span> <span class="token string">'radius is not a number'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>  <span class="token comment">// do something</span><br><span class="token punctuation">}</span></code></pre>
+<p>Just a simple tip, but I hope this helps you to avoid unnecessary branching with conditional statements and thus make your code more readable and lean.</p>
 
-<section class="pt-24">
-  <h2 class="posts_list_label text-xl">Posts</h2>
+</article>
 
-  <div class="flex flex-col text-sm pt-4"><div class="flex flex-col md:flex-row">
-        
-        <span class="posts_list_date">27-09-2020</span>
-        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="/posts/assert-in-guard-clauses/">Guarding your Node.js functions with assert</a>
-      </div><div class="flex flex-col md:flex-row">
-        
-        <span class="posts_list_date">13-09-2020</span>
-        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="/posts/dark-skyr-mousse/">Dark Chocolate Skyr Mousse</a>
-      </div><div class="flex flex-col md:flex-row">
-        
-        <span class="posts_list_date">13-09-2020</span>
-        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="/posts/white-skyr-mousse/">White Chocolate Skyr Mousse</a>
-      </div><div class="flex flex-col md:flex-row">
-        
-        <span class="posts_list_date">02-09-2020</span>
-        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="/posts/pizza-dough/">Pizza Dough Calculator</a>
-      </div></div>
-</section>
+<aside hidden="hidden" class="fixed top-0 right-0 mt-12">
+    
+</aside>
             </main>
 
             <footer class="w-full bottom-0 py-6">
