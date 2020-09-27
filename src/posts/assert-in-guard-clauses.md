@@ -9,7 +9,7 @@ A guard clause is a chunk of code at the top of a function that serves as a prec
 - Checks state of the object and returns if the function call is invalid.
 - Checks trivial cases, and gets rid of them.
 
-In this article, I want to focus on the first case, where we want to make sure that all our functions parameters are valid.
+In this post, I want to focus on the first case, where we want to make sure that all our functions parameters are valid.
 
 Guard clauses can be written as if-statements, but Node.js provides a way to replace those by using [assert](https://nodejs.org/api/assert.html).
 
