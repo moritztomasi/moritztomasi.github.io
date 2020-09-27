@@ -21,6 +21,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ './src/assets': './assets' });
 
+  eleventyConfig.addPassthroughCopy({ './CNAME': './CNAME' });
+
   eleventyConfig.addShortcode('version', function () {
     return String(Date.now());
   });
