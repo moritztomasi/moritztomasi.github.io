@@ -28,7 +28,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "f4c5572774e574dad15e412a36fc6ee3"
+    "revision": "a87129d4a5e079a10e63d3ff4720c65e"
   },
   {
     "url": "assets/404_icon.webp",
@@ -68,71 +68,63 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "81b6fd01111200f6848492e29bce5e31"
+    "revision": "213f2a38fc61a3a20a823b5bd66663be"
   },
   {
     "url": "js/alpine.js",
     "revision": "c38420e4928c75940dc22c893b08c017"
   },
   {
-    "url": "manifest.json",
-    "revision": "f95395e21d497e068c0b0be4fd382e15"
-  },
-  {
     "url": "pages/bio/index.html",
-    "revision": "b2327e3c46f01d9b479bdf4ad8b28b0e"
+    "revision": "eb98801fcdf52aec48731d195f5dd4bb"
   },
   {
     "url": "pages/imprint/index.html",
-    "revision": "07ea174731e766132645c50bd2b99548"
+    "revision": "cf49ed15d55f27febc369615bdd75d97"
   },
   {
     "url": "pages/reading/index.html",
-    "revision": "4501da9bfcbe8d9c683240d5658227f7"
+    "revision": "4d6e70e857cbf04ed1cad603d75fb9b2"
   },
   {
     "url": "pages/travel/iceland/index.html",
-    "revision": "4111969891a2df209fd185c1c6dbe626"
+    "revision": "e9063b57b6b96042ad2035794dc84e8c"
   },
   {
     "url": "pages/travel/index.html",
-    "revision": "52b9199b5e3fbd2c0d19ce190fe2d260"
+    "revision": "fdb296923470f509cb0e5002570b2640"
   },
   {
     "url": "pages/travel/israel/index.html",
-    "revision": "6676f40a76155fcf8b801bf86fc20c7c"
+    "revision": "73acda089c2aac127444f0dde4fec19e"
   },
   {
     "url": "pages/travel/japan/index.html",
-    "revision": "92e22639bb4b927e389337a7f93d23b5"
+    "revision": "b567f4ee8cf0a17e1f8847bea383b870"
   },
   {
     "url": "pages/travel/philippines/index.html",
-    "revision": "1d1f494f9b83576bdd0ee9e58602d360"
+    "revision": "b880edae3b8b52003640c401e207e078"
   },
   {
     "url": "pages/work/index.html",
-    "revision": "5a7b0d320c5fb337a497d07647473407"
+    "revision": "6db7c49d036098cf998494997135a98c"
   },
   {
     "url": "posts/assert-in-guard-clauses/index.html",
-    "revision": "247988edd4ba39cb2fc5b4b7fecec237"
+    "revision": "f2a58e01effd0a8515a4606f28c10da4"
   },
   {
     "url": "posts/dark-skyr-mousse/index.html",
-    "revision": "5cf577584c4550f2807d880891dd7fd8"
+    "revision": "faedee3ba52aae5cbab89f9f1b8ee0d3"
   },
   {
     "url": "posts/neapolitan-pizza-dough/index.html",
-    "revision": "26ec9848c481de986ce9b39d318090af"
+    "revision": "b4a9016695663eee82b2528c019fe5b5"
   },
   {
     "url": "posts/white-skyr-mousse/index.html",
-    "revision": "92314600e785204e261373ac6e0d3986"
-  },
-  {
-    "url": "style.css",
-    "revision": "4eabb5187a291e6cbf3aa518a6c64260"
+    "revision": "42d1caafbc8dcd86903e8ff46e81dd58"
   },
   {
     "url": "theme.css",
