@@ -2,7 +2,7 @@
 
 {# General #}
 <meta name="description" content="{{ description or meta.description }}">
-<link rel="canonical" href="{{ absolutePageUrl }}">
+<link rel="canonical" href="{{ meta.url | url }}">
 
 {# Open Graph #}
 <meta property="og:site_name" content="{{ meta.title }}">
@@ -21,24 +21,24 @@
 <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon-16x16.png' | url }}">
 <link rel="manifest" href="{{ '/assets/site.webmanifest' | url }}">
 
+{# Styles #}
+<link rel="stylesheet" href="{{ '/theme.css' | url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ '/theme.css' | url }}"></noscript>
+
+<link rel="stylesheet" href="{{ '/style.css' | url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ '/style.css' | url }}"></noscript>
+
 {# Font Awesome #}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
 {# Prism #}
 <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 
-{# Styles #}
-<link rel="stylesheet" href="{{ '/theme.css' | url }}">
-<link rel="stylesheet" href="{{ '/style.css' | url }}">
-
-{# RSS Feed #}
-<link type="application/atom+xml" rel="alternate" href="{{ meta.url }}/feed.xml" title="{{ meta.title }}">
-
 {# Google Site Verification #}
 <meta name="google-site-verification" content="3-x3jV9oWKgsefWBwTei3n5bCuufqbBQ-VGdPMPqsek"/>
 
 {# Alpine JS #}
-<script src="/js/alpine.js"></script>
+<script src="/js/alpine.js" defer="defer"></script>
 
 {# PWA #}
 <link rel="manifest" href="{{ '/manifest.json' | url }}"/>
