@@ -1,7 +1,7 @@
 <div x-data="ingredients()" x-init="getCalculatedIngredients()" class="flex flex-col">
     <div class="py-1">
-        <input class="px-1" type="number" min="1" x-model.number="numberOfPizzas" x-on:change="getCalculatedIngredients()"/>
-        <label>pizza(s)</label>
+        <input class="px-1" type="number" name="pizzas" min="1" x-model.number="numberOfPizzas" x-on:change="getCalculatedIngredients()"/>
+        <label for="pizzas">pizza(s)</label>
     </div>
     <div class="py-1">
         <input class="px-1" type="number" min="1" x-model.number="gramsPerDoughBall" x-on:change="getCalculatedIngredients()"/>

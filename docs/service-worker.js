@@ -116,15 +116,15 @@ self.__precacheManifest = [
   },
   {
     "url": "posts/dark-skyr-mousse/index.html",
-    "revision": "1fcff1af8ebddca4b818c6472c7fa1f0"
+    "revision": "bdb19ab2a2177508c38b84b8f26112bc"
   },
   {
     "url": "posts/neapolitan-pizza-dough/index.html",
-    "revision": "886955b50f0f93024ff24efe7588d581"
+    "revision": "e32db3ca979ced04d5b4c7fba00dafe2"
   },
   {
     "url": "posts/white-skyr-mousse/index.html",
-    "revision": "299d215934cb417edb2b9c58407e6d18"
+    "revision": "6e72c22a02c97bc21df682877b0fc967"
   },
   {
     "url": "theme.css",
