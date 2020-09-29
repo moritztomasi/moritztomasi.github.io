@@ -122,7 +122,7 @@
 <div class="py-6">
     <div x-data="ingredients()" x-init="getCalculatedIngredients()" class="flex flex-col">
     <div class="py-1">
-        <input class="px-1" type="number" min="1" name="portions" x-model.number="portions" x-on:change="getCalculatedIngredients()"/>
+        <input id="portions" class="px-1" type="number" min="1" name="portions" x-model.number="portions" x-on:change="getCalculatedIngredients()"/>
         <label for="portions">portions</label>
     </div>
     <div class="flex flex-col pt-6">
