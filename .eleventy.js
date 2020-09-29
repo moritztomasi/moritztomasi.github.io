@@ -7,11 +7,16 @@ const markdownItAnchor = require('markdown-it-anchor');
 const markdownItEmoji = require('markdown-it-emoji');
 const markdownItAttrs = require('markdown-it-attrs');
 const pluginTOC = require('eleventy-plugin-toc');
+const pluginPWA = require('eleventy-plugin-pwa');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginTOC);
+  eleventyConfig.addPlugin(pluginPWA, {
+    clientsClaim: true,
+    skipWaiting: true,
+  });
 
   eleventyConfig.setUseGitIgnore(false);
 
@@ -20,6 +25,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy({ './src/assets': './assets' });
+
+  eleventyConfig.addPassthroughCopy({ './src/data/manifest.json': './manifest.json' });
 
   eleventyConfig.addPassthroughCopy({ './CNAME': './CNAME' });
 

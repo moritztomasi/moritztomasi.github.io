@@ -39,6 +39,9 @@
 
 
 <script src="/js/alpine.js"></script>
+
+
+<link rel="manifest" href="/manifest.json"/>
     </head>
     <body x-data="data()" x-bind:data-theme="themeId" x-on:keydown.escape="onToggleCloseThemeSelector()" class="w-full h-full font-mono">
         <aside class="theme_selector hidden w-full lg:w-auto lg:absolute lg:left-0 text-center lg:text-left bg-white p-4" :class="{ 'hidden': !isThemeSelectorOpen }" style="color: black">
@@ -252,5 +255,15 @@
                 this.isThemeSelectorOpen = false;
             }
         }
+    }
+
+    if ('serviceWorker' in navigator) {
+        navigator
+            .serviceWorker
+            .register("/service-worker.js")
+            .then(function () {
+                console.log("ServiceWorker has been registered!");
+            })
+            .catch(console.error);
     }
 </script>

@@ -21,6 +21,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "alpinejs": "^2.6.0",
     "autoprefixer": "^9.8.6",
+    "eleventy-plugin-pwa": "^1.0.8",
     "eleventy-plugin-toc": "^1.1.0",
     "html-minifier": "^4.0.0",
     "markdown-it": "^11.0.0",
@@ -34,9 +35,7 @@
     "postcss-nesting": "^7.0.1",
     "postcss-partial-import": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.7.2"
-  },
-  "dependencies": {
+    "tailwindcss": "^1.7.2",
     "markdown-it-attrs": "^3.0.3",
     "markdown-it-emoji": "^1.4.0",
     "postcss-import": "^12.0.1",
