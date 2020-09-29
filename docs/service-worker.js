@@ -28,7 +28,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "a87129d4a5e079a10e63d3ff4720c65e"
+    "revision": "3702d3b9e92403172e8d1a6f09d9ca4e"
   },
   {
     "url": "assets/404_icon.webp",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "f2d0acd4584f2ce7c777fe5a844be259"
+    "revision": "11f94ec4562cf79e956047549dabedba"
   },
   {
     "url": "js/alpine.js",
@@ -76,55 +76,55 @@ self.__precacheManifest = [
   },
   {
     "url": "pages/bio/index.html",
-    "revision": "17594762a50645d92d1518748db8ec45"
+    "revision": "33a4fdb51beffc6d67a9607473061bab"
   },
   {
     "url": "pages/imprint/index.html",
-    "revision": "0b971b76a212841afefed5537cd6d53b"
+    "revision": "bda243dc7e7adc5564c3ebaffe9d9204"
   },
   {
     "url": "pages/reading/index.html",
-    "revision": "7728abca8dc8c62a4ba059b51e6fbec7"
+    "revision": "805f113a1b41e3b8b0c5a2cadd017530"
   },
   {
     "url": "pages/travel/iceland/index.html",
-    "revision": "7eea22abea024f41ceca5c41a01d28fb"
+    "revision": "0e056059450638e5959bf3897c5019cb"
   },
   {
     "url": "pages/travel/index.html",
-    "revision": "5c274b22cd49dba52165311528ffa018"
+    "revision": "dd734cd51198d5e7a0141137fa9c1f9a"
   },
   {
     "url": "pages/travel/israel/index.html",
-    "revision": "3cccb7f0d7651129a1ccfd0184131afb"
+    "revision": "5c10bb0ec58b91bfce330db40c024352"
   },
   {
     "url": "pages/travel/japan/index.html",
-    "revision": "15c65beb485331b0b251b264d38c3af8"
+    "revision": "09563225604b82f5539416da15119127"
   },
   {
     "url": "pages/travel/philippines/index.html",
-    "revision": "90574c23c70a0c52f6701e5088b958f4"
+    "revision": "b0904f25009d688c36de3f26c6d2d85d"
   },
   {
     "url": "pages/work/index.html",
-    "revision": "4918be0b5f3cf0d27f1925bb6816676b"
+    "revision": "00be50b7efbc74d66185ad52343e6d8a"
   },
   {
     "url": "posts/assert-in-guard-clauses/index.html",
-    "revision": "d672006ac59a4633de7afd43c464d315"
+    "revision": "8f2c8064ad493312d9a0ffef43aa67d9"
   },
   {
     "url": "posts/dark-skyr-mousse/index.html",
-    "revision": "0b931dca77122de0e2b33638b57bfb9f"
+    "revision": "1fcff1af8ebddca4b818c6472c7fa1f0"
   },
   {
     "url": "posts/neapolitan-pizza-dough/index.html",
-    "revision": "633edcfa0ed7782efea85979bbcc7abd"
+    "revision": "886955b50f0f93024ff24efe7588d581"
   },
   {
     "url": "posts/white-skyr-mousse/index.html",
-    "revision": "973baa374b50c3967e95b581e0f9e63a"
+    "revision": "299d215934cb417edb2b9c58407e6d18"
   },
   {
     "url": "theme.css",
