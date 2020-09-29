@@ -127,10 +127,6 @@ self.__precacheManifest = [
     "revision": "579d6fc010b1114c54b95764680b6aa8"
   },
   {
-    "url": "style.css",
-    "revision": "4eabb5187a291e6cbf3aa518a6c64260"
-  },
-  {
     "url": "theme.css",
     "revision": "13090b396bc19eed5297c20e51b2834c"
   }
