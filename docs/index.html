@@ -10,6 +10,10 @@
 <link rel="canonical" href="https://momasi.dev">
 
 
+<meta name="theme-color" content="#16161a">
+<link rel="manifest" href="/manifest.json"/>
+
+
 <meta property="og:site_name" content="Moritz Tomasi">
 <meta property="og:title" content="Moritz Tomasi">
 <meta property="og:description" content="The personal site of Moritz Tomasi">
@@ -39,9 +43,6 @@
 
 
 <script src="/js/alpine.js" defer="defer"></script>
-
-
-<link rel="manifest" href="/manifest.json"/>
     </head>
     <body x-data="data()" x-bind:data-theme="themeId" x-on:keydown.escape="onToggleCloseThemeSelector()" class="w-full h-full font-mono">
         <aside class="theme_selector hidden w-full lg:w-auto lg:absolute lg:left-0 text-center lg:text-left bg-white p-4" :class="{ 'hidden': !isThemeSelectorOpen }" style="color: black">
