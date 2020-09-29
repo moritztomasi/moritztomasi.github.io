@@ -68,7 +68,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "213f2a38fc61a3a20a823b5bd66663be"
+    "revision": "f2d0acd4584f2ce7c777fe5a844be259"
   },
   {
     "url": "js/alpine.js",
@@ -76,55 +76,55 @@ self.__precacheManifest = [
   },
   {
     "url": "pages/bio/index.html",
-    "revision": "eb98801fcdf52aec48731d195f5dd4bb"
+    "revision": "17594762a50645d92d1518748db8ec45"
   },
   {
     "url": "pages/imprint/index.html",
-    "revision": "cf49ed15d55f27febc369615bdd75d97"
+    "revision": "0b971b76a212841afefed5537cd6d53b"
   },
   {
     "url": "pages/reading/index.html",
-    "revision": "4d6e70e857cbf04ed1cad603d75fb9b2"
+    "revision": "7728abca8dc8c62a4ba059b51e6fbec7"
   },
   {
     "url": "pages/travel/iceland/index.html",
-    "revision": "e9063b57b6b96042ad2035794dc84e8c"
+    "revision": "7eea22abea024f41ceca5c41a01d28fb"
   },
   {
     "url": "pages/travel/index.html",
-    "revision": "fdb296923470f509cb0e5002570b2640"
+    "revision": "5c274b22cd49dba52165311528ffa018"
   },
   {
     "url": "pages/travel/israel/index.html",
-    "revision": "73acda089c2aac127444f0dde4fec19e"
+    "revision": "3cccb7f0d7651129a1ccfd0184131afb"
   },
   {
     "url": "pages/travel/japan/index.html",
-    "revision": "b567f4ee8cf0a17e1f8847bea383b870"
+    "revision": "15c65beb485331b0b251b264d38c3af8"
   },
   {
     "url": "pages/travel/philippines/index.html",
-    "revision": "b880edae3b8b52003640c401e207e078"
+    "revision": "90574c23c70a0c52f6701e5088b958f4"
   },
   {
     "url": "pages/work/index.html",
-    "revision": "6db7c49d036098cf998494997135a98c"
+    "revision": "4918be0b5f3cf0d27f1925bb6816676b"
   },
   {
     "url": "posts/assert-in-guard-clauses/index.html",
-    "revision": "f2a58e01effd0a8515a4606f28c10da4"
+    "revision": "d672006ac59a4633de7afd43c464d315"
   },
   {
     "url": "posts/dark-skyr-mousse/index.html",
-    "revision": "faedee3ba52aae5cbab89f9f1b8ee0d3"
+    "revision": "0b931dca77122de0e2b33638b57bfb9f"
   },
   {
     "url": "posts/neapolitan-pizza-dough/index.html",
-    "revision": "b4a9016695663eee82b2528c019fe5b5"
+    "revision": "633edcfa0ed7782efea85979bbcc7abd"
   },
   {
     "url": "posts/white-skyr-mousse/index.html",
-    "revision": "42d1caafbc8dcd86903e8ff46e81dd58"
+    "revision": "973baa374b50c3967e95b581e0f9e63a"
   },
   {
     "url": "theme.css",

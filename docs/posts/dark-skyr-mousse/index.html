@@ -44,8 +44,7 @@
     <body x-data="data()" x-bind:data-theme="themeId" x-on:keydown.escape="onToggleCloseThemeSelector()" class="w-full h-full font-mono">
         <aside class="theme_selector hidden w-full lg:w-auto lg:absolute lg:left-0 text-center lg:text-left bg-white p-4" :class="{ 'hidden': !isThemeSelectorOpen }" style="color: black">
             <figure class="absolute top-0 right-0 cursor-pointer pr-1">
-                <i @click="onToggleCloseThemeSelector()" class="lg:hidden far fa-window-close fa-lg"></i>
-                <i @click="onToggleCloseThemeSelector()" class="hidden lg:inline far fa-window-close"></i>
+                <i @click="onToggleCloseThemeSelector()" class="far fa-window-close fa-lg"></i>
             </figure>
             <h4 class="text-lg mb-4">Themes</h4>
             <ul class="flex flex-row lg:flex-col flex-wrap lg:flex-no-wrap justify-center">
