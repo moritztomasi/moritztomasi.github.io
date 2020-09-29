@@ -68,7 +68,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "db2fd5ab6e061b975043e1c437612f52"
+    "revision": "1a506bc2656a6f11183767dddb21d060"
   },
   {
     "url": "js/alpine.js",
