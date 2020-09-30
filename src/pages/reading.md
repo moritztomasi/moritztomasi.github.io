@@ -7,10 +7,11 @@ eleventyNavigation:
 
 ## Currently
 
-The Long Walk - Stephen King
+The Three-Body Problem - Liu Cixin
 
 ## 2020
 
+- The Long Walk - Stephen King
 - The Shining - Stephen King
 - The Testaments - Margaret Atwood
 - Homo Deus: A History of Tomorrow - Yuval Noah Harari
