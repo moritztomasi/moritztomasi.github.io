@@ -20,8 +20,8 @@ Between 2012-2015 I took on some projects to make money on the side and gain som
 
 Some of those projects can be found here (note: I'm not the maintainer):
 
-- [AROMA Kaffeebar](http://www.aromakaffeebar.com/){target="_blank" rel="noopener noreferrer"}, Munich: Simple static website built with HTML, CSS and Javascript (jQuery).
-- [Oliver Jaist Fotografie](http://www.oliverjaist.com/){target="_blank" rel="noopener noreferrer"}, Brixen: Portfolio website for an architecture photographer built with HTML, CSS and Javascript (jQuery). Built on WordPress for editing and adding content.
+- [AROMA Kaffeebar](http://www.aromakaffeebar.com/){target="\_blank" rel="noopener noreferrer"}, Munich: Simple static website built with HTML, CSS and Javascript (jQuery).
+- [Oliver Jaist Fotografie](http://www.oliverjaist.com/){target="\_blank" rel="noopener noreferrer"}, Brixen: Portfolio website for an architecture photographer built with HTML, CSS and Javascript (jQuery). Built on WordPress for editing and adding content.
 
 ## Zoomsquare
 
@@ -37,7 +37,7 @@ Again, I learned a lot, but this time I had experienced and great people around 
 
 ## Findheim
 
-I co-founded Findheim in 2018 with some colleagues I had previously worked with at  Zoomsquare. Together we set out to improve the challenges people face when looking for a new home online. Some of the projects I worked on include:
+I co-founded Findheim in 2018 with some colleagues I had previously worked with at Zoomsquare. Together we set out to improve the challenges people face when looking for a new home online. Some of the projects I worked on include:
 
 - Conceptualized and implemented a real-estate data extractor as part of our web-crawler.
 - Built a real-estate recommender system with Elasticsearch (I really like Elasticsearch 😄).
@@ -57,7 +57,7 @@ All in all, there is a lot more that I worked on, but I consider those three pro
 
 ## Project Management Skills
 
-I worked in Scrum Teams at university, Zoomsquare and Findheim. At Findheim we decided after a while to make some changes to our project management and adapted Basecamp's book "Shape up" to our needs. You can read about that in my post "Adapting and adapting to Basecamp's "Shape up" at Findheim".
+I worked in Scrum Teams at university, Zoomsquare and Findheim. At Findheim we decided after a while to make some changes to our project management and adapted Basecamp's book "Shape up" to our needs. I'm currently writing a post about my experience with that and hope to publish it soon.
 
 ## Languages
 

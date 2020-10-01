@@ -76,7 +76,7 @@ self.__precacheManifest = [
   },
   {
     "url": "pages/bio/index.html",
-    "revision": "33a4fdb51beffc6d67a9607473061bab"
+    "revision": "26d19be494434a44c2b9395a5fe7c770"
   },
   {
     "url": "pages/imprint/index.html",
