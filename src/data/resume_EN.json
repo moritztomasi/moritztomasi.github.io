@@ -22,13 +22,13 @@
       },
       {
         "network": "Github",
-        "faClass": "fab fa-twitter",
+        "faClass": "fab fa-github",
         "username": "moritztomasi",
         "url": "https://github.com/moritztomasi"
       },
       {
         "network": "Twitter",
-        "faClass": "fab fa-github",
+        "faClass": "fab fa-twitter",
         "username": "@MoritzTomasi",
         "url": "https://twitter.com/MoritzTomasi"
       }
@@ -109,7 +109,7 @@
   "languages": [
     {
       "language": "German",
-      "fluency": "mothertongue"
+      "fluency": "mother tongue"
     },
     {
       "language": "English",
