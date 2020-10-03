@@ -82,7 +82,7 @@ I worked in Scrum Teams at university, Zoomsquare and Findheim. At Findheim we d
 
 ## CV
 
-Here you can find my CV in both English (German coming soon):
+Here you can find my CV in English (German coming soon):
 
 [Moritz_Tomasi_CV_EN.pdf]({{ '/assets/Moritz_Tomasi_CV_EN.pdf' | url }}){target="\_blank" rel="noopener noreferrer"}
 
