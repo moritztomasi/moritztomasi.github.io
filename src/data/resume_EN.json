@@ -2,11 +2,10 @@
   "basics": {
     "name": "Moritz Tomasi",
     "label": "Full-Stack Developer",
-    "picture": "",
     "email": "tomasi.moritz@gmail.com",
     "phone": "+43 650 72 72 959",
-    "website": "https://moritztomasi.github.io",
-    "summary": "I'm a full stack software engineer with experience in integrating many different tools and web frameworks together to develop a variety of different applications. I absolutely love programming, from designing system architecture for full stack apps to diving deep into frameworks and problem solving. I enjoy working on fun, collaborative teams that focus on optimization of applications and integrating additional features.",
+    "website": "momasi.dev",
+    "summary": "A full-stack developer with strong experience in front-end and back-end development, a variety of coding languages, frameworks, and technologies. A good communicator and a team player. Always willing to face new challenges and highly self-motivated.",
     "location": {
       "address": "Lerchenfelderstrasse 129/4",
       "postalCode": "1070",
@@ -37,90 +36,74 @@
   },
   "work": [
     {
-      "company": "Findheim GmbH",
-      "position": "President",
-      "website": "http://company.com",
-      "startDate": "Nov. 2016",
-      "endDate": "Jun. 2018",
-      "summary": "I did stuff and things very nicely and everyone loved me to bits.",
+      "company": "Findheim",
+      "location": "Vienna",
+      "position": "Co-founder & Full-Stack Developer",
+      "website": "http://findheim.at",
+      "startDate": "Jul. 2018",
+      "endDate": "Currently",
+      "summary": "In 2018 I co-founded Findheim, a real-estate matching platform for properties to buy in Vienna. While my focus laid on the conceptualization, implementation and maintenance of back-end services, I also developed front-end features for users and internal tools:",
       "highlights": [
-        "Created features for an application that receives over one billion views per day",
-        "Developed guest watch feature which increased the guest purchase rate by 5%",
-        "Utilized Jest testing framework to increase code coverage from 37% to over 80%",
-        "Resolved a large amount of accessibility bugs, reducing number of bugs by 65%"
+        "Back-end stack: NodeJS, Typescript, Python, PostgreSQL, Elasticsearch, Redis.",
+        "Front-end stack: HTML, CSS, TailwindCSS, Javascript, VueJS (NuxtJS), StimulusJS, Turbolinks, PugJS.",
+        "Conceptualization of a data pipeline for real-estate data that would process 80,000+ real-estate ads per day.",
+        "Conceptualization, implementation and maintenance of a data extraction service in a web-crawler that would extract data from crawled real-estate pages. Implemented using Python, Scrapy and semantic text analysis.",
+        "Conceptualization, implementation and maintenance of a geocoding service using TomTom Multinet data, NodeJS, Typescript, PostgreSQL and PostGIS.",
+        "Conceptualization, implementation and maintenance of a real-estate recommender system built with Elasticsearch.",
+        "Helped create and implement code quality standards by introducing code review processes, refactoring processes and code metrics.",
+        "Lead technical product management and implemented a product management process based on Basecamps book \"Shape Up\". Setup, managed and maintained planning tools like Trello and Notion.",
+        "Worked with freelancers on the implementation of mobile apps (iOS, Android)."
       ]
     },
     {
-      "company": "Zoomsquare GmbH",
-      "position": "President",
-      "website": "http://company.com",
-      "startDate": "Nov. 2016",
-      "endDate": "Jun. 2018",
-      "summary": "I did stuff and things very nicely and everyone loved me to bits.",
+      "company": "Zoomsquare",
+      "location": "Vienna",
+      "position": "Full-Stack Developer",
+      "startDate": "Nov. 2015",
+      "endDate": "Jul. 2018",
+      "summary": "I worked as a full-time employee in a team of eight developers, focusing on both front-end and back-end:",
       "highlights": [
-        "Developed Angular components, services, and directives, reusable through entire application",
-        "Designed API endpoints to send & receive data from PostgreSQL database",
-        "Implemented and optimized modular end-to-end features",
-        "Wrote integration & unit tests for application routes using Mocha & Chai",
-        "Utilized MongoDB to review logs, diagnose and resolve production bugs"
+        "Back-end stack: NodeJS, Coffeescript, Typescript, Python, Java, PostgreSQL, MongoDB, Elasticsearch, Redis.",
+        "Front-end stack: HTML, CSS, Bootstrap, Javascript, Angular.",
+        "Developed and maintained RESTful APIs in both NodeJS (ExpressJS) and Python (Django, Tornado), that delivered and processed data from Elasticsearch and PostgreSQL.",
+        "Conceptualized, implemented and maintained an image-caching service for large amounts of data.",
+        "Developed an image-matching service with Python and OpenCV.",
+        "Worked on user-facing front-end features and internal tooling with Angular and Bootstrap. Strong focus on mobile responsiveness and user experience.",
+        "Developed various metrics with Prometheus, Grafana and Kibana."
       ]
     }
   ],
   "education": [
     {
       "institution": "Technical University of Vienna",
-      "area": "Software Development",
+      "area": "Computer Science and Visual Computing",
       "studyType": "Bachelor",
       "startDate": "2009",
       "endDate": "2015",
-      "gpa": "4.0",
-      "courses": ["DB1101 - Basic SQL"]
-    },
-    {
-      "institution": "Technical University of Vienna",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2009",
-      "endDate": "2015",
-      "gpa": "4.0",
-      "courses": ["DB1101 - Basic SQL"]
+      "summary": "Bachelor thesis and internship at the Institute for Interactive Media Systems on the subject \"Clickless Smartphone Text Translator and Enricher\". Developed an android app and web-service to extract, translate and enrich text from images, using Android SDK, Python and TesseractOCR."
     }
   ],
   "skills": [
     {
-      "name": "NodeJS, Python",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "Javascript"]
+      "name": "NodeJS, Python"
     },
     {
-      "name": "Javascript, Typescript",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "Javascript"]
+      "name": "Javascript, Typescript"
     },
     {
-      "name": "VueJS (NuxtJS), React",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "Javascript"]
+      "name": "VueJS, NuxtJS"
     },
     {
-      "name": "AWS, elastic.co",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "Javascript"]
+      "name": "Elasticsearch, PostgreSQL, Redis, MongoDB"
     },
     {
-      "name": "Elasticsearch, Postgres, Redis",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "Javascript"]
+      "name": "GIS (PostGIS, QGIS)"
     },
     {
-      "name": "Machine Learning, NLP, Computer Vision",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "Javascript"]
+      "name": "AWS (ECS, SQS), Docker, elastic.co"
     },
     {
-      "name": "GIS (PostGIS, QGIS)",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "Javascript"]
+      "name": "Machine Learning, Computer Vision"
     }
   ],
   "languages": [
@@ -135,20 +118,6 @@
     {
       "language": "Italian",
       "fluency": "fluent"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Cooking",
-      "keywords": ["Cooking"]
-    },
-    {
-      "name": "Reading",
-      "keywords": ["Reading"]
-    },
-    {
-      "name": "Tennis",
-      "keywords": ["Tennis"]
     }
   ]
 }

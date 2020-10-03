@@ -50,9 +50,9 @@ All in all, there is a lot more that I worked on, but I consider those three pro
 - NodeJS, Python
 - Javascript, Typescript
 - VueJS, NuxtJS
-- Elasticsearch, Postgres, Redis, MongoDB
+- Elasticsearch, PostgreSQL, Redis, MongoDB
 - GIS (PostGIS, QGIS)
-- AWS, Docker, elastic.co
+- AWS (ECS, SQS), Docker, elastic.co
 - Machine Learning, Computer Vision
 
 ## Project Management Skills
@@ -80,9 +80,10 @@ I worked in Scrum Teams at university, Zoomsquare and Findheim. At Findheim we d
 - Travelling. I try to keep track of some recent destinations on this website. You can find them under [Travel]({{ '/pages/travel' | url }}).
 - TV. My favourites are "The Office" and "Parks & Recreation".
 
-<!-- ## CV
+## CV
 
-Here you can find my CV in both English and German:
+Here you can find my CV in both English (German coming soon):
 
 [Moritz_Tomasi_CV_EN.pdf]({{ '/assets/Moritz_Tomasi_CV_EN.pdf' | url }}){target="\_blank" rel="noopener noreferrer"}
-[Moritz_Tomasi_CV_DE.pdf]({{ '/assets/Moritz_Tomasi_CV_DE.pdf' | url }}){target="\_blank" rel="noopener noreferrer"} -->
+
+<!-- [Moritz_Tomasi_CV_DE.pdf]({{ '/assets/Moritz_Tomasi_CV_DE.pdf' | url }}){target="\_blank" rel="noopener noreferrer"} -->
