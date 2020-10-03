@@ -10,7 +10,7 @@ Hey there! 👋
 
 I’m Moritz, a 30-something-year-old full-stack developer. I've been building stuff on the web for the past 8 years and am currently a co-founder at Findheim.at, a real-estate matching platform based in Vienna, Austria.
 
-## Eduaction
+## Education
 
 In 2009 I moved from Bozen (where I was born and raised) to Vienna to study "Computer Science and Visual Computing" at the Technical University, which I graduated from in 2015 with a Bachelor of Science. For my bachelor thesis, I built an Android app that would translate and enrich text from an image taken with a camera.
 
