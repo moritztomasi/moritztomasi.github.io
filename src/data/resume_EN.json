@@ -81,6 +81,14 @@
       "startDate": "2009",
       "endDate": "2015",
       "summary": "Bachelor thesis and internship at the Institute for Interactive Media Systems on the subject \"Clickless Smartphone Text Translator and Enricher\". Developed an android app and web-service to extract, translate and enrich text from images, using Android SDK, Python and TesseractOCR."
+    },
+    {
+      "institution": "Realgymnasium Peter Anich, Bozen",
+      "area": "General Knowledge",
+      "studyType": "Matura",
+      "startDate": "2004",
+      "endDate": "2009",
+      "summary": ""
     }
   ],
   "skills": [
