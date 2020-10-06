@@ -67,6 +67,14 @@ self.__precacheManifest = [
     "revision": "45d73cac8064f03490a7613aeef9cff1"
   },
   {
+    "url": "cv/theme/resume_DE/index.html",
+    "revision": "3cc9f59c151a386a3a16b04794f0e076"
+  },
+  {
+    "url": "cv/theme/resume_EN/index.html",
+    "revision": "c8d35d940dc0b2a8800cd080df36396d"
+  },
+  {
     "url": "index.html",
     "revision": "11f94ec4562cf79e956047549dabedba"
   },
@@ -76,7 +84,7 @@ self.__precacheManifest = [
   },
   {
     "url": "pages/bio/index.html",
-    "revision": "a77953645682b4cf5164c46d797ce0fc"
+    "revision": "bf3541ce6b4cc0ee3a53f940e4e71132"
   },
   {
     "url": "pages/imprint/index.html",
@@ -120,7 +128,7 @@ self.__precacheManifest = [
   },
   {
     "url": "posts/neapolitan-pizza-dough/index.html",
-    "revision": "1747ae5e2c2e599c74d6292d2ffb22a2"
+    "revision": "ce40ecc311c3b11aff66c06de84fea48"
   },
   {
     "url": "posts/white-skyr-mousse/index.html",

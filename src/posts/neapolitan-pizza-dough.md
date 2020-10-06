@@ -23,7 +23,7 @@ Now that you have a list of ingredients, you can calculate the proportions. But 
 ## Dough Instructions
 
 - Pour the water into a large container and dissolve the yeast in it.
-- Add some flour and mix well. This important, because in the next step we are going to add the salt. The flour will act as a barrier between the yeast and the salt (salt kills yeast).
+- Add some flour and mix well. This is important, because in the next step we are going to add the salt. The flour will act as a barrier between the yeast and the salt (salt kills yeast).
 - Add the salt and mix well.
 - Add the remaining flour and mix well. Let the mixture sit for around 10 minutes.
 - Start kneading the dough. You should knead the dough for at least 20 minutes (very important).

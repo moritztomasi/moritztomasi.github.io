@@ -51,8 +51,7 @@
         "Conceptualization, implementation and maintenance of a geocoding service using TomTom Multinet data, NodeJS, Typescript, PostgreSQL and PostGIS.",
         "Conceptualization, implementation and maintenance of a real-estate recommender system built with Elasticsearch.",
         "Helped create and implement code quality standards by introducing code review processes, refactoring processes and code metrics.",
-        "Lead technical product management and implemented a product management process based on Basecamps book \"Shape Up\". Setup, managed and maintained planning tools like Trello and Notion.",
-        "Worked with freelancers on the implementation of mobile apps (iOS, Android)."
+        "Lead technical product management and implemented a product management process based on Basecamps book \"Shape Up\". Managed and maintained planning tools like Trello and Notion."
       ]
     },
     {
@@ -68,7 +67,7 @@
         "Developed and maintained RESTful APIs in both NodeJS (ExpressJS) and Python (Django, Tornado), that delivered and processed data from Elasticsearch and PostgreSQL.",
         "Conceptualized, implemented and maintained an image-caching service for large amounts of data.",
         "Developed an image-matching service with Python and OpenCV.",
-        "Worked on user-facing front-end features and internal tooling with Angular and Bootstrap. Strong focus on mobile responsiveness and user experience.",
+        "Worked on user-facing front-end features and internal tooling with Angular and Bootstrap. Focus on mobile responsiveness and user experience.",
         "Developed various metrics with Prometheus, Grafana and Kibana."
       ]
     }

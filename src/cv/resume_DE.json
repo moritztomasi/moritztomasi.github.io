@@ -1,0 +1,130 @@
+{
+  "basics": {
+    "name": "Moritz Tomasi",
+    "label": "Full-Stack Developer",
+    "email": "tomasi.moritz@gmail.com",
+    "phone": "+43 650 72 72 959",
+    "website": "momasi.dev",
+    "summary": "Ein Full-Stack Developer mit langjähriger Erfahrung in Front-End- und Back-End-Entwicklung, einer Vielzahl von Programmiersprachen, Frameworks und Technologien. Ein guter Teamplayer und kompetenter Kommunikator. Immer bereit, sich neuen Herausforderungen zu stellen und stets hoch motiviert.",
+    "location": {
+      "address": "Lerchenfelderstrasse 129/4",
+      "postalCode": "1070",
+      "city": "Wien",
+      "countryCode": "AT",
+      "region": "Wien"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "faClass": "fab fa-linkedin",
+        "username": "Moritz Tomasi",
+        "url": "https://www.linkedin.com/in/moritz-tomasi-990398163/"
+      },
+      {
+        "network": "Github",
+        "faClass": "fab fa-github",
+        "username": "moritztomasi",
+        "url": "https://github.com/moritztomasi"
+      },
+      {
+        "network": "Twitter",
+        "faClass": "fab fa-twitter",
+        "username": "@MoritzTomasi",
+        "url": "https://twitter.com/MoritzTomasi"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Findheim",
+      "location": "Vienna",
+      "position": "Co-founder & Full-Stack Developer",
+      "website": "http://findheim.at",
+      "startDate": "Jul. 2018",
+      "endDate": "Heute",
+      "summary": "2018 war ich Mitbegründer von Findheim, einer Immobilien-Matching-Plattform für Immobilien zum Kauf in Wien. Während ich mich auf die Konzeption, Implementierung und Wartung von Back-End-Diensten konzentrierte, entwickelte ich auch Front-End-Funktionen für Nutzer und interne Tools:",
+      "highlights": [
+        "Back-End-Stack: NodeJS, Typescript, Python, PostgreSQL, Elasticsearch, Redis.",
+        "Front-End-Stack: HTML, CSS, TailwindCSS, Javascript, VueJS (NuxtJS), StimulusJS, Turbolinks, PugJS.",
+        "Konzeption einer Datenpipeline für Immobiliendaten, zur Verarbeitung von mehr als 80.000 Immobilienanzeigen pro Tag.",
+        "Konzeption, Implementierung und Wartung eines Dienstes zur Datenextraktion in einem WebCrawler, der Daten von gecrawlten Immobilienseiten extrahiert. Implementiert mit Python, Scrapy und semantischer Textanalyse.",
+        "Konzeption, Implementierung und Wartung eines Geokodierungsdienstes unter Verwendung von TomTom Multinet-Daten, NodeJS, Typescript, PostgreSQL und PostGIS.",
+        "Konzeption, Implementierung und Wartung eines mit Elasticsearch erstellten Immobilienempfehlungssystems.",
+        "Unterstützung bei der Erstellung und Implementierung von Codequalitätsstandards durch Einführung von Codereview-Prozessen, Refactoring-Prozessen und Codemetriken.",
+        "Leitung des technischen Produktmanagements und Implementierung eines Produktmanagementprozesses basierend auf dem Buch \"Shape Up\" von Basecamp. Verwaltung von Planungstools wie Trello und Notion."
+      ]
+    },
+    {
+      "company": "Zoomsquare",
+      "location": "Vienna",
+      "position": "Full-Stack Developer",
+      "startDate": "Nov. 2015",
+      "endDate": "Jul. 2018",
+      "summary": "Als Vollzeitmitarbeiter arbeitete Ich in einem Team von acht Entwicklern. Konzentration sowohl auf Front-End- als auch auf Back-End-Entwicklung:",
+      "highlights": [
+        "Back-End-Stack: NodeJS, Coffeescript, Typescript, Python, Java, PostgreSQL, MongoDB, Elasticsearch, Redis.",
+        "Front-End-Stack: HTML, CSS, Bootstrap, Javascript, Angular.",
+        "Entwicklung und Wartung von RESTful-APIs in NodeJS (ExpressJS) und Python (Django, Tornado), mit Elasticsearch und PostgreSQL als Datenquellen.",
+        "Konzeption, Implementierung und Wartung eines Image-Caching-Dienstes für große Datenmengen.",
+        "Entwicklung eines Image-Matching-Dienstes mit Python und OpenCV.",
+        "Arbeitete mit Angular und Bootstrap an nutzerseitigen Front-End-Funktionen und internen Tools. Fokus auf mobile responsiveness und user experience.",
+        "Entwicklung von Metriken mit Prometheus, Grafana und Kibana."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Technische Universität Wien",
+      "area": "Medieninformatik und Visual Computing",
+      "studyType": "Bachelor",
+      "startDate": "2009",
+      "endDate": "2015",
+      "summary": "Bachelorarbeit und Praktikum am Institut für Interactive Media Systems zum Thema \"Clickless Smartphone Text Translator and Enricher\". Entwicklung einer Android-App und eines Webservices zum Extrahieren, Übersetzen und Anreichern von Text aus Bildern. Implementierung mit Android SDK, Python und TesseractOCR."
+    },
+    {
+      "institution": "Realgymnasium Peter Anich, Bozen",
+      "area": "Allgemeine Richtung",
+      "studyType": "Matura",
+      "startDate": "2004",
+      "endDate": "2009",
+      "summary": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "NodeJS, Python"
+    },
+    {
+      "name": "Javascript, Typescript"
+    },
+    {
+      "name": "VueJS, NuxtJS"
+    },
+    {
+      "name": "Elasticsearch, PostgreSQL, Redis, MongoDB"
+    },
+    {
+      "name": "GIS (PostGIS, QGIS)"
+    },
+    {
+      "name": "AWS (ECS, SQS), Docker, elastic.co"
+    },
+    {
+      "name": "Machine Learning, Computer Vision"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Deutsch",
+      "fluency": "Muttersprache"
+    },
+    {
+      "language": "Englisch",
+      "fluency": "verhandlungssicher"
+    },
+    {
+      "language": "Italienisch",
+      "fluency": "fließend"
+    }
+  ]
+}

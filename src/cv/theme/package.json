@@ -1,0 +1,14 @@
+{
+  "name": "jsonresume-theme-deved",
+  "version": "0.0.1",
+  "description": "Deved Theme for JSON Resume",
+  "author": "Moritz Tomasi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moritztomasi/jsonresume-theme-deved"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4"
+  }
+}
