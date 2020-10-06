@@ -7,13 +7,13 @@
 
         
 <meta name="description" content="The personal site of Moritz Tomasi">
-<link rel="canonical" href="https://momasi.dev/posts/neapolitan-pizza-dough/">
+<link rel="canonical" href="https://momasi.dev/recipes/white-skyr-mousse/">
 
 
 <meta property="og:site_name" content="Moritz Tomasi">
-<meta property="og:title" content="Neapolitan Pizza Dough Calculator">
+<meta property="og:title" content="White Chocolate Skyr Mousse">
 <meta property="og:description" content="The personal site of Moritz Tomasi">
-<meta property="og:url" content="/posts/neapolitan-pizza-dough/">
+<meta property="og:url" content="/recipes/white-skyr-mousse/">
 <meta property="og:locale" content="en_us">
 <meta name="twitter:card" content="summary">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
@@ -110,97 +110,88 @@
                 
 <article>
     
-        <h1 class="post_title">Neapolitan Pizza Dough Calculator</h1>
+        <h1 class="post_title">White Chocolate Skyr Mousse</h1>
     
 
     
-        <h2 class="post_date text-base">29-09-2020</h2>
+        <h2 class="post_date text-base">14-09-2020</h2>
     
 
-    <p><img src="/assets/posts/pizza.jpg" alt="Neapolitan Pizza in oven"></p>
-<p>I wanted to make Neapolitan pizza at home. So I created this ingredients calculator to make it easier. You will need:</p>
-<ul>
-<li>Tipo 00 Flour: Highly refined flour which has been milled to standard “00”. Make sure that its W-value is between 250-310.</li>
-<li>Water: Clean and free of gas.</li>
-<li>Salt: Any type of salt will do, but sea salt is preferred.</li>
-<li>Yeast: Fresh, solid, soft and beige in colour.</li>
-</ul>
-<p>Now that you have a list of ingredients, you can calculate the proportions. But first a quick note regarding the water percentage: The water percentage of the dough should be somewhere between 57-70%. The longer the pizza has to stay in the oven to be evenly cooked through, the higher the water percentage should be, because the longer cooking time will dry out the dough more. If you are using a standard kitchen oven that reaches temperatures between 250-300 °C use the maximum water percentage of 70%. In case you are using a special pizza oven that can reach higher temperatures above 300 °C you can lower the water percentage to up to 57%. A lower water percentage will make the dough a little bit easier to work with and make the pizza crisper.</p>
+    <p>In 2020 I was lucky enough (Coronavirus) to be able to spend three weeks travelling around Iceland by car with my girlfriend. While there, I got hooked on this yoghurt called Skyr. Skyr is a cultured dairy product which is similar in consistency to Greek yoghurt but contains much more protein and much less fat. During our three week stay, I ate a lot of Skyr and tried most of the available flavours. All of them were great. Anyway. On our last day, we went to a restaurant called <a href="https://www.grillmarkadurinn.is/">Grillmarkaðurinn</a> in Reykjavik, and part of the dessert was two scoops of chocolate mousse. One white and one dark chocolate. My girlfriend and I loved both of them, so we decided that we wanted to re-create them both at home and put the recipe with a handy ingredients calculator on this site. Enjoy!</p>
 <h2 id="calculator">Calculator</h2>
 <div class="py-6">
-<div x-data="ingredients()" x-init="getCalculatedIngredients()" class="flex flex-col">
+    <div x-data="ingredients()" x-init="getCalculatedIngredients()" class="flex flex-col">
     <div class="py-1">
-        <input id="pizzas" class="px-1" type="number" name="pizzas" min="1" x-model.number="numberOfPizzas" x-on:change="getCalculatedIngredients()"/>
-        <label for="pizzas">pizza(s)</label>
-    </div>
-    <div class="py-1">
-        <input class="px-1" type="number" min="1" x-model.number="gramsPerDoughBall" x-on:change="getCalculatedIngredients()"/>
-        <label>grams / dough ball</label>
-    </div>
-    <div class="py-1">
-        <input class="px-1" type="number" min="1" x-model.number="waterContent" x-on:change="getCalculatedIngredients()"/>
-        <label>% water</label>
+        <input id="portions" class="px-1" type="number" min="1" name="portions" x-model.number="portions" x-on:change="getCalculatedIngredients()"/>
+        <label for="portions">portions</label>
     </div>
     <div class="flex flex-col pt-6">
         <div>
-            Flour:
-            <span x-text="flour"></span>g
+            Skyr:
+            <span x-text="skyr"></span>g
         </div>
         <div>
-            Water:
-            <span x-text="water"></span>g
+            Egg Whites:
+            <span x-text="eggWhites"></span>
         </div>
         <div>
-            Salt:
-            <span x-text="salt"></span>g
+            White Choccolate:
+            <span x-text="whiteChoccolate"></span>g
         </div>
         <div>
-            Yeast:
-            <span x-text="yeast"></span>g
+            Vanilla Sugar:
+            <span x-text="vanillaSugar"></span>
+            tsp
+        </div>
+        <div>
+            Lemon:
+            <span x-text="lemon"></span>
         </div>
     </div>
 </div>
 <script>
     function ingredients() {
         return {
-            numberOfPizzas: 1,
-            gramsPerDoughBall: 200,
-            waterContent: 57,
-            flour: 0,
-            water: 0,
-            salt: 0,
-            yeast: 0,
+            portions: 4,
+
+            skyr: 0,
+            eggWhites: 0,
+            whiteChoccolate: 0,
+            vanillaSugar: 0,
+            lemon: 0,
             getCalculatedIngredients: function () {
-                this.flour = Math.round((this.numberOfPizzas * this.gramsPerDoughBall) / (1 + (this.waterContent / 100) + 0.03 + 0.002));
-                this.water = Math.round((this.flour * this.waterContent) / 100);
-                this.salt = Math.round(0.03 * this.flour);
-                this.yeast = Math.round((0.002 * this.flour) * 100) / 100;
+                const skyr = 25;
+                const eggWhites = 1;
+                const whiteChoccolate = 50;
+                const vanillaSugar = 0.5;
+                const lemon = 0.125
+
+                this.skyr = this.portions * skyr;
+                this.eggWhites = this.portions * eggWhites;
+                this.whiteChoccolate = this.portions * whiteChoccolate;
+                this.vanillaSugar = this.portions * vanillaSugar;
+                this.lemon = this.portions * lemon;
             }
         }
     }
 </script>
 </div>
-<h2 id="dough-instructions">Dough Instructions</h2>
+<h2 id="instructions">Instructions</h2>
 <ul>
-<li>Pour the water into a large container and dissolve the yeast in it.</li>
-<li>Add some flour and mix well. This is important, because in the next step we are going to add the salt. The flour will act as a barrier between the yeast and the salt (salt kills yeast).</li>
-<li>Add the salt and mix well.</li>
-<li>Add the remaining flour and mix well. Let the mixture sit for around 10 minutes.</li>
-<li>Start kneading the dough. You should knead the dough for at least 20 minutes (very important).</li>
-<li>Put the pizza dough in a dry container, cover with plastic wrap and let it rest for 2 hours.</li>
-<li>Put the pizza dough on a flat surface and divide it into smaller pieces. Form them into balls.</li>
-<li>Place the balls of pizza dough in a dry container and make sure that they don’t touch each other. Let the dough rest for 8-48 hours.</li>
+<li>Put the chocolate into a bowl and melt it over a water bath.</li>
+<li>Separate the egg whites from the yolks, and put the egg whites in a bowl. Whisk until the egg whites become stiff.</li>
+<li>Put the Skyr into a separate bowl, add the vanilla sugar to it and whisk. Then gradually add the melted chocolate. Make sure that the chocolate has cooled down a little bit.</li>
+<li>Fold in the egg whites. Make sure not to beat too hard and try to keep in as much air as possible.</li>
+<li>Cover the bowl and let the mousse chill in the fridge for at least two hours.</li>
 </ul>
-<p>Now that the dough is ready you can start cooking, just make sure that the oven is as hot as possible.</p>
 <h2 id="related-posts">Related posts</h2>
-<p><a href="/posts/dark-skyr-mousse/">Dark Chocolate Skyr Mousse</a><br>
-<a href="/posts/white-skyr-mousse/">White Chocolate Skyr Mousse</a></p>
+<p><a href="/recipes/dark-skyr-mousse/">Dark Chocolate Skyr Mousse</a></p>
 
 </article>
 
 <aside hidden="hidden" class="fixed top-0 right-0 mt-12">
     <nav class="toc">
-        <ol><li><a href="#calculator">Calculator</a></li><li><a href="#dough-instructions">Dough Instructions</a></li><li><a href="#related-posts">Related posts</a></li></ol></nav>
+        <ol><li><a href="#calculator">Calculator</a></li><li><a href="#instructions">Instructions</a></li><li><a href="#related-posts">Related posts</a></li></ol></nav>
 </aside>
             </main>
 

@@ -1,6 +1,7 @@
 ---
 title: Guarding your Node.js functions with assert
 showDate: true
+date: 2020-09-29
 ---
 
 A guard clause is a chunk of code at the top of a function that serves as a precondition. In most cases, it checks one, more or all of the following preconditions:

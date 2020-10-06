@@ -1,6 +1,7 @@
 ---
 title: Dark Chocolate Skyr Mousse
 showDate: true
+date: 2020-09-13
 ---
 
 In 2020 I was lucky enough (Coronavirus) to be able to spend three weeks travelling around Iceland by car with my girlfriend. While there, I got hooked on this yoghurt called Skyr. Skyr is a cultured dairy product which is similar in consistency to Greek yoghurt but contains much more protein and much less fat. During our three week stay, I ate a lot of Skyr and tried most of the available flavours. All of them were great. Anyway. On our last day, we went to a restaurant called [Grillmarkaðurinn](https://www.grillmarkadurinn.is/) in Reykjavik, and part of the dessert was two scoops of chocolate mousse. One white and one dark chocolate. My girlfriend and I loved both of them, so we decided that we wanted to re-create them both at home and put the recipe with a handy ingredients calculator on this site. Enjoy!
@@ -21,4 +22,4 @@ In 2020 I was lucky enough (Coronavirus) to be able to spend three weeks travell
 
 ## Related posts
 
-[White Chocolate Skyr Mousse](/posts/white-skyr-mousse/)
+[White Chocolate Skyr Mousse](/recipes/white-skyr-mousse/)

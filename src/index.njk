@@ -14,7 +14,7 @@ eleventyNavigation:
 </div> #}
 
 <section>
-  <p class="home_text text-base pb-4">
+  <p class="home_text text-base mb-4">
     Hi, I'm Moritz! A full-stack developer based in Vienna, Austria. This is my website, where I write about topics that interest me and document parts of my life.
   </p>
   <p class="home_contact text-base">
@@ -39,9 +39,21 @@ eleventyNavigation:
   <div class="flex flex-col text-sm pt-4">
     {%- for post in collections.posts | reverse -%}
       <div class="flex flex-col md:flex-row">
-        {% set absolutePostUrl %}{{ post.url | url  }}{% endset %}
         <span class="posts_list_date">{{ post.date | dateformat }}</span>
         <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="{{ post.url }}">{{ post.data.title }}</a>
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+<section class="pt-12">
+  <h2 class="posts_list_label text-xl">Recipes</h2>
+
+  <div class="flex flex-col text-sm pt-4">
+    {%- for recipe in collections.recipes | reverse -%}
+      <div class="flex flex-col md:flex-row">
+        <span class="posts_list_date">{{ recipe.date | dateformat }}</span>
+        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="{{ recipe.url }}">{{ recipe.data.title }}</a>
       </div>
     {%- endfor -%}
   </div>

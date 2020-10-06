@@ -1,6 +1,7 @@
 ---
 title: Neapolitan Pizza Dough Calculator
 showDate: true
+date: 2020-09-23
 ---
 
 ![Neapolitan Pizza in oven]({{ '/assets/posts/pizza.jpg' | url }})
@@ -32,8 +33,3 @@ Now that you have a list of ingredients, you can calculate the proportions. But 
 - Place the balls of pizza dough in a dry container and make sure that they don't touch each other. Let the dough rest for 8-48 hours.
 
 Now that the dough is ready you can start cooking, just make sure that the oven is as hot as possible.
-
-## Related posts
-
-[Dark Chocolate Skyr Mousse](/posts/dark-skyr-mousse/)
-[White Chocolate Skyr Mousse](/posts/white-skyr-mousse/)

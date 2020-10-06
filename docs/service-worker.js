@@ -76,7 +76,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "11f94ec4562cf79e956047549dabedba"
+    "revision": "af25e7b0f5939d2b234b77e9c9a87fa0"
   },
   {
     "url": "js/alpine.js",
@@ -123,16 +123,16 @@ self.__precacheManifest = [
     "revision": "8f2c8064ad493312d9a0ffef43aa67d9"
   },
   {
-    "url": "posts/dark-skyr-mousse/index.html",
-    "revision": "acbda9f60d4731312cbc3519aca4b29c"
+    "url": "recipes/dark-skyr-mousse/index.html",
+    "revision": "dd7c7bc28abf27ce459863b56d71aad1"
   },
   {
-    "url": "posts/neapolitan-pizza-dough/index.html",
-    "revision": "ce40ecc311c3b11aff66c06de84fea48"
+    "url": "recipes/neapolitan-pizza-dough/index.html",
+    "revision": "9456bf19d10bb639b8cb616c6501f722"
   },
   {
-    "url": "posts/white-skyr-mousse/index.html",
-    "revision": "579d6fc010b1114c54b95764680b6aa8"
+    "url": "recipes/white-skyr-mousse/index.html",
+    "revision": "d61ea74f61a193988bfb67f13786cfaa"
   },
   {
     "url": "theme.css",
