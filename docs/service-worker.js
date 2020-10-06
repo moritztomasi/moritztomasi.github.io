@@ -76,7 +76,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "af25e7b0f5939d2b234b77e9c9a87fa0"
+    "revision": "f6d8e163daa3beb747b1f7cb8a4a6a42"
   },
   {
     "url": "js/alpine.js",
@@ -120,7 +120,7 @@ self.__precacheManifest = [
   },
   {
     "url": "posts/assert-in-guard-clauses/index.html",
-    "revision": "8f2c8064ad493312d9a0ffef43aa67d9"
+    "revision": "0f189cfbd0dee09f6c9c1bcd7741ac4d"
   },
   {
     "url": "recipes/dark-skyr-mousse/index.html",

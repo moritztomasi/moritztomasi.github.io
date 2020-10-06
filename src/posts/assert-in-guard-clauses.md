@@ -1,5 +1,5 @@
 ---
-title: Guarding your Node.js functions with assert
+title: Guarding Your Node.js Functions With Assert
 showDate: true
 date: 2020-09-29
 ---
