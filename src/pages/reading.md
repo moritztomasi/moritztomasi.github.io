@@ -7,10 +7,11 @@ eleventyNavigation:
 
 ## Currently
 
-The Three-Body Problem - Liu Cixin
+The Dark Forest - Liu Cixin
 
 ## 2020
 
+- The Three-Body Problem - Liu Cixin
 - The Long Walk - Stephen King
 - The Shining - Stephen King
 - The Testaments - Margaret Atwood
