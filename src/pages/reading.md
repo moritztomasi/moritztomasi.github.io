@@ -7,10 +7,11 @@ eleventyNavigation:
 
 ## Currently
 
-The Dark Forest - Liu Cixin
+Death's End - Liu Cixin
 
 ## 2020
 
+- The Dark Forest - Liu Cixin
 - The Three-Body Problem - Liu Cixin
 - The Long Walk - Stephen King
 - The Shining - Stephen King
