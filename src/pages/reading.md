@@ -7,10 +7,11 @@ eleventyNavigation:
 
 ## Currently
 
-Death's End - Liu Cixin
+A Man Called Ove - Fredrik Backman
 
 ## 2020
 
+- Death's End - Liu Cixin
 - The Dark Forest - Liu Cixin
 - The Three-Body Problem - Liu Cixin
 - The Long Walk - Stephen King
