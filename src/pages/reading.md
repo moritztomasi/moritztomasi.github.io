@@ -7,10 +7,11 @@ eleventyNavigation:
 
 ## Currently
 
-A Man Called Ove - Fredrik Backman
+Nudge - Richard H. Thaler & Cass R. Sunstein
 
 ## 2020
 
+- A Man Called Ove - Fredrik Backman
 - Death's End - Liu Cixin
 - The Dark Forest - Liu Cixin
 - The Three-Body Problem - Liu Cixin
