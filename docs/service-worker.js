@@ -92,7 +92,7 @@ self.__precacheManifest = [
   },
   {
     "url": "pages/reading/index.html",
-    "revision": "c8fb8eacf0dea481a6705cb9b8658042"
+    "revision": "87265d5a21fe4dc4c469ce6edb0e24ff"
   },
   {
     "url": "pages/travel/iceland/index.html",
@@ -133,6 +133,10 @@ self.__precacheManifest = [
   {
     "url": "recipes/white-skyr-mousse/index.html",
     "revision": "d61ea74f61a193988bfb67f13786cfaa"
+  },
+  {
+    "url": "style.css",
+    "revision": "d5bc8c8434a23113765273f98f29cf7d"
   },
   {
     "url": "theme.css",

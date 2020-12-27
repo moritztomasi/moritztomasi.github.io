@@ -7,10 +7,11 @@ eleventyNavigation:
 
 ## Currently
 
-Nudge - Richard H. Thaler & Cass R. Sunstein
+The Four - Scott Galloway
 
 ## 2020
 
+- Nudge - Richard H. Thaler & Cass R. Sunstein
 - A Man Called Ove - Fredrik Backman
 - Death's End - Liu Cixin
 - The Dark Forest - Liu Cixin
