@@ -7,13 +7,13 @@
 
         
 <meta name="description" content="The personal site of Moritz Tomasi">
-<link rel="canonical" href="https://momasi.dev/">
+<link rel="canonical" href="https://momasi.dev/posts/favourite-tools-of-2020/">
 
 
 <meta property="og:site_name" content="Moritz Tomasi">
-<meta property="og:title" content="Moritz Tomasi">
+<meta property="og:title" content="Favourite Tools of 2020">
 <meta property="og:description" content="The personal site of Moritz Tomasi">
-<meta property="og:url" content="/">
+<meta property="og:url" content="/posts/favourite-tools-of-2020/">
 <meta property="og:locale" content="en_us">
 <meta name="twitter:card" content="summary">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
@@ -108,57 +108,34 @@
 
             <main class="container mx-auto max-w-2xl flex-1">
                 
+<article>
+    
+        <h1 class="post_title">Favourite Tools of 2020</h1>
+    
 
+    
+        <h2 class="post_date text-base">07-01-2021</h2>
+    
 
-<section>
-  <p class="home_text text-base mb-4">
-    Hi, I'm Moritz! A full-stack developer based in Vienna, Austria. This is my website, where I write about topics that interest me and document parts of my life.
-  </p>
-  <p class="home_contact text-base">
-    <a href="mailto:tomasi.moritz@gmail.com" aria-label="Email">
-      <i class="fas fa-envelope fa-lg"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/moritz-tomasi-990398163/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-      <i class="fab fa-linkedin fa-lg"></i>
-    </a>
-    <a href="https://twitter.com/MoritzTomasi" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-      <i class="fab fa-twitter fa-lg"></i>
-    </a>
-    <a href="https://github.com/moritztomasi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-      <i class="fab fa-github fa-lg"></i>
-    </a>
-  </p>
-</section>
+    <p>Here are some short notes on my favourite tools this year.</p>
+<h2 id="tailwindcss"><a href="https://tailwindcss.com/">TailwindCSS</a></h2>
+<p>TailwindCSS is an un-opinionated CSS framework that provides utility-classes like <code>flex</code>, <code>space-y-2</code>, <code>text-center</code>, <code>bg-gray-200</code> etc. to use directly in HTML markup. While I’ve been using it at work for quite some time now, I started utilising it in personal projects this year. It has straightforward setup options, is extendable, is great when it comes to responsiveness and gets super small when building for production. I have to admit that I’ve always struggled a bit with CSS, which is why I never really enjoyed frontend work. TailwindCSS changed that for me and has made me a better frontend developer.</p>
+<h2 id="objectionjs-%26-knexjs"><a href="https://vincit.github.io/objection.js/">ObjectionJS</a> &amp; <a href="http://knexjs.org/">KnexJS</a></h2>
+<p>I’ve used Sequelize a lot in the past, and I quite like it. But I always found it a bit too abstract for my taste, and once queries got more complex, there were always some issues and lots of googling. Then I discovered KnexJS. I started using it for personal and work projects, and it’s always been a joy. The documentation is quite extensive with lots of examples, and in my opinion, it improves the readability of queries by a lot in comparison to other ORM’s. Just as a standalone library, I find it extremely useful. And then there is ObjectionJS. ObjectionJS is an ORM, but it is more of a wrapper built around KnexJS, making it a query builder with relational functionality, that is simple to use and extremely helpful when managing database schemas.</p>
+<h2 id="shopify"><a href="https://www.shopify.com/">Shopify</a></h2>
+<p>I’ve always been interested in e-commerce. I had been looking around the Shopify ecosystem to see how it works for a while. This year I had the opportunity to help someone set up their own Shopify store. Initially, I advised them to get one of the many themes that Shopify offers for purchase. Still, since their designers had created a custom web design, we decided to implement a custom theme.</p>
+<p>The whole experience was pretty fun and exciting, though I have to say that Shopify’s development ecosystem has some shortcomings. Setting up both a production and development environment is not that straightforward, and a bit hacky, and the documentation can sometimes be sparse with information.</p>
+<h2 id="eleventy"><a href="https://www.11ty.dev/">Eleventy</a></h2>
+<p>A few years ago, I set up a personal website using WordPress, which I had worked before building small business websites. I thought it might be the simplest solution, but I never got excited about it, and the project got abandoned. This year, I came across eleventy, a simple static site generator written in JavaScript, that transforms a directory of templates into HTML. Eleventy supports many template types, including Markdown, which seemed perfect for the personal website project, since I didn’t want to work with a CMS and keep the general workflow simple. It also allowed me to try out <a href="https://github.com/alpinejs/alpine">AlpineJS</a>, a library that offers the reactive and declarative nature of big frameworks like Vue or React at a much lower cost.</p>
+<p>The setup and implementation were pretty straightforward. After I decided which content I wanted to have on the site, planned the structure and put together a minimal design, I began implementing it. My idea of adding a simple light/dark mode switcher turned into a multi-theme mode switcher after discovering <a href="https://www.happyhues.co/">Happy Hues</a>. The last thing I did was implement an automated process for building my CV from a JSON file, using <a href="https://jsonresume.org/">JSON Resume</a>.</p>
+<p>Building this personal website was my favourite experience this year. The workflow is simple. I edit the files, build, commit and push. The hosting on GitHub pages is free, and the domain costs 2€ per month. But most importantly, it allowed me to play around with minimal design ideas and tools that otherwise, I would not have a big chance to use.</p>
 
-<section class="pt-24">
-  <h2 class="posts_list_label text-xl">Posts</h2>
+</article>
 
-  <div class="flex flex-col text-sm pt-4"><div class="flex flex-col md:flex-row">
-        <span class="posts_list_date">07-01-2021</span>
-        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="/posts/stop-hating-on-for-loops/">Stop Hating on For Loops</a>
-      </div><div class="flex flex-col md:flex-row">
-        <span class="posts_list_date">07-01-2021</span>
-        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="/posts/favourite-tools-of-2020/">Favourite Tools of 2020</a>
-      </div><div class="flex flex-col md:flex-row">
-        <span class="posts_list_date">29-09-2020</span>
-        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="/posts/assert-in-guard-clauses/">Guarding Your Node.js Functions With Assert</a>
-      </div></div>
-</section>
-
-<section class="pt-12">
-  <h2 class="posts_list_label text-xl">Recipes</h2>
-
-  <div class="flex flex-col text-sm pt-4"><div class="flex flex-col md:flex-row">
-        <span class="posts_list_date">23-09-2020</span>
-        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="/recipes/neapolitan-pizza-dough/">Neapolitan Pizza Dough Calculator</a>
-      </div><div class="flex flex-col md:flex-row">
-        <span class="posts_list_date">14-09-2020</span>
-        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="/recipes/white-skyr-mousse/">White Chocolate Skyr Mousse</a>
-      </div><div class="flex flex-col md:flex-row">
-        <span class="posts_list_date">13-09-2020</span>
-        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="/recipes/dark-skyr-mousse/">Dark Chocolate Skyr Mousse</a>
-      </div></div>
-</section>
+<aside hidden="hidden" class="fixed top-0 right-0 mt-12">
+    <nav class="toc">
+        <ol><li><a href="#tailwindcss">TailwindCSS</a></li><li><a href="#objectionjs-%26-knexjs">ObjectionJS &amp; KnexJS</a></li><li><a href="#shopify">Shopify</a></li><li><a href="#eleventy">Eleventy</a></li></ol></nav>
+</aside>
             </main>
 
             <footer class="bottom-0 w-full py-6">

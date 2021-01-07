@@ -76,7 +76,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "26edacb42417b95d6247083936c5a997"
+    "revision": "a217285b027e4ba695fbd4a8dc5a80c3"
   },
   {
     "url": "js/alpine.js",
@@ -123,6 +123,10 @@ self.__precacheManifest = [
     "revision": "605aad53af0eb98bc93a920a4d48eaab"
   },
   {
+    "url": "posts/favourite-tools-of-2020/index.html",
+    "revision": "169a7bd32e39b270d1ac979596dc0acf"
+  },
+  {
     "url": "posts/stop-hating-on-for-loops/index.html",
     "revision": "de2bb57077368a066e3439d8a7d9cb1a"
   },
@@ -137,6 +141,10 @@ self.__precacheManifest = [
   {
     "url": "recipes/white-skyr-mousse/index.html",
     "revision": "f4a439e45857a0f823c6988e49341d5d"
+  },
+  {
+    "url": "style.css",
+    "revision": "d5bc8c8434a23113765273f98f29cf7d"
   },
   {
     "url": "theme.css",
