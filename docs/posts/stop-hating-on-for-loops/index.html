@@ -7,13 +7,13 @@
 
         
 <meta name="description" content="The personal site of Moritz Tomasi">
-<link rel="canonical" href="https://momasi.dev/">
+<link rel="canonical" href="https://momasi.dev/posts/stop-hating-on-for-loops/">
 
 
 <meta property="og:site_name" content="Moritz Tomasi">
-<meta property="og:title" content="Moritz Tomasi">
+<meta property="og:title" content="Stop Hating on For Loops">
 <meta property="og:description" content="The personal site of Moritz Tomasi">
-<meta property="og:url" content="/">
+<meta property="og:url" content="/posts/stop-hating-on-for-loops/">
 <meta property="og:locale" content="en_us">
 <meta name="twitter:card" content="summary">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
@@ -108,54 +108,38 @@
 
             <main class="container mx-auto max-w-2xl flex-1">
                 
+<article>
+    
+        <h1 class="post_title">Stop Hating on For Loops</h1>
+    
 
+    
+        <h2 class="post_date text-base">07-01-2021</h2>
+    
 
-<section>
-  <p class="home_text text-base mb-4">
-    Hi, I'm Moritz! A full-stack developer based in Vienna, Austria. This is my website, where I write about topics that interest me and document parts of my life.
-  </p>
-  <p class="home_contact text-base">
-    <a href="mailto:tomasi.moritz@gmail.com" aria-label="Email">
-      <i class="fas fa-envelope fa-lg"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/moritz-tomasi-990398163/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-      <i class="fab fa-linkedin fa-lg"></i>
-    </a>
-    <a href="https://twitter.com/MoritzTomasi" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-      <i class="fab fa-twitter fa-lg"></i>
-    </a>
-    <a href="https://github.com/moritztomasi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-      <i class="fab fa-github fa-lg"></i>
-    </a>
-  </p>
-</section>
+    <p>This Year, I got a lot of email recommendations from <a href="https://medium.com/">Medium</a> and <a href="https://dev.to/">dev.to</a> recommending articles on how we should stop using for-loops and instead replace them with array functions like <code>forEach</code>, <code>map</code>, <code>filter</code>, <code>reduce</code> and so on. I’m always up for learning something new, checking out best practices and evaluating my coding style, so the first time one of those articles popped up I read through it. About halfway down, I had decided that the author and I did not share the same opinion, so I closed the tab and moved on with my life. But those articles would keep showing up in my email recommendations, all with the same structure:</p>
+<ul>
+<li>A clickbaity title.</li>
+<li>An explanation of why <code>for</code> and <code>for...of</code> are bad.</li>
+<li>The claim, that <code>for</code> and <code>for...of</code> should be replaced with array functions.</li>
+<li>Examples using array functions.</li>
+</ul>
+<p>The examples were sometimes quite good and helpful, but what bothers me are the clickbaity titles and absolute claims they make. In programming, there are no absolutes. There is an infinite amount of tools, best practices, and many instances of “it depends”. As a developer, you need to learn how to properly use these tools, consider best practices, and weigh different options. Array functions, <code>for</code>, and <code>for...of</code> are different kinds of tools. Just like any other tool they have a purpose, some quirks and various types of features sets. So telling people to stop considering one of those tools is just bad advice.</p>
+<p>The claim that the authors repeat most commonly and the one that personally bothers me the most is that array functions always improve readability. Don’t get me wrong. They certainly can improve readability. But it depends on the situation. For example, given a simple small array of numbers <code>forEach</code> would be a good choice.</p>
+<p>But if the array is more complex, e.g. if working with an array of objects, the disadvantages become clear:</p>
+<ul>
+<li>There is no break and continue. So if you have an array of objects, it will only work if those objects are well defined.</li>
+<li>No return or yield.</li>
+<li>No async/await.</li>
+</ul>
+<p>There are some ways around those limitations, but they’ll make the code unnecessarily complicated and less readable.</p>
+<p>People are trying to build up some reputation and publish content. I get that! But this is not the way to do it. Articles like these aren’t helping people they’re targeting, like beginners or junior developers, who can be very insecure about their coding style and knowledge. They can make them adopt bad habits, just because they try to avoid using <code>for</code> and <code>for...of</code>. Instead, try to give readers a comprehensive overview of array functions and when it is appropriate to use them. There are lots of instances where a <code>map</code>, <code>forEach</code> or <code>filter</code> can make the code more readable, but it depends.</p>
 
-<section class="pt-24">
-  <h2 class="posts_list_label text-xl">Posts</h2>
+</article>
 
-  <div class="flex flex-col text-sm pt-4"><div class="flex flex-col md:flex-row">
-        <span class="posts_list_date">07-01-2021</span>
-        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="/posts/stop-hating-on-for-loops/">Stop Hating on For Loops</a>
-      </div><div class="flex flex-col md:flex-row">
-        <span class="posts_list_date">29-09-2020</span>
-        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="/posts/assert-in-guard-clauses/">Guarding Your Node.js Functions With Assert</a>
-      </div></div>
-</section>
-
-<section class="pt-12">
-  <h2 class="posts_list_label text-xl">Recipes</h2>
-
-  <div class="flex flex-col text-sm pt-4"><div class="flex flex-col md:flex-row">
-        <span class="posts_list_date">23-09-2020</span>
-        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="/recipes/neapolitan-pizza-dough/">Neapolitan Pizza Dough Calculator</a>
-      </div><div class="flex flex-col md:flex-row">
-        <span class="posts_list_date">14-09-2020</span>
-        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="/recipes/white-skyr-mousse/">White Chocolate Skyr Mousse</a>
-      </div><div class="flex flex-col md:flex-row">
-        <span class="posts_list_date">13-09-2020</span>
-        <a class="posts_list_title md:ml-12 mb-4 md:mb-0" href="/recipes/dark-skyr-mousse/">Dark Chocolate Skyr Mousse</a>
-      </div></div>
-</section>
+<aside hidden="hidden" class="fixed top-0 right-0 mt-12">
+    
+</aside>
             </main>
 
             <footer class="bottom-0 w-full py-6">

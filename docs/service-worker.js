@@ -76,7 +76,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "d0cc25d5844b575820fe46dee79da65f"
+    "revision": "26edacb42417b95d6247083936c5a997"
   },
   {
     "url": "js/alpine.js",
@@ -121,6 +121,10 @@ self.__precacheManifest = [
   {
     "url": "posts/assert-in-guard-clauses/index.html",
     "revision": "605aad53af0eb98bc93a920a4d48eaab"
+  },
+  {
+    "url": "posts/stop-hating-on-for-loops/index.html",
+    "revision": "de2bb57077368a066e3439d8a7d9cb1a"
   },
   {
     "url": "recipes/dark-skyr-mousse/index.html",
