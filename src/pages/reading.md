@@ -7,7 +7,11 @@ eleventyNavigation:
 
 ## Currently
 
-The Four - Scott Galloway
+Business Adventures - John Brooks
+
+## 2021
+
+- The Four - Scott Galloway
 
 ## 2020
 
