@@ -7,10 +7,11 @@ eleventyNavigation:
 
 ## Currently
 
-Business Adventures - John Brooks
+Utopia for Realists - Rutger Bregman
 
 ## 2021
 
+- Business Adventures - John Brooks
 - The Four - Scott Galloway
 
 ## 2020

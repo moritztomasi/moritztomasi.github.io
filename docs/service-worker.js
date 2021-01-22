@@ -92,7 +92,7 @@ self.__precacheManifest = [
   },
   {
     "url": "pages/reading/index.html",
-    "revision": "799183f71094769f30118f42f936c293"
+    "revision": "7d8ab334321a96c0284b74d6f6ce696d"
   },
   {
     "url": "pages/travel/iceland/index.html",
